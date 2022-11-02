@@ -15,7 +15,8 @@ jobs:
     steps:
       # Checks-out GitHub repository
       # more: https://github.com/actions/checkout
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@master
 
       - name: "Train and Test Rasa Demo"
         id: action
@@ -26,9 +27,10 @@ jobs:
           # In order to add a PR comment with summary
           # a GH Token has to be pass to the GH action
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          workspace: ${{ format('{0}/{1}', github.workspace, "rasa" }}
 
-            # The 'actions/upload-artifact' action to upload files
-            # More: https://github.com/actions/upload-artifact
+      # The 'actions/upload-artifact' action to upload files
+      # More: https://github.com/actions/upload-artifact
       - uses: actions/upload-artifact@v2
         with:
           name: rasa-cfg
