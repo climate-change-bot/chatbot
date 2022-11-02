@@ -13,6 +13,10 @@ jobs:
     name: "Train and test model"
     runs-on: ubuntu-latest
     steps:
+      # Checks-out GitHub repository
+      # more: https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+
       - name: "Train and Test Rasa Demo"
         id: action
         uses: RasaHQ/rasa-train-test-gha@main
