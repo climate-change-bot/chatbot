@@ -18,9 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - run: mkdir -p results
-      - run: mkdir -p reports
-
       - name: "Train and Test Rasa Demo"
         id: action
         uses: RasaHQ/rasa-train-test-gha@main
@@ -38,8 +35,8 @@ jobs:
         with:
           name: rasa-cfg
           path: |
-            results
-            reports
+            rasa/results
+            rasa/reports
 
 #  docker:
 #    name: "Docker build and push to Amazon ECR"
