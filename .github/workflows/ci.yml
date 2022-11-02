@@ -18,6 +18,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - run: mkdir -p results
+      - run: mkdir -p reports
+
       - name: "Train and Test Rasa Demo"
         id: action
         uses: RasaHQ/rasa-train-test-gha@main
@@ -31,7 +34,7 @@ jobs:
 
       # The 'actions/upload-artifact' action to upload files
       # More: https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: rasa-cfg
           path: |
