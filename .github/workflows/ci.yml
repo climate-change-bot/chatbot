@@ -38,6 +38,11 @@ jobs:
             rasa/results
             rasa/reports
 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: rasa-model
+          path: rasa/models
+
 #  docker:
 #    name: "Docker build and push to Amazon ECR"
 #    runs-on: ubuntu-latest
