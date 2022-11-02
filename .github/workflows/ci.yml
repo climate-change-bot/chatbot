@@ -27,7 +27,7 @@ jobs:
           # In order to add a PR comment with summary
           # a GH Token has to be pass to the GH action
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workspace: ${{ format('{0}/{1}', github.workspace, "rasa" }}
+          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
 
       # The 'actions/upload-artifact' action to upload files
       # More: https://github.com/actions/upload-artifact
