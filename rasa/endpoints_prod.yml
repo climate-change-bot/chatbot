@@ -20,7 +20,7 @@
 tracker_store:
     type: SQL
     dialect: "postgresql"  # the dialect used to interact with the db
-    url: "ip-172-31-39-45.eu-central-1.compute.internal:5432"  # (optional) host of the sql db, e.g. "localhost"
+    url: "10.0.0.26:5432"  # (optional) host of the sql db, e.g. "localhost"
     db: "rasa"  # path to your db
     username: "rasa"  # username used for authentication
     password: "localhost" # password used for authentication
