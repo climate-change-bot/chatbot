@@ -7,8 +7,7 @@ COPY requirements.txt ./
 RUN pip3 install -r requirements.txt
 
 COPY rasa .
-COPY rasa/endpoints_prod.yml /rasa/endpoints.yml
 
 EXPOSE 5005
 
-CMD ["rasa", "run", "--enable-api", "--endpoints", "endpoints.yml"]
+CMD ["rasa", "run", "--enable-api", "--endpoints", "endpointsProd.yml"]
