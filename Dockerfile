@@ -11,6 +11,4 @@ COPY rasa/endpoints_prod.yml /rasa/endpoints.yml
 
 EXPOSE 5005
 
-ENTRYPOINT ["rasa"]
-
-CMD [ "run", "--enable-api", "--endpoints", "endpoints.yml"]
+CMD ["rasa", "run", "--enable-api", "--endpoints", "endpoints.yml"]
