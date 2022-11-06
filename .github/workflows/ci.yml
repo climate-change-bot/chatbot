@@ -4,14 +4,38 @@ on:
   push:
     branches:
       - main
+    tags:
+      - '*'
   pull_request:
     branches:
       - main
 
 jobs:
-  train_and_test:
+  train_test:
     name: "Train and test model"
     runs-on: ubuntu-latest
+    if: github.ref_type != 'tag'
+    steps:
+      # Checks-out GitHub repository
+      # more: https://github.com/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: "Train and Test Rasa Demo"
+        id: action
+        uses: RasaHQ/rasa-train-test-gha@main
+        with:
+          # List of available tags: https://hub.docker.com/r/rasa/rasa/tags
+          rasa_version: "3.2.10-full"
+          # In order to add a PR comment with summary
+          # a GH Token has to be pass to the GH action
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
+
+  train_test_upload:
+    name: "Train, test and upload model"
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
     steps:
       # Checks-out GitHub repository
       # more: https://github.com/actions/checkout
@@ -46,8 +70,8 @@ jobs:
   docker:
     name: "Docker build and push to Amazon ECR"
     runs-on: ubuntu-latest
-    needs: train_and_test
-    # if: github.ref_type == 'tag' && contains(github.ref_name, 'V0.')
+    needs: train_test_upload
+    if: github.ref_type == 'tag'
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
