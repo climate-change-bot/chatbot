@@ -8,6 +8,8 @@ can answer questions about climate change.
 ## Restrictions
 
 - The chatbot is currently only available in german language
+- The chatbot is only accessible from [www.climate-change-bot.site](https://www.climate-change-bot.site). Facebook
+  Messenger or similar integrations will be provided at a later date.
 
 ## Models
 
