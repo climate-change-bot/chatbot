@@ -9,16 +9,23 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hallo. Welche Fragen zum Klimawandel hast du?"
+  - text: "Hallo. Ich bin der Climate Change Bot. Welche Fragen zum Klimawandel hast du?"
 
   utter_answer_what_is_climate_change:
-  - text: "Über Jahrmillionen hat das globale Klima stets Schwankungen aufgewiesen. Seit dem Beginn der Industrialisierung hat sich aber die Zusammensetzung der Atmosphäre durch die Emissionen von Treibhausgasen verändert. Diese von Menschen verursachte Erwärmung verstärkt den natürlichen Treibhauseffekt und führt zu einem spürbaren Wandel des Klimas."
+  - text: "Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
+
+  utter_question_who_is_responsible_for_climate_change:
+  - text: "Weist du wer oder was den aktuellen Klimawandel verursacht?"
 
   utter_further_question:
-  - text: "Hast du eine weitere Frage?"
+  - text: "Hast du weitere Fragen?"
+  - test: "Was möchtest du sonst noch wissen?"
 
   utter_goodbye:
   - text: "Tschüss"
+
+  utter_please_rephrase:
+    - text: Entschuldige, leider habe ich dich nicht verstanden. Könntest du das etwas anders formulieren?
 
 
 session_config:
