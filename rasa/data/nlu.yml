@@ -3,89 +3,37 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
+    - hallo
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - tschüss
+    - Machs gut
+    - Bye
+    - Auf Wiedersehen
+    - see you
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - ja
+    - klar
+    - okay
+    - das ist richtig
+    - genau
 
 - intent: deny
   examples: |
-    - no
+    - nein
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nop
+    - Sicher nicht
+    - Ich mag das nicht
+    - nicht wirklich
 
-- intent: mood_great
+- intent: question_what_is_climate_change
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Was ist ist der Klimawandel?
+    - Kannst du mir erklären was der Klimawandel ist?
+    - Klimawandel?
+    
