@@ -1,7 +1,13 @@
 version: "3.1"
 
 rules:
+- rule: welcome user
+  conversation_start: true  # this rule only applies at the beginning of a conversation
+  steps:
+    - intent: greet
+    - action: utter_welcome
+
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
-  - intent: nlu_fallback
-  - action: utter_please_rephrase
+    - intent: nlu_fallback
+    - action: utter_please_rephrase
