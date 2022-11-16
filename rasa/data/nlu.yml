@@ -2,9 +2,14 @@ version: "3.1"
 
 nlu:
 - intent: greet
+
+- intent: greet_again
   examples: |
     - hallo
     - hi
+    - Guten Tag
+    - Guten Morgen
+    - Whats up
 
 - intent: goodbye
   examples: |
@@ -25,15 +30,68 @@ nlu:
 - intent: deny
   examples: |
     - nein
-    - n
     - nop
     - Sicher nicht
     - Ich mag das nicht
     - nicht wirklich
 
+# chitchat
+- intent: chitchat_how_are_you
+  examples: |
+    - Wie geht es dir
+    - Fühlst du dich gut
+    - Alles gut
+
+- intent: chitchat
+  examples: |
+    - Was machst du so
+    - wie ist das Wetter
+    - Hast du lust auf ein Date
+
+# Climate sceptic
+
+# climate change questions
+
 - intent: question_what_is_climate_change
   examples: |
-    - Was ist ist der Klimawandel?
-    - Kannst du mir erklären was der Klimawandel ist?
+    - Was ist ist der Klimawandel
+    - Was ist ist der Klimawandel überhaupt
+    - Kannst du mir erklären was der Klimawandel ist
     - Klimawandel?
+
+- intent: question_what_causes_climate_change
+  examples: |
+    - Was verursacht den Klimawandel
+    - Wer verursacht den Klimawandel
+    - Was sind die Ursachen des Klimawandels
+
+- intent: question_climate_changed_before
+  examples: |
+    - Hat sich das Klima nicht schon immer verändert
+    - Das Klima hat sich schon immer verändert
+    - Das sich das Klima verändert ist nicht neues
+    - Hat das Klima nicht immer schon geschwankt
+    - Klimaveränderungen gab es früher schon
+    - Klimaveränderungen gab es schon immer
+
+- intent: question_is_the_sun
+  examples: |
+    - Verursacht nicht die Sonne die Klimaveränderung
+    - Ich habe gehört die Sonne ist schuld
+    - Die Sonne verursacht den Klimawandel
+
+- intent: question_its_not_bad
+  examples: |
+    - Der Klimawandel ist doch gar nicht schlimm
+    - Ich habe gehört das es gar nicht so schlimm sei
+
+- intent: question_models_are_unreliable
+  examples: |
+    - Die Modelle stimmen gar nicht
+    - Klimamodelle sind falsch
+
+- intent: question_temp_record_is_unreliable
+  examples: |
+    - Die Temperature wird falsch gemessen
+    - Die Messung der Temperatur ist falsch
     

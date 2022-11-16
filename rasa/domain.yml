@@ -2,30 +2,68 @@ version: "3.1"
 
 intents:
   - greet
+  - greet_again
   - goodbye
   - affirm
   - deny
+  - chitchat_how_are_you
+  - chitchat
   - question_what_is_climate_change
+  - question_what_causes_climate_change
+  - question_climate_changed_before
+  - question_is_the_sun
+  - question_its_not_bad
+  - question_models_are_unreliable
+  - question_temp_record_is_unreliable
 
 responses:
-  utter_greet:
-  - text: "Hallo. Ich bin der Climate Change Bot. Welche Fragen zum Klimawandel hast du?"
 
+# Greeting
+  utter_welcome:
+    - text: "Willkommen! Welche Fragen zum Klimawandel hast du?"
+  utter_greet_again:
+    - text: "Hallo :-)"
+
+# Chitchat
+  utter_chitchat_how_are_you:
+    - text: "Ich bin ein Chatbot. Mir geht es immer gut :-)"
+  utter_chitchat:
+    - text: "Leider kann ich mich mit dir nur über den Klimawandel sprechen. Über alles andere musst du mit einem Menschen chatten."
+
+# Answers to climate change
   utter_answer_what_is_climate_change:
-  - text: "Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
+    - text: "Das ist die Frage aller Fragen ;-) Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
+  utter_answer_what_causes_climate_change:
+    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen."
+  utter_answer_climate_changed_before:
+    - text: "Ja das stimmt. Das Klima hat sich schon immer verändert. Jedoch wenn sich das Klima so schnell veränderte wie im Moment, führte das in der Vergangenheit zu einem Massensterben."
+  utter_answer_is_the_sun:
+    - text: "Das ist leider nicht korrekt. Die Sonneneinstrahlung ist nicht stärker geworden. Trotzdem steigen die Temperaturen."
+  utter_answer_its_not_bad:
+    - text: "Schön wär es. Leider ist es aber so das die negativen Folgen die Positiven bei weitem übersteigen."
+  utter_answer_models_are_unreliable:
+    - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung seit 1900 nachgerechnet."
+  utter_answer_temp_record_is_unreliable:
+    - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
 
+# Questions to the user
   utter_question_who_is_responsible_for_climate_change:
-  - text: "Weist du wer oder was den aktuellen Klimawandel verursacht?"
+    - text: "Weist du was den aktuellen Klimawandel verursacht?"
 
   utter_further_question:
-  - text: "Hast du weitere Fragen?"
-  - test: "Was möchtest du sonst noch wissen?"
+    - text: "Hast du weitere Fragen?"
+    - text: "Was möchtest du sonst noch wissen?"
+    - text: "Was brennt dir noch unter den Fingernägel?"
+    - text: "Gibt's noch mehr das du wissen möchtest?"
+
+  utter_which_question:
+    - text: "Welche Frage?"
 
   utter_goodbye:
-  - text: "Tschüss"
+    - text: "Es war schön mit dir zu plaudern :-) Tschüss und mach's gut..."
 
   utter_please_rephrase:
-    - text: Entschuldige, leider habe ich dich nicht verstanden. Könntest du das etwas anders formulieren?
+    - text: "Leider habe ich dich nicht verstanden. Könntest du das etwas anders formulieren?"
 
 
 session_config:

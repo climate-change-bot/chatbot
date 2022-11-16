@@ -2,12 +2,14 @@ version: "3.1"
 
 stories:
 
-- story: climate change
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: question_what_is_climate_change
-  - action: utter_answer_what_is_climate_change
-  - action: utter_further_question
-  - intent: deny
-  - action: utter_goodbye
+#- story: question what is climate change/ what causes climate change
+#  steps:
+#    - intent: affirm
+#    - action: utter_which_question
+#    - intent: question_what_is_climate_change
+#    - action: utter_answer_what_is_climate_change
+#    - action: utter_further_question
+#    - intent: question_what_causes_climate_change
+#    - action: utter_answer_what_causes_climate_change
+#    - intent: deny
+#    - action: utter_goodbye

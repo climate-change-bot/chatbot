@@ -7,6 +7,73 @@ rules:
     - intent: greet
     - action: utter_welcome
 
+- rule: welcome user again
+  steps:
+    - intent: greet_again
+    - action: utter_greet_again
+
+- rule: goodbye user
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+# Simple Questions
+
+- rule: What is climate change
+  steps:
+    - intent: question_what_is_climate_change
+    - action: utter_answer_what_is_climate_change
+    - action: utter_further_question
+
+- rule: What causes climate change
+  steps:
+    - intent: question_what_causes_climate_change
+    - action: utter_answer_what_causes_climate_change
+    - action: utter_further_question
+
+- rule: The climate changed before
+  steps:
+    - intent: question_climate_changed_before
+    - action: utter_answer_climate_changed_before
+    - action: utter_further_question
+
+- rule: It's the sun
+  steps:
+    - intent: question_is_the_sun
+    - action: utter_answer_is_the_sun
+    - action: utter_further_question
+
+- rule: It's not bad
+  steps:
+    - intent: question_its_not_bad
+    - action: utter_answer_its_not_bad
+    - action: utter_further_question
+
+- rule: Models are unreliable
+  steps:
+    - intent: question_models_are_unreliable
+    - action: utter_answer_models_are_unreliable
+    - action: utter_further_question
+
+- rule: Temperature record is unreliable
+  steps:
+    - intent: question_temp_record_is_unreliable
+    - action: utter_answer_temp_record_is_unreliable
+    - action: utter_further_question
+
+# Chitchat
+
+- rule: Generell chitchat
+  steps:
+    - intent: chitchat
+    - action: utter_chitchat
+
+- rule: Chitchat how are you
+  steps:
+    - intent: chitchat_how_are_you
+    - action: utter_chitchat_how_are_you
+
+# Fallback
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
     - intent: nlu_fallback
