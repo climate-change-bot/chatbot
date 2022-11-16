@@ -41,10 +41,13 @@ jobs:
       - run: python -m spacy download de_core_news_md
 
       - run: rasa data validate
+        working-directory: ./rasa
 
       - run: rasa train
+        working-directory: ./rasa
 
       - run: rasa test
+        working-directory: ./rasa
 
 #      - name: "Train and Test Rasa Demo"
 #        id: action
