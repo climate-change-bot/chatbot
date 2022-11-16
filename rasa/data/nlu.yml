@@ -13,7 +13,8 @@ nlu:
 
 - intent: goodbye
   examples: |
-    - tschüss
+    - Tschüss
+    - Tschau
     - Machs gut
     - Bye
     - Auf Wiedersehen
@@ -33,7 +34,11 @@ nlu:
     - nop
     - Sicher nicht
     - Ich mag das nicht
-    - nicht wirklich
+
+- intent: no_question
+  examples: |
+    - Keine Frage
+    - Nicht wirklich eine
 
 # chitchat
 - intent: chitchat_how_are_you
