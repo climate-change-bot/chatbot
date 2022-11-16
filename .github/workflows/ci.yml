@@ -40,25 +40,11 @@ jobs:
 
       - run: python -m spacy download de_core_news_md
 
-      - run: rasa data validate
-        working-directory: ./rasa
-
       - run: rasa train
         working-directory: ./rasa
 
       - run: rasa test
         working-directory: ./rasa
-
-#      - name: "Train and Test Rasa Demo"
-#        id: action
-#        uses: RasaHQ/rasa-train-test-gha@main
-#        with:
-#          # List of available tags: https://hub.docker.com/r/rasa/rasa/tags
-#          rasa_version: "3.3.1-full"
-#          # In order to add a PR comment with summary
-#          # a GH Token has to be pass to the GH action
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
 
   train_test_upload:
     name: "Train, test and upload model"
@@ -70,16 +56,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: "Train and Test Rasa Demo"
-        id: action
-        uses: RasaHQ/rasa-train-test-gha@main
+      - uses: actions/setup-python@v4
         with:
-          # List of available tags: https://hub.docker.com/r/rasa/rasa/tags
-          rasa_version: "3.3.1-full"
-          # In order to add a PR comment with summary
-          # a GH Token has to be pass to the GH action
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
+          python-version: '3.8'
+          cache: 'pip' # caching pip dependencies
+
+      - run: pip install -r requirements.txt
+
+      - run: python -m spacy download de_core_news_md
+
+      - run: rasa train
+        working-directory: ./rasa
+
+      - run: rasa test
+        working-directory: ./rasa
 
       # The 'actions/upload-artifact' action to upload files
       # More: https://github.com/actions/upload-artifact
@@ -88,7 +78,6 @@ jobs:
           name: rasa-cfg
           path: |
             rasa/results
-            rasa/reports
 
       - uses: actions/upload-artifact@v3
         with:
