@@ -21,3 +21,4 @@ communication.
 | Chatbot Version | Model Id                         | Rasa Version |
 |:----------------|:---------------------------------|:-------------|
 | 0.0.1           | d9c3b19cbde94838bec0b44655ac5bc3 | 3.2.10       |
+| 0.0.2           | 33daec1dd801496d8d54875efa15fe58 | 3.3.1        |
