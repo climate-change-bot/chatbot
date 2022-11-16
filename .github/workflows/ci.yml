@@ -40,16 +40,22 @@ jobs:
 
       - run: python -m spacy download de_core_news_md
 
-      - name: "Train and Test Rasa Demo"
-        id: action
-        uses: RasaHQ/rasa-train-test-gha@main
-        with:
-          # List of available tags: https://hub.docker.com/r/rasa/rasa/tags
-          rasa_version: "3.3.1-full"
-          # In order to add a PR comment with summary
-          # a GH Token has to be pass to the GH action
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
+      - run: rasa data validate
+
+      - run: rasa train
+
+      - run: rasa test
+
+#      - name: "Train and Test Rasa Demo"
+#        id: action
+#        uses: RasaHQ/rasa-train-test-gha@main
+#        with:
+#          # List of available tags: https://hub.docker.com/r/rasa/rasa/tags
+#          rasa_version: "3.3.1-full"
+#          # In order to add a PR comment with summary
+#          # a GH Token has to be pass to the GH action
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          workspace: ${{ format('{0}/{1}', github.workspace, 'rasa') }}
 
   train_test_upload:
     name: "Train, test and upload model"
