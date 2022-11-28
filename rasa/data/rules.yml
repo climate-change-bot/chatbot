@@ -61,6 +61,18 @@ rules:
     - action: utter_answer_temp_record_is_unreliable
     - action: utter_further_question
 
+- rule: Can I eat meat
+  steps:
+    - intent: question_can_i_eat_meat
+    - action: utter_answer_can_i_eat_meat
+    - action: utter_further_question
+
+- rule: Can we stop climate change
+  steps:
+    - intent: question_can_we_stop_climate_change
+    - action: utter_answer_can_we_stop_climate_change
+    - action: utter_further_question
+
 # Chitchat
 
 - rule: Generell chitchat
@@ -72,6 +84,11 @@ rules:
   steps:
     - intent: chitchat_how_are_you
     - action: utter_chitchat_how_are_you
+
+- rule: Chitchat do you know everything
+  steps:
+    - intent: chitchat_do_you_know_everything
+    - action: utter_chitchat_do_you_know_everything
 
 # Fallback
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence

@@ -47,6 +47,12 @@ nlu:
     - Fühlst du dich gut
     - Alles gut
 
+- intent: chitchat_do_you_know_everything
+  examples: |
+    - Weisst du zu allen Fragen eine Antwort?
+    - Weisst du alles
+    - Bist du allwissend
+
 - intent: chitchat
   examples: |
     - Was machst du so
@@ -61,6 +67,7 @@ nlu:
   examples: |
     - Was ist ist der Klimawandel
     - Was ist ist der Klimawandel überhaupt
+    - Was ist eigentlich dieser Klimawandel?
     - Kannst du mir erklären was der Klimawandel ist
     - Klimawandel?
 
@@ -68,6 +75,7 @@ nlu:
   examples: |
     - Was verursacht den Klimawandel
     - Wer verursacht den Klimawandel
+    - Weshalb steigen die Temperaturen?
     - Was sind die Ursachen des Klimawandels
 
 - intent: question_climate_changed_before
@@ -84,10 +92,12 @@ nlu:
     - Verursacht nicht die Sonne die Klimaveränderung
     - Ich habe gehört die Sonne ist schuld
     - Die Sonne verursacht den Klimawandel
+    - Trägt die Sonne zum Klimawandel bei
 
 - intent: question_its_not_bad
   examples: |
     - Der Klimawandel ist doch gar nicht schlimm
+    - Ist der Klimawandel schlimm?
     - Ich habe gehört das es gar nicht so schlimm sei
 
 - intent: question_models_are_unreliable
@@ -99,4 +109,15 @@ nlu:
   examples: |
     - Die Temperature wird falsch gemessen
     - Die Messung der Temperatur ist falsch
+
+- intent: question_can_i_eat_meat
+  examples: |
+    - Kann ich weiterhin Fleisch essen
+    - Kann ich weiterhin guten Gewissens Fleisch essen
+
+- intent: question_can_we_stop_climate_change
+  examples: |
+    - Hat die Menschheit noch eine Chance
+    - Können wir den Klimawandel noch stoppen
+    - Ist es nicht schon zu spät umd den Klimawandel zu stoppen
     

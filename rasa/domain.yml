@@ -8,6 +8,7 @@ intents:
   - affirm
   - deny
   - chitchat_how_are_you
+  - chitchat_do_you_know_everything
   - chitchat
   - question_what_is_climate_change
   - question_what_causes_climate_change
@@ -16,18 +17,22 @@ intents:
   - question_its_not_bad
   - question_models_are_unreliable
   - question_temp_record_is_unreliable
+  - question_can_i_eat_meat
+  - question_can_we_stop_climate_change
 
 responses:
 
 # Greeting
   utter_welcome:
-    - text: "Willkommen! Welche Fragen zum Klimawandel hast du?"
+    - text: "Willkommen! Welche Frage zum Klimawandel hast du?"
   utter_greet_again:
     - text: "Hallo :-)"
 
 # Chitchat
   utter_chitchat_how_are_you:
     - text: "Ich bin ein Chatbot. Mir geht es immer gut :-)"
+  utter_chitchat_do_you_know_everything:
+    - text: "Schön wärs :-) Aber mit jeder Konversation lerne ich wieder etwas mehr..."
   utter_chitchat:
     - text: "Leider kann ich mich mit dir nur über den Klimawandel sprechen. Über alles andere musst du mit einem Menschen chatten."
 
@@ -35,17 +40,21 @@ responses:
   utter_answer_what_is_climate_change:
     - text: "Das ist die Frage aller Fragen ;-) Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
   utter_answer_what_causes_climate_change:
-    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen."
+    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen. Die durch den Mensch verursachten Treibhausgase spielen dabei eine treibende Rolle."
   utter_answer_climate_changed_before:
     - text: "Ja das stimmt. Das Klima hat sich schon immer verändert. Jedoch wenn sich das Klima so schnell veränderte wie im Moment, führte das in der Vergangenheit zu einem Massensterben."
   utter_answer_is_the_sun:
     - text: "Das ist leider nicht korrekt. Die Sonneneinstrahlung ist nicht stärker geworden. Trotzdem steigen die Temperaturen."
   utter_answer_its_not_bad:
-    - text: "Schön wär es. Leider ist es aber so das die negativen Folgen die Positiven bei weitem übersteigen."
+    - text: "Die negativen Folgen des Klimawandel sind gravierend und werden von den Positiven bei weitem nicht ausgeglichen."
   utter_answer_models_are_unreliable:
     - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung seit 1900 nachgerechnet."
   utter_answer_temp_record_is_unreliable:
     - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
+  utter_answer_can_i_eat_meat:
+    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."
+  utter_answer_can_we_stop_climate_change:
+    - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
 
 # Misc
 
@@ -57,9 +66,8 @@ responses:
     - text: "Weist du was den aktuellen Klimawandel verursacht?"
 
   utter_further_question:
-    - text: "Hast du weitere Fragen?"
+    - text: "Hast du eine weitere Frage?"
     - text: "Was möchtest du sonst noch wissen?"
-    - text: "Was brennt dir noch unter den Fingernägel?"
     - text: "Gibt's noch mehr das du wissen möchtest?"
 
   utter_which_question:
