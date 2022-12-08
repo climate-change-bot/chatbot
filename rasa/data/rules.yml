@@ -73,6 +73,12 @@ rules:
     - action: utter_answer_can_we_stop_climate_change
     - action: utter_further_question
 
+- rule: Politics vs Activism
+  steps:
+    - intent: question_activism_vs_politics
+    - action: utter_answer_activism_vs_politics
+    - action: utter_further_question
+
 # Chitchat
 
 - rule: Generell chitchat

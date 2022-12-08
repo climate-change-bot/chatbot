@@ -9,3 +9,9 @@ stories:
     - action: utter_knows_more_than_bot
     - intent: deny
     - action: utter_goodbye
+
+- story: what can i do?
+  steps:
+    - intent: question_what_can_i_do
+    - action: utter_answer_what_can_i_do_general
+    - action: utter_answer_what_can_i_do_general_tips

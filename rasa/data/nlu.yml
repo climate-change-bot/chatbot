@@ -121,4 +121,21 @@ nlu:
     - hat die menschheit noch eine chance?
     - können wir den klimawandel noch stoppen?
     - ist es nicht schon zu spät um den klimawandel zu stoppen?
+
+- intent: question_activism_vs_politics
+  examples: |
+    - ist aktivismus besser als politik?
+    - ist politik besser als aktivismus?
+    - braucht es eher aktivismus oder politik?
+    - braucht es eher politik oder aktivismus?
+    - politik oder aktivismus?
+    - aktivismus der politik?
     
+- intent: question_what_can_i_do
+  examples: |
+    - was kann ich tun?
+    - was kann ich machen?
+    - was kann ich als einzelperson tun?
+    - was kann ich als einzelperson ausrichten?
+    - wie rette ich das klima?
+    - was sind meine optionen?

@@ -19,6 +19,8 @@ intents:
   - question_temp_record_is_unreliable
   - question_can_i_eat_meat
   - question_can_we_stop_climate_change
+  - question_activism_vs_politics
+  - question_what_can_i_do
 
 responses:
 
@@ -26,19 +28,22 @@ responses:
   utter_welcome:
     - text: "Herzlich Willkommen! Welche Frage zum Klimawandel hast du?"
   utter_greet_again:
-    - text: "Hallo :-)"
+    - text: "Hallo :smile:"
+    - text: "Servus :smile:"
+    - text: "Guten Tag :smile:"
+    - text: "Grüezi :smile:"
 
   # Chitchat
   utter_chitchat_how_are_you:
-    - text: "Ich bin ein Chatbot. Mir geht es immer gut :-)"
+    - text: "Ich bin ein Chatbot. Mir geht es immer gut :smile:"
   utter_chitchat_do_you_know_everything:
-    - text: "Schön wärs :-) Aber mit jeder Konversation lerne ich wieder etwas mehr..."
+    - text: "Schön wärs :smile: Aber mit jeder Konversation lerne ich wieder etwas mehr..."
   utter_chitchat:
     - text: "Leider kann ich mich mit dir nur über den Klimawandel sprechen. Über alles andere musst du mit einem Menschen chatten."
 
   # Answers to climate change
   utter_answer_what_is_climate_change:
-    - text: "Das ist die Frage aller Fragen ;-) Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
+    - text: "Das ist die Frage aller Fragen :wink: Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
   utter_answer_what_causes_climate_change:
     - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen. Die durch den Mensch verursachten Treibhausgase spielen dabei eine treibende Rolle."
   utter_answer_climate_changed_before:
@@ -55,11 +60,19 @@ responses:
     - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."
   utter_answer_can_we_stop_climate_change:
     - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
+  utter_answer_activism_vs_politics:
+    - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
+
+  # What can I do answers
+  utter_answer_what_can_i_do_general:
+    - text: "Das Gute ist, es gibt vieles das du tun kannst. Zum Beispiel könntest du mehr mit dem öffentlichen Verkehr reisen als mit dem Auto. Oder du benutzt nur noch das Velo :wink: Scherz, das geht natürlich nicht immer."
+  utter_answer_what_can_i_do_general_tips:
+    - text: "Ich habe dir schon mal einen [Link](https://utopia.de/galerien/klimaschutz-tipps/#3) mit einigen guten Tipps."
 
   # Misc
 
   utter_knows_more_than_bot:
-    - text: "Wow dann weisst du sicher mehr als ich ;-) Darf ich dich Fragen was du machst um den Klimawandel zu begrenzen?"
+    - text: "Wow dann weisst du sicher mehr als ich :wink: Darf ich dich Fragen was du machst um den Klimawandel zu begrenzen?"
 
   # Questions to the user
   utter_question_who_is_responsible_for_climate_change:
@@ -69,15 +82,16 @@ responses:
     - text: "Hast du eine weitere Frage?"
     - text: "Was möchtest du sonst noch wissen?"
     - text: "Gibt's noch mehr das du wissen möchtest?"
+    - text: "Darf ich dir noch weitere Fragen beantworten?"
 
   utter_which_question:
     - text: "Welche Frage?"
 
   utter_goodbye:
-    - text: "Es war schön mit dir zu plaudern :-) Tschüss und mach's gut..."
+    - text: "Es war schön mit dir zu plaudern :smile: Tschüss und mach's gut..."
 
   utter_please_rephrase:
-    - text: "Ups, auf diese Frage habe ich noch keine Antwort. Roger wird sich aber darum kümmern und beim nächsten Mal kann ich dir hoffentlich die Frage beantworten ;-)"
+    - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim nächsten Mal kann ich dir hoffentlich die Frage beantworten :wink:"
 
 
 session_config:
