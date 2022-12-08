@@ -6,18 +6,20 @@ nlu:
 - intent: greet_again
   examples: |
     - hallo
+    - hallo!
     - hi
-    - Guten Tag
-    - Guten Morgen
-    - Whats up
+    - hi!
+    - guten tag
+    - guten morgen
+    - whats up
 
 - intent: goodbye
   examples: |
-    - Tschüss
-    - Tschau
-    - Machs gut
-    - Bye
-    - Auf Wiedersehen
+    - tschüss
+    - tschau
+    - machs gut
+    - bye
+    - auf wiedersehen
     - see you
 
 - intent: affirm
@@ -32,32 +34,32 @@ nlu:
   examples: |
     - nein
     - nop
-    - Sicher nicht
+    - sicher nicht
     - Ich mag das nicht
 
 - intent: no_question
   examples: |
-    - Keine Frage
-    - Nicht wirklich eine
+    - deine frage
+    - nicht wirklich eine frage
 
 # chitchat
 - intent: chitchat_how_are_you
   examples: |
-    - Wie geht es dir
-    - Fühlst du dich gut
-    - Alles gut
+    - wie geht es dir?
+    - fühlst du dich gut?
+    - alles gut?
 
 - intent: chitchat_do_you_know_everything
   examples: |
-    - Weisst du zu allen Fragen eine Antwort?
-    - Weisst du alles
-    - Bist du allwissend
+    - weisst du zu allen fragen eine antwort?
+    - weisst du alles?
+    - bist du allwissend?
 
 - intent: chitchat
   examples: |
-    - Was machst du so
-    - wie ist das Wetter
-    - Hast du lust auf ein Date
+    - was machst du so?
+    - wie ist das Wetter?
+    - Hast du lust auf ein date?
 
 # Climate sceptic
 
@@ -65,59 +67,58 @@ nlu:
 
 - intent: question_what_is_climate_change
   examples: |
-    - Was ist ist der Klimawandel
-    - Was ist ist der Klimawandel überhaupt
-    - Was ist eigentlich dieser Klimawandel?
-    - Kannst du mir erklären was der Klimawandel ist
-    - Klimawandel?
+    - was ist der klimawandel?
+    - was ist der klimawandel überhaupt?
+    - Was ist eigentlich dieser klimawandel?
+    - kannst du mir erklären was der klimawandel ist?
 
 - intent: question_what_causes_climate_change
   examples: |
-    - Was verursacht den Klimawandel
-    - Wer verursacht den Klimawandel
-    - Weshalb steigen die Temperaturen?
-    - Was sind die Ursachen des Klimawandels
+    - was verursacht den klimawandel?
+    - Wer verursacht den klimawandel?
+    - weshalb steigen die temperaturen?
+    - was sind die ursachen des klimawandels?
 
 - intent: question_climate_changed_before
   examples: |
-    - Hat sich das Klima nicht schon immer verändert
-    - Das Klima hat sich schon immer verändert
-    - Das sich das Klima verändert ist nicht neues
-    - Hat das Klima nicht immer schon geschwankt
-    - Klimaveränderungen gab es früher schon
+    - hat sich das klima nicht schon immer verändert?
+    - das klima hat sich schon immer verändert
+    - das sich das klima verändert ist nichts neues
+    - hat das klima nicht immer schon geschwankt
+    - klimaveränderungen gab es schon früher
     - Klimaveränderungen gab es schon immer
 
 - intent: question_is_the_sun
   examples: |
-    - Verursacht nicht die Sonne die Klimaveränderung
-    - Ich habe gehört die Sonne ist schuld
-    - Die Sonne verursacht den Klimawandel
-    - Trägt die Sonne zum Klimawandel bei
+    - verursacht nicht die sonne die klimaveränderung?
+    - ich habe gehört die sonne ist die ursache
+    - die sonne verursacht den klimawandel
+    - trägt die sonne zum klimawandel bei?
 
 - intent: question_its_not_bad
   examples: |
-    - Der Klimawandel ist doch gar nicht schlimm
-    - Ist der Klimawandel schlimm?
-    - Ich habe gehört das es gar nicht so schlimm sei
+    - der klimawandel ist doch gar nicht schlimm
+    - ist der klimawandel schlimm?
+    - ich habe gehört das es gar nicht so schlimm sei
 
 - intent: question_models_are_unreliable
   examples: |
-    - Die Modelle stimmen gar nicht
-    - Klimamodelle sind falsch
+    - die modelle stimmen gar nicht
+    - klimamodelle sind falsch
 
 - intent: question_temp_record_is_unreliable
   examples: |
-    - Die Temperature wird falsch gemessen
-    - Die Messung der Temperatur ist falsch
+    - die temperature wird falsch gemessen
+    - die messung der temperatur ist falsch
 
 - intent: question_can_i_eat_meat
   examples: |
-    - Kann ich weiterhin Fleisch essen
-    - Kann ich weiterhin guten Gewissens Fleisch essen
+    - kann ich weiterhin fleisch essen?
+    - kann ich weiterhin guten gewissens fleisch essen?
 
 - intent: question_can_we_stop_climate_change
   examples: |
-    - Hat die Menschheit noch eine Chance
-    - Können wir den Klimawandel noch stoppen
-    - Ist es nicht schon zu spät umd den Klimawandel zu stoppen
+    - hat die menschheit noch eine chance?
+    - können wir den klimawandel noch stoppen?
+    - ist es nicht schon zu spät um den klimawandel zu stoppen?
     
