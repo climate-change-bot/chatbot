@@ -22,13 +22,13 @@ intents:
 
 responses:
 
-# Greeting
+  # Greeting
   utter_welcome:
-    - text: "Willkommen! Welche Frage zum Klimawandel hast du?"
+    - text: "Herzlich Willkommen! Welche Frage zum Klimawandel hast du?"
   utter_greet_again:
     - text: "Hallo :-)"
 
-# Chitchat
+  # Chitchat
   utter_chitchat_how_are_you:
     - text: "Ich bin ein Chatbot. Mir geht es immer gut :-)"
   utter_chitchat_do_you_know_everything:
@@ -36,7 +36,7 @@ responses:
   utter_chitchat:
     - text: "Leider kann ich mich mit dir nur über den Klimawandel sprechen. Über alles andere musst du mit einem Menschen chatten."
 
-# Answers to climate change
+  # Answers to climate change
   utter_answer_what_is_climate_change:
     - text: "Das ist die Frage aller Fragen ;-) Als Klimawandel wird die Veränderung des globalen Klimas bezeichnet."
   utter_answer_what_causes_climate_change:
@@ -56,12 +56,12 @@ responses:
   utter_answer_can_we_stop_climate_change:
     - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
 
-# Misc
+  # Misc
 
   utter_knows_more_than_bot:
     - text: "Wow dann weisst du sicher mehr als ich ;-) Darf ich dich Fragen was du machst um den Klimawandel zu begrenzen?"
 
-# Questions to the user
+  # Questions to the user
   utter_question_who_is_responsible_for_climate_change:
     - text: "Weist du was den aktuellen Klimawandel verursacht?"
 
@@ -77,7 +77,7 @@ responses:
     - text: "Es war schön mit dir zu plaudern :-) Tschüss und mach's gut..."
 
   utter_please_rephrase:
-    - text: "Leider habe ich dich nicht verstanden. Könntest du das etwas anders formulieren?"
+    - text: "Ups, auf diese Frage habe ich noch keine Antwort. Roger wird sich aber darum kümmern und beim nächsten Mal kann ich dir hoffentlich die Frage beantworten ;-)"
 
 
 session_config:
