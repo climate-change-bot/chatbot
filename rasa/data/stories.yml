@@ -7,11 +7,33 @@ stories:
     - action: utter_welcome
     - intent: no_question
     - action: utter_knows_more_than_bot
-    - intent: deny
-    - action: utter_goodbye
 
 - story: what can i do?
   steps:
     - intent: question_what_can_i_do
     - action: utter_answer_what_can_i_do_general
     - action: utter_answer_what_can_i_do_general_tips
+    - action: utter_answer_what_can_i_do_general_next_questions
+
+- story: what can i do (consume)?
+  steps:
+    - intent: what_can_i_do_tipps_topic
+    - slot_was_set:
+        - topic: "konsum"
+    - action: utter_more_about_consume_animal_products
+    - action: utter_more_about_consume_question
+    - intent: want_to_know_more
+    - action: utter_more_about_consume_buy_mobile_phone
+    - action: utter_know_not_more_consume_tipps
+
+
+- story: what can i do (mobility)?
+  steps:
+    - intent: what_can_i_do_tipps_topic
+    - slot_was_set:
+        - topic: "mobilität"
+    - action: utter_more_about_mobility_public_transportation
+    - action: utter_more_about_mobility_question
+    - intent: want_to_know_more
+    - action: utter_more_about_mobility_carsharing
+    - action: utter_know_not_more_mobility_tipps
