@@ -14,26 +14,104 @@ stories:
     - action: utter_answer_what_can_i_do_general
     - action: utter_answer_what_can_i_do_general_tips
     - action: utter_answer_what_can_i_do_general_next_questions
+    - checkpoint: checkpoint_what_can_i_do
+
+# consume stories
 
 - story: what can i do (consume)?
   steps:
+    - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
     - slot_was_set:
         - topic: "konsum"
-    - action: utter_more_about_consume_animal_products
+    - action: utter_more_about_consume_second_hand
     - action: utter_more_about_consume_question
-    - intent: want_to_know_more
-    - action: utter_more_about_consume_buy_mobile_phone
-    - action: utter_know_not_more_consume_tipps
+    - checkpoint: checkpoint_what_can_i_do_consume_more_questions
 
+- story: what can i do (consume)? -> More Questions
+  steps:
+  - checkpoint: checkpoint_what_can_i_do_consume_more_questions
+  - intent: want_to_know_more
+  - action: utter_more_about_consume_buy_mobile_phone
+  - action: utter_know_not_more_consume_tipps
+
+- story: what can i do (consume)? -> Deny
+  steps:
+  - checkpoint: checkpoint_what_can_i_do_consume_more_questions
+  - intent: deny
+  - action: utter_answer_what_can_i_do_no_more_tips
+
+# mobility stories
 
 - story: what can i do (mobility)?
   steps:
+    - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
     - slot_was_set:
         - topic: "mobilität"
     - action: utter_more_about_mobility_public_transportation
     - action: utter_more_about_mobility_question
+    - checkpoint: checkpoint_what_can_i_do_mobility_more_questions
+
+- story: what can i do (mobility) - More questions?
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_mobility_more_questions
     - intent: want_to_know_more
     - action: utter_more_about_mobility_carsharing
     - action: utter_know_not_more_mobility_tipps
+
+- story: what can i do (mobility)? -> Deny
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_mobility_more_questions
+    - intent: deny
+    - action: utter_answer_what_can_i_do_no_more_tips
+
+# household stories
+
+- story: what can i do (household)?
+  steps:
+    - checkpoint: checkpoint_what_can_i_do
+    - intent: what_can_i_do_tipps_topic
+    - slot_was_set:
+        - topic: "haushalt"
+    - action: utter_more_about_household_flow_regulator
+    - action: utter_more_about_household_question
+    - checkpoint: checkpoint_what_can_i_do_household_more_questions
+
+- story: what can i do (household) - More questions?
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_household_more_questions
+    - intent: want_to_know_more
+    - action: utter_more_about_household_shower_instead_of_bad
+    - action: utter_know_not_more_household_tipps
+
+- story: what can i do (household)? -> Deny
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_household_more_questions
+    - intent: deny
+    - action: utter_answer_what_can_i_do_no_more_tips
+
+# food stories
+
+- story: what can i do (food)?
+  steps:
+    - checkpoint: checkpoint_what_can_i_do
+    - intent: what_can_i_do_tipps_topic
+    - slot_was_set:
+        - topic: "nahrungsmittel"
+    - action: utter_more_about_food_animal_products
+    - action: utter_more_about_food_question
+    - checkpoint: checkpoint_what_can_i_do_food_more_questions
+
+- story: what can i do (food) - More questions?
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_food_more_questions
+    - intent: want_to_know_more
+    - action: utter_more_about_food_regional
+    - action: utter_know_not_more_food_tipps
+
+- story: what can i do (food)? -> Deny
+  steps:
+    - checkpoint: checkpoint_what_can_i_do_food_more_questions
+    - intent: deny
+    - action: utter_answer_what_can_i_do_no_more_tips

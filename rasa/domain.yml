@@ -32,6 +32,8 @@ slots:
     values:
       - konsum
       - mobilität
+      - haushalt
+      - nahrungsmittel
     mappings:
       - type: from_entity
         entity: topic
@@ -84,16 +86,18 @@ responses:
     - text: "Ich habe schon mal einen [Link](https://utopia.de/galerien/klimaschutz-tipps/#3) mit einigen guten Tipps für dich."
   utter_answer_what_can_i_do_general_next_questions:
     - text: "Möchtest du noch mehr Tipps? Welches Thema (Konsum, Mobilität, Haushalt, Nahrungsmittel) interessiert dich?"
+  utter_answer_what_can_i_do_no_more_tips:
+    - text: "Alles klar :smile:. Hast du eine weitere Frage zum Klimawandel?"
 
   # What can I do answers (consume)
   utter_more_about_consume_question:
     - text: "Möchtest du weitere Tipps zum Thema Konsum?"
-  utter_more_about_consume_animal_products:
-    - text: "Einen grossen Einfluss auf das Klima haben [Tierprodukte](https://proveg.com/de/5-pros/pro-umwelt/wie-sich-die-industrielle-tierhaltung-auf-den-klimawandel-auswirkt/). Vor allem Fleisch. Wenn du weniger davon isst oder ganz darauf verzichtest ist dir der Planet sehr dankbar :smile:"
+  utter_more_about_consume_second_hand:
+    - text: "Wenn du das nächste Mal Kleider benötigst, dann schaue doch zuerst bei einem Second Hand Geschäft vorbei. Dort gibt es meisten auch viele schöne Kleider :smile:."
   utter_more_about_consume_buy_mobile_phone:
     - text: "Behalte deine [Mobiltelefon](https://www.umweltbundesamt.de/umwelttipps-fuer-den-alltag/elektrogeraete/smartphones-tablets#gewusst-wie) so lange wie möglich! Die Produktion benötigt viel Energie und Rohstoffe."
   utter_know_not_more_consume_tipps:
-    - text: "Ende der Fahnenstange :wink:. Mehr Tipps zum Konsum habe ich nicht. Möchtest du aber Tipps zu einem anderen Thema (Mobilität, Haushalt, Nahrungsmittel)? Oder hast du eine Frage zum Klimawandel?"
+    - text: "Ende der Fahnenstange :wink:. Mehr Tipps zum Konsum habe ich im Moment nicht. Möchtest du aber Tipps zu einem anderen Thema (Mobilität, Haushalt, Nahrungsmittel)? Oder hast du eine Frage zum Klimawandel?"
 
   # What can I do answers (mobility)
   utter_more_about_mobility_question:
@@ -103,25 +107,38 @@ responses:
   utter_more_about_mobility_carsharing:
     - text: "Eine weitere gute Möglichkeit um CO2 einzusparen ist wenn du Fahrgemeinschaften mit anderen machst."
   utter_know_not_more_mobility_tipps:
-    - text: "Ende der Fahnenstange :wink:. Mehr Tipps zu Mobilität habe ich nicht. Möchtest du aber Tipps zu einem anderen Thema (Konsum, Haushalt, Nahrungsmittel)? Oder hast du eine Frage zum Klimawandel?"
+    - text: "Mehr Tipps zu Mobilität habe ich im Moment nicht. Möchtest du aber Tipps zu einem anderen Thema (Konsum, Haushalt, Nahrungsmittel)? Oder hast du eine Frage zum Klimawandel?"
+
+  # What can I do answers (household)
+  utter_more_about_household_question:
+    - text: "Möchtest du weitere Tipps zum Thema Haushalt?"
+  utter_more_about_household_flow_regulator:
+    - text: "Falls du das nicht bereits machst dann verwende unbedingt einen wassersparenden [Strahlregler](https://de.wikipedia.org/wiki/Strahlregler)! Mit diesem kannst du deinen Wasserverbrauch um bis zu 50 Prozent reduzieren und sparst entsprechend Energie."
+  utter_more_about_household_shower_instead_of_bad:
+    - text: "Auch wenn ein Bad ab und zu etwas schönes ist, solltest du schauen das du eher kurz Duscht. Das verbraucht [weniger Wasser](https://wohnglueck.de/artikel/duschen-oder-baden-wasserverbrauch-49873), vor allem wenn du einen sparsamen Duschkopf verwendest."
+  utter_know_not_more_household_tipps:
+    - text: "Mehr Tipps zum Haushalt habe ich im Moment nicht. Möchtest du aber Tipps zu einem anderen Thema (Konsum, Mobilität, Nahrungsmittel)? Oder hast du eine Frage zum Klimawandel?"
+
+  # What can I do answers (food)
+  utter_more_about_food_question:
+    - text: "Möchtest du weitere Tipps zum Thema Nahrungsmittel?"
+  utter_more_about_food_animal_products:
+    - text: "Einen grossen Einfluss auf das Klima haben [Tierprodukte](https://proveg.com/de/5-pros/pro-umwelt/wie-sich-die-industrielle-tierhaltung-auf-den-klimawandel-auswirkt/). Vor allem Fleisch. Wenn du weniger davon isst oder ganz darauf verzichtest ist dir der Planet sehr dankbar :smile:"
+  utter_more_about_food_regional:
+    - text: "Kaufe Nahrungsmittel die seasonal und möglichst regional produziert werden. Das spart die Energie für den Transport."
+  utter_know_not_more_food_tipps:
+    - text: "Mehr Tipps zu Nahrungsmittel habe ich im Moment nicht. Möchtest du aber Tipps zu einem anderen Thema (Konsum, Mobilität, Haushalt)? Oder hast du eine Frage zum Klimawandel?"
 
   # Misc
-
   utter_knows_more_than_bot:
-    - text: "Wow dann weisst du sicher mehr als ich :wink: Darf ich dich Fragen was du machst um den Klimawandel zu begrenzen?"
+    - text: "Wow dann weisst du sicher mehr als ich :wink: Aber hast du wirklich keine Frage zum Klimawandel?"
 
   # Questions to the user
-  utter_question_who_is_responsible_for_climate_change:
-    - text: "Weist du was den aktuellen Klimawandel verursacht?"
-
   utter_further_question:
     - text: "Hast du eine weitere Frage?"
     - text: "Was möchtest du sonst noch wissen?"
     - text: "Gibt's noch mehr das du wissen möchtest?"
     - text: "Darf ich dir noch weitere Fragen beantworten?"
-
-  utter_which_question:
-    - text: "Welche Frage?"
 
   utter_goodbye:
     - text: "Es war schön mit dir zu plaudern :smile: Tschüss und mach's gut..."

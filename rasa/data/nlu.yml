@@ -145,7 +145,7 @@ nlu:
 
 - intent: what_can_i_do_tipps_topic
   examples: |
-    - Ich möchte gerne mehr über [konsum]{"entity": "topic"} erfahren
+    - Ich möchte gerne mehr über [nahrungsmittel]{"entity": "topic"} erfahren
     - [konsum]{"entity": "topic"} bitte
-    - [mobilität]{"entity": "topic"} würde mich interessieren
+    - [haushalt]{"entity": "topic"} würde mich interessieren
     - [mobilität]{"entity": "topic"}
