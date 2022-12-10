@@ -11,6 +11,7 @@ nlu:
     - hi!
     - guten tag
     - guten morgen
+    - guten abend
     - whats up
 
 - intent: goodbye
@@ -18,9 +19,14 @@ nlu:
     - tschüss
     - tschau
     - machs gut
+    - bis bald wieder
     - bye
     - auf wiedersehen
     - see you
+    - ich wünsche dir einen schönen abend
+    - ich wünsche dir einen geruhsamen und entspannten Abend
+    - ich wünsche dir einen schönen tag
+    - ich wünsche dir alles gute
 
 - intent: want_to_know_more
   examples: |
@@ -55,15 +61,45 @@ nlu:
     - weisst du alles?
     - bist du allwissend?
 
+- intent: chitchat_you_are_boring
+  examples: |
+    - du bist etwas eintönig
+    - du bist eintönig
+    - deine antworten sind nicht interessant
+
+- intent: chitchat_you_know_nothing
+  examples: |
+    - du muss noch besser werden
+    - du bist nicht gut
+    - du kannst nichts
+    - du kannst nix
+    - du bist nervig
+    - man bist du schlecht
+    - du bist schlecht
+    - du bist noch etwas dumm
+    - du bist dumm
+    - das ist echt zeitverschwendung
+    - warum weisst du keine antworten?
+    - warum verstehst du gar nichts?
+    - warum verstehst du mich nicht?
+
 - intent: chitchat
   examples: |
     - was machst du so?
-    - wie ist das Wetter?
+    - wie ist das wetter?
+    - wie sehen die radieschen von unten aus
+    - hund oder katze
     - Hast du lust auf ein date?
 
 # Climate sceptic
 
 # climate change questions
+
+- intent: question_what_can_i_ask
+  examples: |
+    - was kann ich fragen?
+    - was darf ich fragen?
+    - welche fragen kann ich stellen?
 
 - intent: question_what_is_climate_change
   examples: |
@@ -72,12 +108,26 @@ nlu:
     - Was ist eigentlich dieser klimawandel?
     - kannst du mir erklären was der klimawandel ist?
 
+- intent: question_is_climate_real
+  examples: |
+    - gibt es den klimawandel wirklich?
+    - ist der klimawandel real?
+    - ist der klimawandel eine erfindung?
+
 - intent: question_what_causes_climate_change
   examples: |
     - was verursacht den klimawandel?
     - Wer verursacht den klimawandel?
     - weshalb steigen die temperaturen?
     - was sind die ursachen des klimawandels?
+
+- intent: question_is_the_climate_change_caused_by_humans
+  examples: |
+    - wird der klimawandel durch den menschen verursacht?
+    - ist der klimawandel durch den menschen verursacht?
+    - ist der klimawandel menschengemacht?
+    - ist der klimawandel mensch gemacht?
+    - ist der mensch schuld am klimawandel?
 
 - intent: question_climate_changed_before
   examples: |
@@ -131,6 +181,38 @@ nlu:
     - politik oder aktivismus?
     - aktivismus der politik?
 
+- intent: question_why_does_the_politics_nothing
+  examples: |
+    - warum macht die politik nichts gegen den klimawandel?
+    - warum macht die politik so wenig gegen den klimawandel?
+    - weshalb handelt die politik nicht?
+    - weshalb ist die politik so passiv?
+    - weshalb ist die politik passiv?
+
+- intent: question_why_do_we_fly
+  examples: |
+    - warum fliegen wir?
+    - warum fliegen wir so viel?
+    - weshalb fliegen wir so viel?
+    - weshalb verzichten wir nicht auf das fliegen?
+    - weshalb fliegen wir nicht weniger?
+    - warum benutzen wir das flugzeug so oft?
+    - warum benutzen wir das flugzeug?
+    - was ist der grund das wir so viel fliegen?
+    - was sind die gründe das wir so viel fliegen?
+
+- intent: question_why_do_we_use_the_car
+  examples: |
+    - warum benutzen wir das auto so oft?
+    - warum benutzen wir so oft das auto?
+    - warum fahren wir so viel mit dem auto?
+    - weshalb fahren wir so viel auto?
+    - weshalb verzichten wir nicht öfters auf das auto?
+    - weshalb fahren wir nicht weniger mit dem auto?
+    - warum benutzen wir das auto so oft?
+    - was ist der grund das wir so viel auto fahren?
+    - was sind die gründe das wir so viel auto fahren?
+
 # what can I do intents
 
 - intent: question_what_can_i_do
@@ -149,3 +231,17 @@ nlu:
     - [konsum]{"entity": "topic"} bitte
     - [haushalt]{"entity": "topic"} würde mich interessieren
     - [mobilität]{"entity": "topic"}
+
+# questions to challenge the bot
+
+- intent: chatbot_contributes_to_climate_change
+  examples: |
+    - trägst du zum klimawandel bei?
+    - bist du mitverantwortlich für den klimawandel? 
+
+# synonyms
+
+- synonym: weshalb
+  examples: |
+    - wieso
+    - warum

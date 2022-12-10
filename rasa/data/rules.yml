@@ -19,16 +19,33 @@ rules:
 
 # Simple Questions
 
+- rule: What can I ask
+  steps:
+    - intent: question_what_can_i_ask
+    - action: utter_answer_what_can_i_ask
+
 - rule: What is climate change
   steps:
     - intent: question_what_is_climate_change
     - action: utter_answer_what_is_climate_change
     - action: utter_further_question
 
+- rule: Is the climate change real
+  steps:
+    - intent: question_is_climate_real
+    - action: utter_answer_is_climate_real
+    - action: utter_further_question
+
 - rule: What causes climate change
   steps:
     - intent: question_what_causes_climate_change
     - action: utter_answer_what_causes_climate_change
+    - action: utter_further_question
+
+- rule: Causes man climate change
+  steps:
+    - intent: question_is_the_climate_change_caused_by_humans
+    - action: utter_answer_is_the_climate_change_caused_by_humans
     - action: utter_further_question
 
 - rule: The climate changed before
@@ -79,6 +96,31 @@ rules:
     - action: utter_answer_activism_vs_politics
     - action: utter_further_question
 
+- rule: Why does politics nothing?
+  steps:
+    - intent: question_why_does_the_politics_nothing
+    - action: utter_answer_why_does_the_politics_nothing
+    - action: utter_further_question
+
+- rule: Why do we fly?
+  steps:
+    - intent: question_why_do_we_fly
+    - action: utter_answer_why_do_we_fly
+    - action: utter_further_question
+
+- rule: Why do we use the car?
+  steps:
+    - intent: question_why_do_we_use_the_car
+    - action: utter_answer_why_do_we_use_the_car
+    - action: utter_further_question
+
+# Challenge chatbot
+
+- rule: Chatbot contributes to climate change
+  steps:
+    - intent: chatbot_contributes_to_climate_change
+    - action: utter_contributes_to_climate_change
+
 # Chitchat
 
 - rule: Generell chitchat
@@ -91,13 +133,23 @@ rules:
     - intent: chitchat_how_are_you
     - action: utter_chitchat_how_are_you
 
+- rule: Chitchat you are boring
+  steps:
+    - intent: chitchat_you_are_boring
+    - action: utter_chitchat_your_boring
+
+- rule: Chitchat know nothing
+  steps:
+    - intent: chitchat_you_know_nothing
+    - action: utter_chitchat_you_know_nothing
+
 - rule: Chitchat do you know everything
   steps:
     - intent: chitchat_do_you_know_everything
     - action: utter_chitchat_do_you_know_everything
 
 # Fallback
-- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+- rule: Apologize for low NLU confidence
   steps:
     - intent: nlu_fallback
     - action: utter_please_rephrase
