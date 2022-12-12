@@ -67,6 +67,14 @@ nlu:
     - du bist eintönig
     - deine antworten sind nicht interessant
 
+- intent: chitchat_you_repeat_your_self
+  examples: |
+    - das sagtest du schon
+    - du wiederholst dich
+    - du wiederholst dich oft
+    - das hast du bereits gesagt
+    - das hast du schon gesagt
+
 - intent: chitchat_you_know_nothing
   examples: |
     - du muss noch besser werden

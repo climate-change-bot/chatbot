@@ -143,6 +143,11 @@ rules:
     - intent: chitchat_you_know_nothing
     - action: utter_chitchat_you_know_nothing
 
+- rule: Chitchat you repeat yourself
+  steps:
+    - intent: chitchat_you_repeat_your_self
+    - action: utter_chitchat_repeat_your_self
+
 - rule: Chitchat do you know everything
   steps:
     - intent: chitchat_do_you_know_everything
