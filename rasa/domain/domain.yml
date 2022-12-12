@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - greet_again
+  - goodbye
+  - no_question
+  - want_to_know_more
+  - deny
+  - question_what_can_i_ask
+  - chatbot_contributes_to_climate_change
+
+entities:
+  - topic
+
+slots:
+  topic:
+    type: categorical
+    values:
+      - konsum
+      - mobilität
+      - haushalt
+      - nahrungsmittel
+    mappings:
+      - type: from_entity
+        entity: topic
+
+responses:
+
+  # Greeting
+  utter_welcome:
+    - text: "Herzlich Willkommen! Welche Frage zum Klimawandel hast du?"
+  utter_greet_again:
+    - text: "Hallo :smile:"
+    - text: "Servus :smile:"
+    - text: "Guten Tag :smile:"
+    - text: "Grüezi :smile:"
+
+  # Questions to challenge the bot
+  utter_contributes_to_climate_change:
+    - text: "Leider trage ich auch ein bisschen zum Klimawandel bei. Meine [Server](https://sustainability.aboutamazon.com/environment/the-cloud?energyType=true) laufen noch nicht mit grünem Strom. Wenn ich aber bewirken kann das mehr Menschen Massnahmen zum Schutz des Klimas umsetzen, wiegt dies bei weitem meinen minimalen Stromverbrauch auf."
+
+  # Misc
+  utter_answer_what_can_i_ask:
+    - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat."
+  utter_knows_more_than_bot:
+    - text: "Wow dann weisst du sicher mehr als ich :wink: Aber hast du wirklich keine Frage zum Klimawandel?"
+
+  # Questions to the user
+  utter_further_question:
+    - text: "Hast du eine weitere Frage?"
+    - text: "Was möchtest du sonst noch wissen?"
+    - text: "Gibt's noch mehr das du wissen möchtest?"
+    - text: "Darf ich dir noch weitere Fragen beantworten?"
+
+  utter_goodbye:
+    - text: "Es war schön mit dir zu plaudern :smile: Tschüss und mach's gut..."
+
+  utter_please_rephrase:
+    - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim deinem nächsten Besuch kann ich dir diese hoffentlich beantworten :wink:. Es hilft aber sehr, wenn du weitere Fragen stellst. So kann ich mich weiterentwickeln."
+
+
+session_config:
+  session_expiration_time: 600
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - question_what_is_climate_change
+  - question_is_climate_real
+  - question_what_causes_climate_change
+  - question_is_the_climate_change_caused_by_humans
+  - question_climate_changed_before
+  - question_is_the_sun
+  - question_its_not_bad
+  - question_models_are_unreliable
+  - question_temp_record_is_unreliable
+  - question_can_i_eat_meat
+  - question_can_we_stop_climate_change
+  - question_activism_vs_politics
+  - question_why_does_the_politics_nothing
+  - question_why_do_we_fly
+  - question_why_do_we_use_the_car
+
+responses:
+  # Answers to climate change
+  utter_answer_what_is_climate_change:
+    - text: "Als [Klimawandel](https://de.wikipedia.org/wiki/Klimawandel) wird die Veränderung des globalen Klimas bezeichnet."
+  utter_answer_is_the_climate_change_caused_by_humans:
+    - text: "Der Klimawandel wird mit sehr grosser Wahrscheinlichkeit vom Menschen verursacht. Das wurde mehrfach durch Untersuchungen von [unabhängigen Wissenschaftler](https://www.klimafakten.de/behauptungen/behauptung-es-gibt-noch-keinen-wissenschaftlichen-konsens-zum-klimawandel) bestätigt."
+  utter_answer_what_causes_climate_change:
+    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen. Die durch den Mensch verursachten Treibhausgase spielen dabei eine treibende Rolle."
+  utter_answer_is_climate_real:
+    - text: "[Der Klimawandel ist sehr real](https://www.dw.com/de/faktencheck-warum-der-klimawandel-real-ist/a-62461158). Die Auswirkungen sind bereits heute sehr gut spürbar und werden in Zukunft noch viel schlimmer werden wenn wir nichts tun."
+  utter_answer_climate_changed_before:
+    - text: "Ja das stimmt. Das Klima hat sich schon immer verändert. Jedoch wenn sich das Klima so schnell veränderte wie im Moment, führte das in der Vergangenheit zu einem Massensterben."
+  utter_answer_is_the_sun:
+    - text: "Das ist leider nicht korrekt. Die Sonneneinstrahlung ist nicht stärker geworden. Trotzdem steigen die Temperaturen."
+  utter_answer_its_not_bad:
+    - text: "Die negativen Folgen des Klimawandel sind gravierend und werden von den Positiven bei weitem nicht ausgeglichen."
+  utter_answer_models_are_unreliable:
+    - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung seit 1900 nachgerechnet."
+  utter_answer_temp_record_is_unreliable:
+    - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
+  utter_answer_can_i_eat_meat:
+    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."
+  utter_answer_can_we_stop_climate_change:
+    - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
+  utter_answer_activism_vs_politics:
+    - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
+  utter_answer_why_does_the_politics_nothing:
+    - text: "Es gibt sicher verschieden Meinungen dazu. Ein Punkt ist sicher das es Menschen gibt die davon profitieren so wie es jetzt ist. Diese wollen nicht unbedingt das sich etwas ändert und nehmen über [Lobbing](https://taz.de/Einfluss-von-Firmen-auf-EU-Klimapolitik/!5666698/) Einfluss auf die Politiker_innen."
+  utter_answer_why_do_we_fly:
+    - text: "Fliegen ist für längere Distanzen viel schneller und bequemer. Vor allem wenn wir über ein Meer reisen müssen gibt es fast keine Alternative. Zudem ist z.B. der Bahnverkehr bis jetzt in Europa meistens nicht geeignet um weite Strecken zu fahren."
+  utter_answer_why_do_we_use_the_car:
+    - text: "Das Auto ist sehr bequem und verschafft uns eine grosse Mobilität. Zudem ist es für viele ein Statussymbol. Darauf zu verzichten ist deshalb nicht immer so einfach, auch wenn es eigentlich gut fürs Klima wäre..."
+

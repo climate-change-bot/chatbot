@@ -40,10 +40,10 @@ jobs:
 
       - run: python -m spacy download de_core_news_md
 
-      - run: rasa train
+      - run: rasa train --domain domain
         working-directory: ./rasa
 
-      - run: rasa test
+      - run: rasa test --domain domain
         working-directory: ./rasa
 
   train_test_upload:
@@ -65,10 +65,10 @@ jobs:
 
       - run: python -m spacy download de_core_news_md
 
-      - run: rasa train
+      - run: rasa train --domain domain
         working-directory: ./rasa
 
-      - run: rasa test
+      - run: rasa test --domain domain
         working-directory: ./rasa
 
       # The 'actions/upload-artifact' action to upload files
