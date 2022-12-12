@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+- intent: chitchat_how_are_you
+  examples: |
+    - wie geht es dir?
+    - fühlst du dich gut?
+    - alles gut?
+
+- intent: chitchat_do_you_know_everything
+  examples: |
+    - weisst du zu allen fragen eine antwort?
+    - weisst du alles?
+    - bist du allwissend?
+
+- intent: chitchat_you_are_boring
+  examples: |
+    - du bist etwas eintönig
+    - du bist eintönig
+    - deine antworten sind nicht interessant
+
+- intent: chitchat_you_repeat_your_self
+  examples: |
+    - das sagtest du schon
+    - du wiederholst dich
+    - du wiederholst dich oft
+    - das hast du bereits gesagt
+    - das hast du schon gesagt
+
+- intent: chitchat_you_know_nothing
+  examples: |
+    - du muss noch besser werden
+    - du bist nicht gut
+    - du kannst nichts
+    - du kannst nix
+    - du bist nervig
+    - man bist du schlecht
+    - du bist schlecht
+    - du bist noch etwas dumm
+    - du bist dumm
+    - das ist echt zeitverschwendung
+    - warum weisst du keine antworten?
+    - warum verstehst du gar nichts?
+    - warum verstehst du mich nicht?
+
+- intent: chitchat
+  examples: |
+    - was machst du so?
+    - wie ist das wetter?
+    - wie sehen die radieschen von unten aus
+    - hund oder katze
+    - Hast du lust auf ein date?

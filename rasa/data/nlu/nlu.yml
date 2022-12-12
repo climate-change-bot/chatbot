@@ -1,0 +1,63 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+
+- intent: greet_again
+  examples: |
+    - hallo
+    - hallo!
+    - hi
+    - hi!
+    - guten tag
+    - guten morgen
+    - guten abend
+    - whats up
+
+- intent: goodbye
+  examples: |
+    - tschüss
+    - tschau
+    - machs gut
+    - bis bald wieder
+    - bye
+    - auf wiedersehen
+    - see you
+    - ich wünsche dir einen schönen abend
+    - ich wünsche dir einen geruhsamen und entspannten Abend
+    - ich wünsche dir einen schönen tag
+    - ich wünsche dir alles gute
+
+- intent: want_to_know_more
+  examples: |
+    - ich möchte mehr wissen
+    - ja ich möchte mehr wissen
+    - ja gerne
+    - bitte ja
+    - ja
+
+- intent: deny
+  examples: |
+    - nein
+    - nop
+    - sicher nicht
+    - Ich mag das nicht
+
+- intent: no_question
+  examples: |
+    - deine frage
+    - nicht wirklich eine frage
+
+# questions to challenge the bot
+
+- intent: chatbot_contributes_to_climate_change
+  examples: |
+    - trägst du zum klimawandel bei?
+    - bist du mitverantwortlich für den klimawandel? 
+
+# synonyms
+
+- synonym: weshalb
+  examples: |
+    - wieso
+    - warum

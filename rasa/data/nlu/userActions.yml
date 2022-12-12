@@ -1,0 +1,19 @@
+version: "3.1"
+
+nlu:
+- intent: question_what_can_i_do
+  examples: |
+    - was kann ich tun?
+    - was kann ich machen?
+    - was kann ich als einzelperson tun?
+    - was kann ich als einzelperson ausrichten?
+    - wie rette ich das klima?
+    - wie helfe ich dem klima?
+    - was sind meine optionen?
+
+- intent: what_can_i_do_tipps_topic
+  examples: |
+    - Ich möchte gerne mehr über [nahrungsmittel]{"entity": "topic"} erfahren
+    - [konsum]{"entity": "topic"} bitte
+    - [haushalt]{"entity": "topic"} würde mich interessieren
+    - [mobilität]{"entity": "topic"}

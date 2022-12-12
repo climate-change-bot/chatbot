@@ -1,0 +1,36 @@
+version: "3.1"
+
+rules:
+- rule: welcome user
+  conversation_start: true  # this rule only applies at the beginning of a conversation
+  steps:
+    - intent: greet
+    - action: utter_welcome
+
+- rule: welcome user again
+  steps:
+    - intent: greet_again
+    - action: utter_greet_again
+
+- rule: goodbye user
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: What can I ask
+  steps:
+    - intent: question_what_can_i_ask
+    - action: utter_answer_what_can_i_ask
+
+# Challenge chatbot
+
+- rule: Chatbot contributes to climate change
+  steps:
+    - intent: chatbot_contributes_to_climate_change
+    - action: utter_contributes_to_climate_change
+
+# Fallback
+- rule: Apologize for low NLU confidence
+  steps:
+    - intent: nlu_fallback
+    - action: utter_please_rephrase

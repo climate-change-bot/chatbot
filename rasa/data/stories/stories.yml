@@ -1,0 +1,8 @@
+version: "3.1"
+
+stories:
+- story: has no questions
+  steps:
+    - action: utter_welcome
+    - intent: no_question
+    - action: utter_knows_more_than_bot
