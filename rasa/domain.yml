@@ -65,11 +65,11 @@ responses:
   utter_chitchat_do_you_know_everything:
     - text: "Schön wärs :smile: Aber mit jeder Konversation lerne ich wieder etwas mehr..."
   utter_chitchat_your_boring:
-    - text: "Meine Antworten sind noch nicht so umfangreich, da hast du recht."
+    - text: "Meine Antworten sind noch nicht so umfangreich, da hast du recht. Ich bin noch ganz am Anfang meiner Entwicklung und du leistest wertvolle Entwicklungshilfe :smile:"
   utter_chitchat_you_know_nothing:
     - text: "Ich muss noch viel lernen das ist mir bewusst. Aber dank dir lerne ich schon wieder einiges :smile:."
   utter_chitchat_repeat_your_self:
-    - text: "Ich bin noch nicht so flexibel. Deshalb wiederhole ich mich noch oft :repeat:."
+    - text: "Ich bin noch nicht so flexibel. Deshalb wiederhole ich mich oft :repeat:."
   utter_chitchat:
     - text: "Leider kann ich mich mit dir nur über den Klimawandel sprechen. Über alles andere musst du mit einem Menschen chatten."
 
@@ -176,7 +176,7 @@ responses:
     - text: "Es war schön mit dir zu plaudern :smile: Tschüss und mach's gut..."
 
   utter_please_rephrase:
-    - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim nächsten Mal kann ich dir hoffentlich die Frage beantworten :wink:"
+    - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim deinem nächsten Besuch kann ich dir diese hoffentlich beantworten :wink:. Es hilft aber sehr, wenn du weitere Fragen stellst. So kann ich mich weiterentwickeln."
 
 
 session_config:
