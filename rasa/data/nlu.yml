@@ -121,6 +121,7 @@ nlu:
     - gibt es den klimawandel wirklich?
     - ist der klimawandel real?
     - ist der klimawandel eine erfindung?
+    - gibt es den klimawandel überhaupt?
 
 - intent: question_what_causes_climate_change
   examples: |
@@ -149,8 +150,10 @@ nlu:
 - intent: question_is_the_sun
   examples: |
     - verursacht nicht die sonne die klimaveränderung?
+    - ist nicht die sonnenaktivität schuld an der klimaerwärmung?
     - ich habe gehört die sonne ist die ursache
     - die sonne verursacht den klimawandel
+    - das klima wird wärmer weil die sonne scheint
     - trägt die sonne zum klimawandel bei?
 
 - intent: question_its_not_bad
@@ -172,6 +175,8 @@ nlu:
 - intent: question_can_i_eat_meat
   examples: |
     - kann ich weiterhin fleisch essen?
+    - kann ich noch fleisch essen?
+    - darf ich nie mehr fleisch essen?
     - kann ich weiterhin guten gewissens fleisch essen?
 
 - intent: question_can_we_stop_climate_change
