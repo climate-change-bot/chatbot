@@ -15,17 +15,23 @@ following_chat_gpt_command = "Reagiere nun als simulierter Benutzer auf die folg
 
 
 def start_simulation_of_user():
+    number_of_conversations = 5
+    for i in range(number_of_conversations):
+        simulation_of_one_conversation()
+
+
+def simulation_of_one_conversation():
     sender_id = f"chatgpt-{str(uuid.uuid4())}"
     rasa_bot_message = send_message_rasa(sender_id, "/greet")
-    print(f"Rasa Chatbot: {rasa_bot_message}")
+    print(f"Chatbot: {rasa_bot_message}")
     bot = ChatGPT(os.environ["SESSION_TOKEN"])
     chat_gpt_command = initial_chat_gpt_command + rasa_bot_message
-    number_of_turns = 20
+    number_of_turns = 15
     for i in range(number_of_turns):
         chat_gpt_response = send_message_chatgpt(chat_gpt_command, bot)
         rasa_bot_message = send_message_rasa(sender_id, chat_gpt_response)
         print(f"User: {chat_gpt_response}")
-        print(f"Rasa Chatbot: {rasa_bot_message}")
+        print(f"Chatbot: {rasa_bot_message}")
         chat_gpt_command = following_chat_gpt_command + rasa_bot_message
         time.sleep(10)
 
