@@ -54,6 +54,7 @@ nlu:
   examples: |
     - trägst du zum klimawandel bei?
     - bist du mitverantwortlich für den klimawandel? 
+    - wie viel co2 produzierst du?
 
 # synonyms
 

@@ -5,28 +5,64 @@ nlu:
   examples: |
     - was kann ich fragen?
     - was darf ich fragen?
+    - was kann ich erfahren?
+    - was kann ich erfragen?
+    - was kann ich nachfragen?
     - welche fragen kann ich stellen?
+    - welche fragen darf ich stellen?
+    - welche fragen sind erlaubt?
+    - welche fragen stehen zur verfügung?
+    - welche informationen kann ich erhalten?
 
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?
+    - was ist der klimawandel genau?
+    - was versteht man unter klimawandel?
     - was ist der klimawandel überhaupt?
-    - Was ist eigentlich dieser klimawandel?
+    - was ist eigentlich dieser klimawandel?
+    - was bedeutet der begriff klimawandel?
     - kannst du mir erklären was der klimawandel ist?
+    - kannst du erklären, was der klimawandel ist?
+    - kannst du beschreiben, was der klimawandel ist?
+    - kannst du das konzept des klimawandels beschreiben?
 
 - intent: question_is_climate_real
   examples: |
     - gibt es den klimawandel wirklich?
+    - existiert der klimawandel wirklich?
     - ist der klimawandel real?
     - ist der klimawandel eine erfindung?
+    - ist der klimawandel eine tatsächliche erscheinung?
     - gibt es den klimawandel überhaupt?
+    - besteht der klimawandel wirklich?
+    - ist der klimawandel eine belegbare tatsache?
+    - ist der klimawandel eine belegbare realität?
+    - kann der klimawandel als tatsache bestätigt werden?
+    - existiert der klimawandel wirklich oder ist es nur eine theorie?
 
 - intent: question_what_causes_climate_change
   examples: |
     - was verursacht den klimawandel?
-    - Wer verursacht den klimawandel?
+    - wer verursacht den klimawandel?
+    - von wem wird der klimawandel verursacht?
     - weshalb steigen die temperaturen?
     - was sind die ursachen des klimawandels?
+    - was sind die hauptverursacher des klimawandels?
+    - was sind die treiber des klimawandels?
+    - was sind die primären treiber des klimawandels?
+    - was sind die primären ursachen für den klimawandel?
+    - was sind die wichtigsten treiber des klimawandels?
+    - was sind die treibenden kräfte hinter dem klimawandel?
+    - welche faktoren beeinflussen den klimawandel?
+    - was sind die hauptursachen des klimawandels?
+    - was sind die hauptursachen für den klimawandel?
+    - was sind die größten verursacher des klimawandels?
+    - was sind die ursprünglichen gründe für den klimawandel?
+    - was sind die gründe für den klimawandel?
+    - welche verursacher gibt es für den klimawandel?
+    - welche faktoren tragen zum klimawandel bei?
+    - welche konkreten treiber gibt es für den klimawandel?
 
 - intent: question_is_the_climate_change_caused_by_humans
   examples: |
@@ -35,44 +71,71 @@ nlu:
     - ist der klimawandel menschengemacht?
     - ist der klimawandel mensch gemacht?
     - ist der mensch schuld am klimawandel?
+    - ist der mensch der hauptverursacher des klimawandels?
+    - tragen menschliche aktivitäten zum klimawandel bei?
+    - haben menschen einen einfluss auf den klimawandel?
+    - welche rolle spielen menschen bei der verursachung des klimawandels?
 
 - intent: question_climate_changed_before
   examples: |
     - hat sich das klima nicht schon immer verändert?
+    - hat das klima in der vergangenheit nicht auch schon veränderungen durchgemacht?
+    - hat sich das klima in der vergangenheit nicht auch schon verändert?
+    - hat sich das klima nicht schon immer im natürlichen rahmen verändert?
     - das klima hat sich schon immer verändert
     - das sich das klima verändert ist nichts neues
     - hat das klima nicht immer schon geschwankt
     - klimaveränderungen gab es schon früher
     - Klimaveränderungen gab es schon immer
+    - gab es in der vergangenheit nicht auch schon klimaschwankungen?
+    - ist der klimawandel nicht ein natürlicher prozess?
+    - der klimawandel ist ein natürlicher prozess, der sich immer wieder ereignet hat und immer wieder ereignen wird.
 
 - intent: question_is_the_sun
   examples: |
     - verursacht nicht die sonne die klimaveränderung?
     - ist nicht die sonnenaktivität schuld an der klimaerwärmung?
+    - ist die sonnenaktivität nicht der hauptgrund für den klimawandel?
+    - ist der klimawandel nicht ein ergebnis der sonnenaktivität?
+    - ist der klimawandel nicht durch die sonnenstrahlung verursacht?
     - ich habe gehört die sonne ist die ursache
     - die sonne verursacht den klimawandel
     - das klima wird wärmer weil die sonne scheint
     - trägt die sonne zum klimawandel bei?
+    - beeinflussen nicht die sonnenzyklen das klima?
+    - ist der klimawandel nicht ein natürlicher sonnenzyklus?
 
 - intent: question_its_not_bad
   examples: |
     - der klimawandel ist doch gar nicht schlimm
     - ist der klimawandel schlimm?
     - ich habe gehört das es gar nicht so schlimm sei
+    - der klimawandel wird oft übertrieben
+    - es gibt keine notwendigkeit sich über den klimawandel sorgen zu machen
+    - die auswirkungen des klimawandels sind übertrieben
+    - der klimawandel ist nicht so schlimm, wie die medien es darstellen
 
 - intent: question_models_are_unreliable
   examples: |
     - die modelle stimmen gar nicht
     - klimamodelle sind falsch
+    - die vorhersagen der klimamodelle sind nicht zuverlässig
+    - die klimamodelle haben sich in der vergangenheit als falsch erwiesen
+    - die klimamodelle beruhen auf ungenauen Annahmen
+    - die klimamodelle sind nicht auf die Realität anwendbar
 
 - intent: question_temp_record_is_unreliable
   examples: |
     - die temperature wird falsch gemessen
+    - die temperaturmessungen sind nicht akkurat
+    - die temperaturmessungen sind nicht repräsentativ
     - die messung der temperatur ist falsch
+    - die messmethoden der temperaturen sind ungenau
 
 - intent: question_can_i_eat_meat
   examples: |
     - kann ich weiterhin fleisch essen?
+    - kann ich weiterhin rindfleisch essen?
     - kann ich noch fleisch essen?
     - darf ich nie mehr fleisch essen?
     - kann ich weiterhin guten gewissens fleisch essen?
@@ -81,12 +144,23 @@ nlu:
   examples: |
     - hat die menschheit noch eine chance?
     - können wir den klimawandel noch stoppen?
+    - kann der klimawandel noch gestoppt werden?
+    - ist es möglich den klimawandel zu stoppen?
     - ist es nicht schon zu spät um den klimawandel zu stoppen?
+    - ist es zu spät den klimawandel aufzuhalten?
+    - kann man den klimawandel aufhalten?
+    - ist es noch möglich den klimawandel zu bekämpfen?
+    - haben wir noch eine chance den klimawandel zu verhindern?
+    - kann man den klimawandel noch aufhalten bevor es zu spät ist?
 
 - intent: question_activism_vs_politics
   examples: |
     - ist aktivismus besser als politik?
     - ist politik besser als aktivismus?
+    - ist politisches handeln wichtiger als aktivismus bei der bekämpfung des klimawandels?
+    - ist aktivismus effektiver als politisches handeln bei der bekämpfung des klimawandels?
+    - brauchen wir sowohl aktivismus als auch politisches handeln um den klimawandel zu bekämpfen?
+    - kann man als einzelner durch aktivismus mehr erreichen als durch politisches handeln?
     - braucht es eher aktivismus oder politik?
     - braucht es eher politik oder aktivismus?
     - politik oder aktivismus?
@@ -96,9 +170,15 @@ nlu:
   examples: |
     - warum macht die politik nichts gegen den klimawandel?
     - warum macht die politik so wenig gegen den klimawandel?
+    - warum tut die regierung so wenig gegen den klimawandel?
     - weshalb handelt die politik nicht?
     - weshalb ist die politik so passiv?
     - weshalb ist die politik passiv?
+    - warum sind politiker untätig beim klimaschutz?
+    - warum wird der klimawandel von der politik ignoriert?
+    - warum unternimmt die regierung so wenig gegen den klimawandel?
+    - warum setzt die politik keine konkreten ziele zum klimaschutz um?
+    - warum ist die politik in sachen klimaschutz so ineffektiv?
 
 - intent: question_why_do_we_fly
   examples: |

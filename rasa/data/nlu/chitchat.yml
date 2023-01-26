@@ -12,20 +12,36 @@ nlu:
     - weisst du zu allen fragen eine antwort?
     - weisst du alles?
     - bist du allwissend?
+    - hast du antworten auf alle fragen parat?
+    - kannst du alle fragen beantworten?
+    - verfügst du über antworten auf alle fragen?
+    - kannst du alle fragen beantworten, die gestellt werden?
+    - hast du wissen zu allen fragen?
+    - bist du in der Lage alle Fragen zu beantworten?
+    - bist du experte genug um alle fragen zu beantworten?
 
 - intent: chitchat_you_are_boring
   examples: |
     - du bist etwas eintönig
     - du bist eintönig
     - deine antworten sind nicht interessant
+    - deine antworten langweilen mich
+    - ich finde deine antworten nicht interessant
+    - ich finde deine antworten unspannend
+    - deine antworten sind nicht von bedeutung
+    - ich finde deine antworten irrelevant
 
 - intent: chitchat_you_repeat_your_self
   examples: |
     - das sagtest du schon
+    - du sagst immer das gleiche
+    - du bringst immer die gleichen argumente
     - du wiederholst dich
     - du wiederholst dich oft
+    - du wiederholst dich ständig
     - das hast du bereits gesagt
     - das hast du schon gesagt
+    - du bist unflexibel in deinen antworten
 
 - intent: chitchat_you_know_nothing
   examples: |
