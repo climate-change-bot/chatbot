@@ -16,6 +16,8 @@ intents:
   - question_why_does_the_politics_nothing
   - question_why_do_we_fly
   - question_why_do_we_use_the_car
+  - question_what_are_the_effects_on_the_economic_system
+  - question_what_are_the_effects_on_the_energy_supply
 
 responses:
   # Answers to climate change
@@ -46,7 +48,10 @@ responses:
   utter_answer_why_does_the_politics_nothing:
     - text: "Es gibt sicher verschieden Meinungen dazu. Ein Punkt ist sicher das es Menschen gibt die davon profitieren so wie es jetzt ist. Diese wollen nicht unbedingt das sich etwas ändert und nehmen über [Lobbing](https://taz.de/Einfluss-von-Firmen-auf-EU-Klimapolitik/!5666698/) Einfluss auf die Politiker_innen."
   utter_answer_why_do_we_fly:
-    - text: "Fliegen ist für längere Distanzen viel schneller und bequemer. Vor allem wenn wir über ein Meer reisen müssen gibt es fast keine Alternative. Zudem ist z.B. der Bahnverkehr bis jetzt in Europa meistens nicht geeignet um weite Strecken zu fahren."
+    - text: "Es gibt mehrere Gründe warum Menschen weiterhin fliegen, obwohl sie sich des Klimawandels bewusst sind. Einer davon ist, dass der Flugverkehr für viele Menschen eine bequeme und schnelle Art der Fortbewegung ist, insbesondere für Geschäftsreisen und Urlaubsreisen."
   utter_answer_why_do_we_use_the_car:
     - text: "Das Auto ist sehr bequem und verschafft uns eine grosse Mobilität. Zudem ist es für viele ein Statussymbol. Darauf zu verzichten ist deshalb nicht immer so einfach, auch wenn es eigentlich gut fürs Klima wäre..."
-
+  utter_what_are_the_effects_on_the_economic_system:
+    - text: "Wie sich der Klimawandel genau auf die Wirtschaft auswirken wird, ist nicht einfach abschätzbar. Negative Effekte können Ernteausfälle, Flutschäden, Ausfall von Lieferketten und Einbussen bei der Arbeitsproduktivität aufgrund von hohen Temperaturen sein. Wenn dich das Thema interessiert erfährst du auf dieser [Webseite](https://www.quarks.de/umwelt/klimawandel/so-teuer-werden-die-folgen-des-klimawandels/) mehr dazu."
+  utter_what_are_the_effects_on_the_energy_supply:
+    - text: "Es ist sehr wahrscheinlich, dass die Energieversorgung in Zukunft nicht mehr ausschliesslich auf fossilen Brennstoffen basieren wird. Die Energieversorgung wird sich vermutlich auf erneuerbare Energien wie Sonne, Wind und Wasser konzentrieren."

@@ -58,6 +58,8 @@ nlu:
     - warum weisst du keine antworten?
     - warum verstehst du gar nichts?
     - warum verstehst du mich nicht?
+    - du bist noch lange nicht ausgereift
+    - du bist noch nicht ausgereift
 
 - intent: chitchat
   examples: |

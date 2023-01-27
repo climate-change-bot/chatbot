@@ -4,12 +4,22 @@ nlu:
 - intent: question_what_can_i_do
   examples: |
     - was kann ich tun?
+    - was kann ich im alltag tun?
+    - Was tun?
     - was kann ich machen?
     - was kann ich als einzelperson tun?
+    - was kann ich tun, um meinen beitrag zum klimaschutz zu leisten?
     - was kann ich als einzelperson ausrichten?
     - wie rette ich das klima?
     - wie helfe ich dem klima?
+    - wie kann ich mein leben verändern, um den klimawandel zu bekämpfen?
+    - was kann ich tun um den klimawandel zu bekämpfen?
+    - wie kann ich meinen lebensstil verändern, um den klimawandel zu bekämpfen?
     - was sind meine optionen?
+    - wie kann ich meinen co2-fußabdruck reduzieren?
+    - was sind möglichkeiten, um meinen co2-fußabdruck zu reduzieren?
+    - was können wir dagegen tun?
+    - was kann ich persönlich tun um etwas gegen den Klimawandel zu machen?
 
 - intent: what_can_i_do_tipps_topic
   examples: |

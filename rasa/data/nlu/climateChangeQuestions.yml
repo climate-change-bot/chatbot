@@ -17,6 +17,8 @@ nlu:
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?
+    - beschreibe den Klimawandel
+    - erklär mir den Klimawandel
     - was ist der klimawandel genau?
     - was versteht man unter klimawandel?
     - was ist der klimawandel überhaupt?
@@ -56,6 +58,7 @@ nlu:
     - was sind die treibenden kräfte hinter dem klimawandel?
     - welche faktoren beeinflussen den klimawandel?
     - was sind die hauptursachen des klimawandels?
+    - was ist der hauptgrund für den klimawandel?
     - was sind die hauptursachen für den klimawandel?
     - was sind die größten verursacher des klimawandels?
     - was sind die ursprünglichen gründe für den klimawandel?
@@ -63,6 +66,8 @@ nlu:
     - welche verursacher gibt es für den klimawandel?
     - welche faktoren tragen zum klimawandel bei?
     - welche konkreten treiber gibt es für den klimawandel?
+    - warum gibt es klimawandel?
+    - wodurch wird der klimawandel hauptsächlich verursacht?
 
 - intent: question_is_the_climate_change_caused_by_humans
   examples: |
@@ -104,6 +109,7 @@ nlu:
     - trägt die sonne zum klimawandel bei?
     - beeinflussen nicht die sonnenzyklen das klima?
     - ist der klimawandel nicht ein natürlicher sonnenzyklus?
+    - ist es die sonne?
 
 - intent: question_its_not_bad
   examples: |
@@ -203,3 +209,26 @@ nlu:
     - warum benutzen wir das auto so oft?
     - was ist der grund das wir so viel auto fahren?
     - was sind die gründe das wir so viel auto fahren?
+
+- intent: question_what_are_the_effects_on_the_economic_system
+  examples: |
+    - welche auswirkungen hat der klimawandel auf die wirtschaft?
+    - welche auswirkungen hat der klimawandel auf die wirtschaftlichen systeme?
+    - wie wirkt sich der klimawandel auf die wirtschaft aus?
+    - welche wirtschaftlichen folgen hat der klimawandel?
+    - welche wirtschaftlichen auswirkungen hat der klimawandel?
+    - wie beeinflusst der klimawandel die wirtschaft?
+    - wie wird sich der klimawandel auf die wirtschaft auswirken?
+    - welche wirtschaftlichen folgen hat der klimawandel?
+    - was sind die wirtschaftlichen auswirkungen des klimawandels?
+    - wie wird der klimawandel die wirtschaft beeinflussen?
+    - was sind die wirtschaftlichen konsequenzen des klimawandels?
+    - inwieweit beeinflusst der klimawandel die wirtschaft?
+
+- intent: question_what_are_the_effects_on_the_energy_supply
+  examples: |
+    - welche auswirkungen hat der klimawandel auf die energieversorgung?
+    - wie beeinflusst der klimawandel die energieversorgung?
+    - was sind die konsequenzen des klimawandels für die energieversorgung?
+    - wie wird der klimawandel die energieversorgung beeinflussen?
+    - wie wird der klimawandel die energieinfrastruktur beeinflussen?
