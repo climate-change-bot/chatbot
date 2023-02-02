@@ -1,0 +1,5 @@
+- rule: Can I eat meat
+  steps:
+    - intent: question_can_i_eat_meat
+    - action: utter_answer_can_i_eat_meat
+    - action: utter_further_question

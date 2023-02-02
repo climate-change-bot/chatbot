@@ -1,0 +1,8 @@
+version: "3.1"
+
+intents:
+  - question_can_i_eat_meat
+
+responses:
+  utter_can_i_eat_meat:
+    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."

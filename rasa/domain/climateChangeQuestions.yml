@@ -10,7 +10,6 @@ intents:
   - question_its_not_bad
   - question_models_are_unreliable
   - question_temp_record_is_unreliable
-  - question_can_i_eat_meat
   - question_can_we_stop_climate_change
   - question_activism_vs_politics
   - question_why_does_the_politics_nothing
@@ -39,8 +38,6 @@ responses:
     - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung seit 1900 nachgerechnet."
   utter_answer_temp_record_is_unreliable:
     - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
-  utter_answer_can_i_eat_meat:
-    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."
   utter_answer_can_we_stop_climate_change:
     - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
   utter_answer_activism_vs_politics:

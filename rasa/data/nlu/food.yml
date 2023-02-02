@@ -1,0 +1,10 @@
+version: "3.1"
+
+nlu:
+- intent: question_can_i_eat_meat
+  examples: |
+    - kann ich weiterhin fleisch essen?
+    - kann ich weiterhin rindfleisch essen?
+    - kann ich noch fleisch essen?
+    - darf ich nie mehr fleisch essen?
+    - kann ich weiterhin guten gewissens fleisch essen?

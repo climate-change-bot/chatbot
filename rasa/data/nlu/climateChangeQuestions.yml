@@ -138,14 +138,6 @@ nlu:
     - die messung der temperatur ist falsch
     - die messmethoden der temperaturen sind ungenau
 
-- intent: question_can_i_eat_meat
-  examples: |
-    - kann ich weiterhin fleisch essen?
-    - kann ich weiterhin rindfleisch essen?
-    - kann ich noch fleisch essen?
-    - darf ich nie mehr fleisch essen?
-    - kann ich weiterhin guten gewissens fleisch essen?
-
 - intent: question_can_we_stop_climate_change
   examples: |
     - hat die menschheit noch eine chance?

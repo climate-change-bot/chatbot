@@ -55,12 +55,6 @@ rules:
     - action: utter_answer_temp_record_is_unreliable
     - action: utter_further_question
 
-- rule: Can I eat meat
-  steps:
-    - intent: question_can_i_eat_meat
-    - action: utter_answer_can_i_eat_meat
-    - action: utter_further_question
-
 - rule: Can we stop climate change
   steps:
     - intent: question_can_we_stop_climate_change
