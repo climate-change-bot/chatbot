@@ -4,7 +4,6 @@ intents:
   - greet
   - greet_again
   - goodbye
-  - no_question
   - want_to_know_more
   - deny
   - question_what_can_i_ask
@@ -43,8 +42,6 @@ responses:
   # Misc
   utter_answer_what_can_i_ask:
     - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat."
-  utter_knows_more_than_bot:
-    - text: "Wow dann weisst du sicher mehr als ich :wink: Aber hast du wirklich keine Frage zum Klimawandel?"
 
   # Questions to the user
   utter_further_question:

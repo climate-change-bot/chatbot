@@ -46,11 +46,6 @@ nlu:
     - sicher nicht
     - Ich mag das nicht
 
-- intent: no_question
-  examples: |
-    - deine frage
-    - nicht wirklich eine frage
-
 # questions to challenge the bot
 
 - intent: chatbot_contributes_to_climate_change
