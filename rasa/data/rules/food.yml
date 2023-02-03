@@ -7,6 +7,22 @@ rules:
       - action: utter_can_i_eat_meat
       - action: utter_further_question
 
+  - rule: Which food is particularly bad for the climate
+    steps:
+      - intent: question_effect_to_the_climate
+      - slot_was_set:
+        - influence_type_on_climate: "negative_for_climate"
+      - action: utter_which_food_is_particularly_harmful_to_the_climate
+      - action: utter_further_question
+
+  - rule: Which food is good for the climate
+    steps:
+      - intent: question_effect_to_the_climate
+      - slot_was_set:
+          - influence_type_on_climate: "positive_for_climate"
+      - action: utter_which_food_is_best_for_the_climate
+      - action: utter_further_question
+
   - rule: Why is beef bad for the climate
     steps:
       - intent: question_why_is_meat_bad_for_the_climate
@@ -39,7 +55,15 @@ rules:
       - action: utter_why_is_poultry_bad_for_the_climate
       - action: utter_further_question
 
-  - rule: Why is beef bad for the climate
+  - rule: how much does meat pollute the climate
+    steps:
+      - intent: question_how_much_does_meat_pollute_the_climate
+      - slot_was_set:
+          - meat_type: "fleisch"
+      - action: utter_how_much_co2_is_produced_by_meat
+      - action: utter_further_question
+
+  - rule: how much does beef pollute the climate
     steps:
       - intent: question_how_much_does_meat_pollute_the_climate
       - slot_was_set:
@@ -47,7 +71,7 @@ rules:
       - action: utter_why_is_beef_bad_for_the_climate
       - action: utter_further_question
 
-  - rule: Why is lamb bad for the climate
+  - rule: how much does lamb pollute the climate
     steps:
       - intent: question_how_much_does_meat_pollute_the_climate
       - slot_was_set:
@@ -55,7 +79,7 @@ rules:
       - action: utter_why_is_lamb_bad_for_the_climate
       - action: utter_further_question
 
-  - rule: Why is pig bad for the climate
+  - rule: how much does pig pollute the climate
     steps:
       - intent: question_how_much_does_meat_pollute_the_climate
       - slot_was_set:
@@ -63,10 +87,22 @@ rules:
       - action: utter_why_is_pig_bad_for_the_climate
       - action: utter_further_question
 
-  - rule: Why is poultry bad for the climate
+  - rule: how much does poultry pollute the climate
     steps:
       - intent: question_how_much_does_meat_pollute_the_climate
       - slot_was_set:
           - meat_type: "huhn"
       - action: utter_why_is_poultry_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: What contribution does diet make to climate change
+    steps:
+      - intent: question_what_contribution_does_diet_make_to_climate_change
+      - action: utter_what_contribution_does_diet_make_to_climate_change
+      - action: utter_further_question
+
+  - rule: What food should i eat
+    steps:
+      - intent: question_what_food_should_i_eat
+      - action: utter_what_food_should_i_eat
       - action: utter_further_question

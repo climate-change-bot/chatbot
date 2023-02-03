@@ -3,47 +3,91 @@ version: "3.1"
 nlu:
 - intent: question_can_i_eat_meat
   examples: |
-    - kann ich weiterhin [fleisch]{"entity": "meat_type"} essen?
-    - kann ich weiterhin [rind]{"entity": "meat_type"} essen?
-    - kann ich noch [huhn]{"entity": "meat_type"} essen?
-    - darf ich nie mehr [lamm]{"entity": "meat_type"} essen?
-    - kann ich weiterhin guten gewissens [schwein]{"entity": "meat_type"} essen?
+    - kann ich weiterhin [fleisch]{"entity": "meat_type", "value": "fleisch"} essen?
+    - kann ich weiterhin [rind]{"entity": "meat_type", "value": "rind"} essen?
+    - kann ich noch [huhn]{"entity": "meat_type", "value": "huhn"} essen?
+    - darf ich nie mehr [lamm]{"entity": "meat_type", "value": "lamm"} essen?
+    - kann ich weiterhin guten gewissens [schwein]{"entity": "meat_type", "value": "schwein"} essen?
+
+- intent: question_effect_to_the_climate
+  examples: |
+    - welche lebensmittel sind besonders [klimaschädlich]{"entity": "influence_type_on_climate", "value":"negative_for_climate"}?
+    - welche lebensmittel sind am [klimaschädlichsten]{"entity": "influence_type_on_climate", "value":"positive_for_climate"}?
+    - welche lebensmittel sind besonders [klimafreundlich]{"entity": "influence_type_on_climate", "value":"positive_for_climate"} für die umwelt?
+    - welches sind die [besten]{"entity": "influence_type_on_climate", "value":"positive_for_climate"} lebensmittel?
+    - was sind [schlechtesten]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} lebensmittel?
+    - welche lebensmittel sind [schlecht]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} für das klima?
+    - welche lebensmittel sind besonders [schlecht]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} für das klima?
+    - welche lebensmittel sind besonders [schlecht]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} für die umwelt?
+    - welche nahrungsmittel haben den größten [positiven]{"entity": "influence_type_on_climate", "value":"positive_for_climate"} einfluss auf das klima?
+    - welche lebensmittel haben den größten [negativen]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} einfluss auf das klima?
+    - was sind die [klimafreundlichsten]{"entity": "influence_type_on_climate", "value":"positive_for_climate"} in meiner ernährung?
+    - was sind die [klimafreundlichsten]{"entity": "influence_type_on_climate", "value":"positive_for_climate"} lebensmittel?
+    - was sind die [schlechtesten]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} lebensmittel für das klima?
+    - welche lebensmittel tragen am meisten zum [klimawandel]{"entity": "influence_type_on_climate", "value":"negative_for_climate"} bei?
+    - welche nahrungsmittel sind [schlecht]{"entity": "influence_type_on_climate", "value":"negative_for_climate"}?
+    - welche nahrungsmittel sollte ich wegen ihrer klimaschädlichen wirkung [vermeiden]{"entity": "influence_type_on_climate", "value":"negative_for_climate"}?
+    - welche lebensmittel sollte ich [vermeiden]{"entity": "influence_type_on_climate", "value":"negative_for_climate"}?
+
+#- intent: question_which_food_is_best_for_the_climate
+#  examples: |
+#    - welche lebensmittel sind besonders klimafreundlich?
+#    - welche lebensmittel sind am klimafreundlichsten?
+#    - welche lebensmittel sind besonders klimafreundlich für die umwelt?
+#    - welche nahrungsmittel haben den größten positiven einfluss auf das klima?
+#    - welche lebensmittel haben den größten positiven einfluss auf das klima?
+#    - was sind die klimafreundlichen lebensmittel in meiner ernährung?
+#    - was sind die klimafreundlichen lebensmittel?
+#    - was sind die besten lebensmittel für das klima?
+#    - welche lebensmittel sind gut für das klima?
+#    - welche lebensmittel tragen besonders zum klimaschutz bei?
+#    - welche nahrungsmittel sind am besten für das klima?
+#    - wie kann ich durch meine ernährung das klima schonen?
+#    - wie kann ich durch meine lebensmittelwahl das klima schonen?
+#    - welche lebensmittel sollte ich wegen ihrer klimafreundlichen wirkung bevorzugen?
+#    - welche nahrungsmittel sollte ich bevorzugen?
+#    - was sind die besten optionen für eine klimafreundliche ernährung?
+#    - wie beeinflusst meine ernährung das klima positiv?
+#    - wie kann ich durch meine ernährung den klimawandel verringern?
 
 - intent: question_why_is_meat_bad_for_the_climate
   examples: |
-    - weshalb sollte ich kein [fleisch]{"entity": "meat_type"} essen?
-    - wie ist die auswirkung von [fleisch]{"entity": "meat_type"} auf das klima?
-    - wie stark trägt [fleisch]{"entity": "meat_type"} zur klimabelastung bei?
-    - wie beeinflusst [fleisch]{"entity": "meat_type"} die klimabilanz?
-    - Wie beeinflusst [fleisch]{"entity": "meat_type"} das Klima negativ?
-    - inwieweit ist [fleisch]{"entity": "meat_type"} schädlich für das klima?
-    - inwieweit ist [fleisch]{"entity": "meat_type"} klima schädigend?
-    - hat [fleisch]{"entity": "meat_type"} einen negativen einfluss auf das klima?
-    - in welchem masse trägt [lamm]{"entity": "meat_type"} zum klimaproblem bei?
-    - wie groß ist der beitrag von [rind]{"entity": "meat_type"} zum klimawandel?
-    - wie klimaschädlich ist [fleisch]{"entity": "meat_type"}?
-    - wie groß ist die klimabelastung durch [huhn]{"entity": "meat_type"}?
-    - wie schädlich ist [schwein]{"entity": "meat_type"} für das klima?
+    - weshalb sollte ich kein [fleisch]{"entity": "meat_type", "value": "fleisch"} essen?
+    - wie ist die auswirkung von [fleisch]{"entity": "meat_type", "value": "fleisch"} auf das klima?
+    - wie stark trägt [fleisch]{"entity": "meat_type", "value": "fleisch"} zur klimabelastung bei?
+    - wie beeinflusst [fleisch]{"entity": "meat_type", "value": "fleisch"} die klimabilanz?
+    - Wie beeinflusst [fleisch]{"entity": "meat_type", "value": "fleisch"} das Klima negativ?
+    - inwieweit ist [fleisch]{"entity": "meat_type", "value": "fleisch"} schädlich für das klima?
+    - inwieweit ist [fleisch]{"entity": "meat_type", "value": "fleisch"} klima schädigend?
+    - hat [fleisch]{"entity": "meat_type", "value": "fleisch"} einen negativen einfluss auf das klima?
+    - in welchem masse trägt [lamm]{"entity": "meat_type", "value": "lamm"} zum klimaproblem bei?
+    - wie groß ist der beitrag von [rind]{"entity": "meat_type", "value": "rind"} zum klimawandel?
+    - wie klimaschädlich ist [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie groß ist die klimabelastung durch [huhn]{"entity": "meat_type", "value": "huhn"}?
+    - wie schädlich ist [schwein]{"entity": "meat_type", "value": "schwein"} für das klima?
 
 - intent: question_how_much_does_meat_pollute_the_climate
   examples: |
-    - wie viel co2 wird durch den konsum von [lamm]{"entity": "meat_type"} verursacht?
-    - wie ist die co2 bilanz von [huhn]{"entity": "meat_type"}?
-    - wie viele treibhausgase werden durch [fleisch]{"entity": "meat_type"} verursacht?
-    - wie viel co2 wird durch [fleisch]{"entity": "meat_type"} verursacht?
-    - wie viel co2 entsteht durch [fleisch]{"entity": "meat_type"}?
-    - wie viel co2 entsteht durch die die erzeugung von [fleisch]{"entity": "meat_type"}?
-    - wie schneidet [schwein]{"entity": "meat_type"} in bezug auf co2-emissionen ab?
-    - wie beeinflusst [fleisch]{"entity": "meat_type"}? die co2-bilanz?
-    - wie beeinflusst [fleisch]{"entity": "meat_type"} den co2-ausstoss?
-    - wie hoch ist die co2-belastung durch [fleisch]{"entity": "meat_type"}?
-    - wie hoch ist die co2-emission von [fleisch]{"entity": "meat_type"}?
-    - ist die co2 bilanz gut von [fleisch]{"entity": "meat_type"}?
-    - ist die co2 bilanz schlecht von [fleisch]{"entity": "meat_type"}?
-    - wie wirkt sich die erzeugung von [fleisch]{"entity": "meat_type"} auf die co2 bilanz aus?
-    - wie gross ist der co2-fussabdruck von [fleisch]{"entity": "meat_type"}?
-    - wie viel co2 wird bei der produktion von [fleisch]{"entity": "meat_type"} freigesetzt?
-    - wie start belastet [fleisch]{"entity": "meat_type"} die umwelt hinsichtlich co2?
+    - wie viel co2 wird durch den konsum von [lamm]{"entity": "meat_type", "value": "lamm"} verursacht?
+    - wie ist die co2 bilanz von [huhn]{"entity": "meat_type", "value": "huhn"}?
+    - wie viele treibhausgase werden durch [fleisch]{"entity": "meat_type", "value": "fleisch"} verursacht?
+    - wie viel co2 wird durch [fleisch]{"entity": "meat_type", "value": "fleisch"} verursacht?
+    - wie viel co2 entsteht durch [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie viel co2 wird produziert, wenn jemand [fleisch]{"entity": "meat_type", "value": "fleisch"} isst?
+    - Wie viel co2 is produziert, wann jemand [fleisch]{"entity": "meat_type", "value": "fleisch"} isst?
+    - wie viel co2 entsteht durch die die erzeugung von [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie schneidet [schwein]{"entity": "meat_type", "value": "schwein"} in bezug auf co2-emissionen ab?
+    - wie beeinflusst [fleisch]{"entity": "meat_type", "value": "fleisch"}? die co2-bilanz?
+    - wie beeinflusst [lamm]{"entity": "meat_type", "value": "lamm"} den co2-ausstoss?
+    - wie hoch ist die co2-belastung durch [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie hoch ist die co2-emission von [lamm]{"entity": "meat_type", "value": "lamm"}?
+    - ist die co2 bilanz gut von [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - ist die co2 bilanz schlecht von [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie wirkt sich die erzeugung von [fleisch]{"entity": "meat_type", "value": "fleisch"} auf die co2 bilanz aus?
+    - wie gross ist der co2-fussabdruck von [fleisch]{"entity": "meat_type", "value": "fleisch"}?
+    - wie viel co2 wird bei der produktion von [fleisch]{"entity": "meat_type", "value": "fleisch"} freigesetzt?
+    - wie stark belastet [fleisch]{"entity": "meat_type", "value": "fleisch"} die umwelt hinsichtlich co2?
+    - wie stark belastet [lamm]{"entity": "meat_type", "value": "lamm"} das klima?
 
 - intent: i_eat_lot_meat
   examples: |
@@ -113,6 +157,35 @@ nlu:
     - fleisch spielt keine rolle in meiner ernährung
     - fleisch ist nicht teil meiner ernährung
 
+- intent: question_what_contribution_does_diet_make_to_climate_change
+  examples: |
+    - welche rolle spielt meine ernährung bei dem ganzen?
+    - wie wirkt sich meine ernährung auf den klimawandel aus?
+    - wie wirkt sich meine ernährung auf die umwelt aus, insbesondere auf den klimawandel?
+    - welchen anteil hat die ernährung am klimawandel?
+    - wie gross ist der anteil der ernährung am klimawandel?
+    - wie beeinflusst meine ernährung den klimawandel?
+    - wie stark ist meine ernährung am klimawandel beteiligt?
+    - wie wichtig ist meine ernährung für den klimawandel?
+    - wie trage ich durch meine ernährung zum klimawandel bei?
+    - wie gross ist mein beitrag zum klimawandel durch meine ernährung?
+
+- intent: question_what_food_should_i_eat
+  examples: |
+    - auf welche nahrungsmittel muss ich achten?
+    - auf welche nahrungsmittel soll ich achten?
+    - welche nahrungsmittel empfiehlst du?
+    - welche nahrungsmittel soll ich essen?
+    - welche nahrungsmittel soll ich konsumieren?
+    - welche nahrungsmittel soll ich konsumieren, um den klimawandel zu verhindern?
+    - welche nahrungsmittel soll ich konsumieren, um den klimawandel zu reduzieren?
+    - welche nahrungsmittel soll ich konsumieren, um den klimawandel zu minimieren?
+    - welche lebensmittel soll ich im hinblick auf den klimawandel konsumieren?
+    - worauf muss ich bei meiner wahl von lebensmittel achten, um den klimawandel zu verhindern?
+    - welche nahrungsmittel sollte ich in meiner ernährung bevorzugen, um den klimawandel zu bekämpfen?
+    - was muss ich bei meiner ernährung beachten, um den klimawandel zu verringern?
+    - was für essen soll ich konsumieren?
+
 - synonym: fleisch
   examples: |
     - fleischkonsum
@@ -133,3 +206,27 @@ nlu:
   examples: |
     - geflügel
     - hühnerfleisch
+
+- synonym: positive_for_climate
+  examples: |
+    - besten
+    - gute
+    - positiven
+    - klimafreundlichsten
+    - klimafreundlichste
+    - klimafreundlich
+    - klimaschutz
+    - sind am besten für das klima
+
+- synonym: negative_for_climate
+  examples: |
+    - klimaschädlich
+    - klimaschädlichen
+    - klimakiller
+    - negativen
+    - schädlich
+    - schlechte
+    - schlechteste
+    - schlechtesten
+    - klimawandel
+    - vermeiden

@@ -2,14 +2,18 @@ version: "3.1"
 
 intents:
   - question_can_i_eat_meat
+  - question_effect_to_the_climate
   - question_why_is_meat_bad_for_the_climate
   - question_how_much_does_meat_pollute_the_climate
+  - question_what_contribution_does_diet_make_to_climate_change
+  - question_what_food_should_i_eat
   - i_eat_lot_meat
   - i_some_times_eat_meat
   - i_eat_no_meat
 
 entities:
   - meat_type
+  - influence_type_on_climate
 
 slots:
   meat_type:
@@ -24,6 +28,15 @@ slots:
       - type: from_entity
         entity: meat_type
 
+  influence_type_on_climate:
+    type: categorical
+    values:
+      - positive_for_climate
+      - negative_for_climate
+    mappings:
+      - type: from_entity
+        entity: influence_type_on_climate
+
 responses:
   utter_can_i_eat_meat:
     - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel 
@@ -35,6 +48,17 @@ responses:
     Flächen wieder renaturieren, könnten wir in 100 Jahren 800 Milliarden Tonnen CO2 aus der Luft entfernen. Zum Vergleich:
     Im Moment stossen wir weltweit 50 Milliarden Tonnen CO2 pro Jahr aus. Falls du zu diesem Thema noch ein Video schauen möchtest
     kann ich dir sehr das Erklärvideo von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) empfehlen."
+  utter_which_food_is_particularly_harmful_to_the_climate:
+    - text: "Vor allem Fleisch ist sehr schlecht für das Klima. Die Fleischproduktion benötigt grosse Landflächen. Deshalb werden Waldflächen gerodet, 
+    Moore trockengelegt und es verschwinden weitere wichtige Flächen für die Natur. So wird viel CO2 freigesetzt, 
+    welches normalerweise von diesen Naturflächen gebunden wird. Das produzieren von pflanzlichen Lebensmittel benötigt 
+    natürlich auch Fläche, aber viel weniger. Falls sich alle Menschen nur noch pflanzlich ernähren würden, 
+    würde eine Fläche von 3 Milliarden Hektar frei. Das ist so gross wie ganz Afrika. Wenn wir nun diese 
+    Flächen wieder renaturieren, könnten wir in 100 Jahren 800 Milliarden Tonnen CO2 aus der Luft entfernen. Zum Vergleich:
+    Im Moment stossen wir weltweit 50 Milliarden Tonnen CO2 pro Jahr aus. Falls du zu diesem Thema noch ein Video schauen möchtest
+    kann ich dir sehr das Erklärvideo von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) empfehlen."
+  utter_which_food_is_best_for_the_climate:
+    - text: "Am besten für das Klima sind pflanzliche Produkte, die möglichst regional und saisonal hergestellt werden."
   utter_why_is_meat_bad_for_the_climate:
     - text: "Die Fleischproduktion benötigt grosse Landflächen. Deshalb werden Waldflächen gerodet, 
     Moore trockengelegt und es verschwinden weitere wichtige Flächen für die Natur. So wird viel CO2 freigesetzt, 
@@ -44,6 +68,10 @@ responses:
     Flächen wieder renaturieren, könnten wir in 100 Jahren 800 Milliarden Tonnen CO2 aus der Luft entfernen. Zum Vergleich:
     Im Moment stossen wir weltweit 50 Milliarden Tonnen CO2 pro Jahr aus. Falls du zu diesem Thema noch ein Video schauen möchtest
     kann ich dir sehr das Erklärvideo von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) empfehlen."
+  utter_how_much_co2_is_produced_by_meat:
+    - text: "Es kommt sehr stark darauf an, was für ein Fleisch gegessen wird. Rindfleisch verursacht dabei am meisten 
+    CO2. Im Durchschnitt etwa 71 Kilogram CO2 Equivalent pro Kilogram Rindfleisch. Huhn verursacht deutlich weniger CO2.
+    Im Durchschnitt etwa 9.87 Kilogram CO2 Equivalent"
   utter_why_is_beef_bad_for_the_climate:
     - text: "Rindfleisch verursacht besonders viele Treibhausgase. Im Durchschnitt etwa 71 Kilogram CO2 Equivalent 
     pro Kilogram Rindfleisch. Zum Vergleich: Ein Kilogram Tofu verursacht gerade einmal 3.16 Kilogram CO2 Equivalent.
@@ -71,3 +99,13 @@ responses:
     versuchen zum Beispiel einen Monat lang auf Fleisch zu verzichten."
   utter_i_eat_no_meat:
     - text: "Wow das ist super :smile:. Du bist ein Vorbild und trägst viel zum Schutz des Klimas bei :+1:."
+  utter_what_contribution_does_diet_make_to_climate_change:
+    - text: "Die Ernährung ist für etwas 26 Prozent der Treibhausgasemissionen verantwortlich. Ein grosser Anteil davon
+    wird durch die Produktion von Fleisch verursacht. Wenn die meisten Menschen sich pflanzlich ernähren würden, könnte
+    ein sehr grosser Teil der Treibhausgasemissionen vermieden werden. Sehr gut wird dies in diesem Video 
+    von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) beschrieben."
+  utter_what_food_should_i_eat:
+    - text: "Wenn du Fleisch isst, dann solltest du möglichst auf Rindfleisch verzichten. Das hat nebst Lamm die 
+    höchsten Treibhausgasemissionen. Schweinefleisch und Huhn sind etwas besser. Am besten wäre es aber wenn du
+    dich möglichst pflanzlich ernährst. Das ist nicht nur gut fürs Klima, sondern auch für die Tiere :wink:. Ein
+    weiterer Tipp ist, dass du saisonales Gemüse isst, welches in deiner Region angebaut wird."
