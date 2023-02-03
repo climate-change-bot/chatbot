@@ -4,5 +4,69 @@ rules:
   - rule: Can I eat meat
     steps:
       - intent: question_can_i_eat_meat
-      - action: utter_answer_can_i_eat_meat
+      - action: utter_can_i_eat_meat
+      - action: utter_further_question
+
+  - rule: Why is beef bad for the climate
+    steps:
+      - intent: question_why_is_meat_bad_for_the_climate
+      - slot_was_set:
+          - meat_type: "rind"
+      - action: utter_why_is_beef_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is lamb bad for the climate
+    steps:
+      - intent: question_why_is_meat_bad_for_the_climate
+      - slot_was_set:
+          - meat_type: "lamm"
+      - action: utter_why_is_lamb_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is pig bad for the climate
+    steps:
+      - intent: question_why_is_meat_bad_for_the_climate
+      - slot_was_set:
+          - meat_type: "schwein"
+      - action: utter_why_is_pig_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is poultry bad for the climate
+    steps:
+      - intent: question_why_is_meat_bad_for_the_climate
+      - slot_was_set:
+          - meat_type: "huhn"
+      - action: utter_why_is_poultry_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is beef bad for the climate
+    steps:
+      - intent: question_how_much_does_meat_pollute_the_climate
+      - slot_was_set:
+          - meat_type: "rind"
+      - action: utter_why_is_beef_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is lamb bad for the climate
+    steps:
+      - intent: question_how_much_does_meat_pollute_the_climate
+      - slot_was_set:
+          - meat_type: "lamm"
+      - action: utter_why_is_lamb_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is pig bad for the climate
+    steps:
+      - intent: question_how_much_does_meat_pollute_the_climate
+      - slot_was_set:
+          - meat_type: "schwein"
+      - action: utter_why_is_pig_bad_for_the_climate
+      - action: utter_further_question
+
+  - rule: Why is poultry bad for the climate
+    steps:
+      - intent: question_how_much_does_meat_pollute_the_climate
+      - slot_was_set:
+          - meat_type: "huhn"
+      - action: utter_why_is_poultry_bad_for_the_climate
       - action: utter_further_question

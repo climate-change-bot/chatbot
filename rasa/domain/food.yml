@@ -2,7 +2,72 @@ version: "3.1"
 
 intents:
   - question_can_i_eat_meat
+  - question_why_is_meat_bad_for_the_climate
+  - question_how_much_does_meat_pollute_the_climate
+  - i_eat_lot_meat
+  - i_some_times_eat_meat
+  - i_eat_no_meat
+
+entities:
+  - meat_type
+
+slots:
+  meat_type:
+    type: categorical
+    values:
+      - fleisch
+      - rind
+      - lamm
+      - huhn
+      - schwein
+    mappings:
+      - type: from_entity
+        entity: meat_type
 
 responses:
   utter_can_i_eat_meat:
-    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel Treibhausgasausstoss und benötigt grosse Landflächen."
+    - text: "Deinen Fleischkonsum solltest du möglichst reduzieren. Die Fleischproduktion verursacht viel 
+    Treibhausgasausstoss und benötigt grosse Landflächen. Deshalb werden Waldflächen gerodet, 
+    Moore trockengelegt und es verschwinden weitere wichtige Flächen für die Natur. So wird viel CO2 freigesetzt, 
+    welches normalerweise von diesen Naturflächen gebunden wird. Das produzieren von pflanzlichen Lebensmittel benötigt 
+    natürlich auch Fläche, aber viel weniger. Falls sich alle Menschen nur noch pflanzlich ernähren würden, 
+    würde eine Fläche von 3 Milliarden Hektar frei. Das ist so gross wie ganz Afrika. Wenn wir nun diese 
+    Flächen wieder renaturieren, könnten wir in 100 Jahren 800 Milliarden Tonnen CO2 aus der Luft entfernen. Zum Vergleich:
+    Im Moment stossen wir weltweit 50 Milliarden Tonnen CO2 pro Jahr aus. Falls du zu diesem Thema noch ein Video schauen möchtest
+    kann ich dir sehr das Erklärvideo von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) empfehlen."
+  utter_why_is_meat_bad_for_the_climate:
+    - text: "Die Fleischproduktion benötigt grosse Landflächen. Deshalb werden Waldflächen gerodet, 
+    Moore trockengelegt und es verschwinden weitere wichtige Flächen für die Natur. So wird viel CO2 freigesetzt, 
+    welches normalerweise von diesen Naturflächen gebunden wird. Das produzieren von pflanzlichen Lebensmittel benötigt 
+    natürlich auch Fläche, aber viel weniger. Falls sich alle Menschen nur noch pflanzlich ernähren würden, 
+    würde eine Fläche von 3 Milliarden Hektar frei. Das ist so gross wie ganz Afrika. Wenn wir nun diese 
+    Flächen wieder renaturieren, könnten wir in 100 Jahren 800 Milliarden Tonnen CO2 aus der Luft entfernen. Zum Vergleich:
+    Im Moment stossen wir weltweit 50 Milliarden Tonnen CO2 pro Jahr aus. Falls du zu diesem Thema noch ein Video schauen möchtest
+    kann ich dir sehr das Erklärvideo von [Dinge Erklärt](https://youtu.be/8eeYdcCql24) empfehlen."
+  utter_why_is_beef_bad_for_the_climate:
+    - text: "Rindfleisch verursacht besonders viele Treibhausgase. Im Durchschnitt etwa 71 Kilogram CO2 Equivalent 
+    pro Kilogram Rindfleisch. Zum Vergleich: Ein Kilogram Tofu verursacht gerade einmal 3.16 Kilogram CO2 Equivalent.
+    Natürlich könnte man den Vergleich auch noch für Kalorien oder Proteinmenge machen, jedoch schneidet auch da Rindfleisch 
+    deutlich schlechter ab."
+  utter_why_is_lamb_bad_for_the_climate:
+    - text: "Lammfleisch verursacht nach Rindfleisch am meisten Treibhausgase. Im Durchschnitt etwa 39.72 Kilogram 
+    CO2 Equivalent. Zum Vergleich: Ein Kilogram Tofu verursacht gerade einmal 3.16 Kilogram CO2 Equivalent."
+  utter_why_is_pig_bad_for_the_climate:
+    - text: "Schweinefleisch verursacht im Durchschnitt etwa 12.31 Kilogram 
+    CO2 Equivalent. Das ist einiges weniger als Rindfleisch (71 Kilogram CO2 Equivalent) aber immer noch mehr als Tofu. 
+    Zum Vergleich: Ein Kilogram Tofu verursacht gerade einmal 3.16 Kilogram CO2 Equivalent."
+  utter_why_is_poultry_bad_for_the_climate:
+    - text: "Huhn verursacht im Durchschnitt etwa 9.87 Kilogram CO2 Equivalent. Das ist einiges weniger als Rindfleisch 
+    (71 Kilogram CO2 Equivalent) und am wenigsten CO2 Ausstoss von allen Fleischarten, jedoch immer noch mehr als Tofu. 
+    Zum Vergleich: Ein Kilogram Tofu verursacht gerade einmal 3.16 Kilogram CO2 Equivalent."
+  utter_how_much_meat_do_you_eat:
+    - text: "Wie oft pro Woche isst du denn Fleisch?"
+  utter_i_eat_lot_meat:
+    - text: "Dann kannst du in diesem Bereich viel dazu beitragen um den Klimawandel zu stoppen :smile:. 
+    Es hilft schon sehr wenn du weniger Fleisch isst. Es gibt viele leckere, rein pflanzliche Rezepte. Einfach mal mit 
+    einer Suchmaschine nach veganen Rezepten suchen :wink:."
+  utter_i_some_times_eat_meat:
+    - text: "Es hilft schon sehr das du so wenig Fleisch ist :smile:. Wenn du magst, kannst du ja als nächsten Schritt mal 
+    versuchen zum Beispiel einen Monat lang auf Fleisch zu verzichten."
+  utter_i_eat_no_meat:
+    - text: "Wow das ist super :smile:. Du bist ein Vorbild und trägst viel zum Schutz des Klimas bei :+1:."

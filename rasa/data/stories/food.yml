@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+- story: How does meat affect the climate (eat a lot meat)?
+  steps:
+    - intent: question_why_is_meat_bad_for_the_climate
+    - slot_was_set:
+        - meat_type: "fleisch"
+    - action: utter_why_is_meat_bad_for_the_climate
+    - action: utter_how_much_meat_do_you_eat
+    - intent: i_eat_lot_meat
+    - action: utter_i_eat_lot_meat
+    - action: utter_further_question
+
+- story: How does meat affect the climate (eat some meat)?
+  steps:
+    - intent: question_why_is_meat_bad_for_the_climate
+    - slot_was_set:
+        - meat_type: "fleisch"
+    - action: utter_why_is_meat_bad_for_the_climate
+    - action: utter_how_much_meat_do_you_eat
+    - intent: i_some_times_eat_meat
+    - action: utter_i_some_times_eat_meat
+    - action: utter_further_question
+
+- story: How does meat affect the climate (eat no meat)?
+  steps:
+    - intent: question_why_is_meat_bad_for_the_climate
+    - slot_was_set:
+        - meat_type: "fleisch"
+    - action: utter_why_is_meat_bad_for_the_climate
+    - action: utter_how_much_meat_do_you_eat
+    - intent: i_eat_no_meat
+    - action: utter_i_eat_no_meat
+    - action: utter_further_question

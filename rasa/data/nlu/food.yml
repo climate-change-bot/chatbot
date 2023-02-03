@@ -3,8 +3,133 @@ version: "3.1"
 nlu:
 - intent: question_can_i_eat_meat
   examples: |
-    - kann ich weiterhin fleisch essen?
-    - kann ich weiterhin rindfleisch essen?
-    - kann ich noch fleisch essen?
-    - darf ich nie mehr fleisch essen?
-    - kann ich weiterhin guten gewissens fleisch essen?
+    - kann ich weiterhin [fleisch]{"entity": "meat_type"} essen?
+    - kann ich weiterhin [rind]{"entity": "meat_type"} essen?
+    - kann ich noch [huhn]{"entity": "meat_type"} essen?
+    - darf ich nie mehr [lamm]{"entity": "meat_type"} essen?
+    - kann ich weiterhin guten gewissens [schwein]{"entity": "meat_type"} essen?
+
+- intent: question_why_is_meat_bad_for_the_climate
+  examples: |
+    - weshalb sollte ich kein [fleisch]{"entity": "meat_type"} essen?
+    - wie ist die auswirkung von [fleisch]{"entity": "meat_type"} auf das klima?
+    - wie stark trägt [fleisch]{"entity": "meat_type"} zur klimabelastung bei?
+    - wie beeinflusst [fleisch]{"entity": "meat_type"} die klimabilanz?
+    - Wie beeinflusst [fleisch]{"entity": "meat_type"} das Klima negativ?
+    - inwieweit ist [fleisch]{"entity": "meat_type"} schädlich für das klima?
+    - inwieweit ist [fleisch]{"entity": "meat_type"} klima schädigend?
+    - hat [fleisch]{"entity": "meat_type"} einen negativen einfluss auf das klima?
+    - in welchem masse trägt [lamm]{"entity": "meat_type"} zum klimaproblem bei?
+    - wie groß ist der beitrag von [rind]{"entity": "meat_type"} zum klimawandel?
+    - wie klimaschädlich ist [fleisch]{"entity": "meat_type"}?
+    - wie groß ist die klimabelastung durch [huhn]{"entity": "meat_type"}?
+    - wie schädlich ist [schwein]{"entity": "meat_type"} für das klima?
+
+- intent: question_how_much_does_meat_pollute_the_climate
+  examples: |
+    - wie viel co2 wird durch den konsum von [lamm]{"entity": "meat_type"} verursacht?
+    - wie ist die co2 bilanz von [huhn]{"entity": "meat_type"}?
+    - wie viele treibhausgase werden durch [fleisch]{"entity": "meat_type"} verursacht?
+    - wie viel co2 wird durch [fleisch]{"entity": "meat_type"} verursacht?
+    - wie viel co2 entsteht durch [fleisch]{"entity": "meat_type"}?
+    - wie viel co2 entsteht durch die die erzeugung von [fleisch]{"entity": "meat_type"}?
+    - wie schneidet [schwein]{"entity": "meat_type"} in bezug auf co2-emissionen ab?
+    - wie beeinflusst [fleisch]{"entity": "meat_type"}? die co2-bilanz?
+    - wie beeinflusst [fleisch]{"entity": "meat_type"} den co2-ausstoss?
+    - wie hoch ist die co2-belastung durch [fleisch]{"entity": "meat_type"}?
+    - wie hoch ist die co2-emission von [fleisch]{"entity": "meat_type"}?
+    - ist die co2 bilanz gut von [fleisch]{"entity": "meat_type"}?
+    - ist die co2 bilanz schlecht von [fleisch]{"entity": "meat_type"}?
+    - wie wirkt sich die erzeugung von [fleisch]{"entity": "meat_type"} auf die co2 bilanz aus?
+    - wie gross ist der co2-fussabdruck von [fleisch]{"entity": "meat_type"}?
+    - wie viel co2 wird bei der produktion von [fleisch]{"entity": "meat_type"} freigesetzt?
+    - wie start belastet [fleisch]{"entity": "meat_type"} die umwelt hinsichtlich co2?
+
+- intent: i_eat_lot_meat
+  examples: |
+    - ich esse mehrmals täglich fleisch
+    - ich esse mehrmals pro woche fleisch
+    - ich esse 7 mal pro woche fleisch
+    - ich esse 6 mal pro woche fleisch
+    - ich esse 5 mal pro woche fleisch
+    - ich esse 4 mal pro woche fleisch
+    - ich esse 3 mal pro woche fleisch
+    - 7 mal die woche
+    - 6 mal die woche
+    - 5 mal die woche
+    - 4 mal die woche
+    - 3 mal die woche
+    - mehrmals pro woche esse ich fleisch
+    - ich esse täglich fleisch
+    - ich esse oft fleisch
+    - ich verzehre täglich fleisch
+    - ich bin ein täglicher fleischesser
+    - meine ernährung beinhaltet täglich fleisch
+    - täglich nehme ich fleisch zu mir
+    - ich verzehre täglich eine fleischhaltige mahlzeit
+    - fleisch ist ein fester bestandteil meiner täglichen ernährung
+    - ich habe täglich fleisch auf dem speiseplan
+    - meine mahlzeiten am tag beinhalten immer fleisch
+    - ich bin täglich ein konsument von fleisch.
+
+- intent: i_some_times_eat_meat
+  examples: |
+    - ich esse ab und zu fleisch
+    - ich esse nicht täglich fleisch
+    - ich esse nur einmal pro woche fleisch
+    - ich esse 2 mal pro woche fleisch
+    - ich esse 1 mal pro woche fleisch
+    - 1 mal die woche
+    - 2 mal die woche
+    - ich esse nur wenig fleisch
+    - ich esse wenig fleisch
+    - ich esse nur selten fleisch
+    - ich esse selten fleisch
+    - ich verzehre nur selten fleisch
+    - fleisch kommt gelegentlich auf meinen teller
+    - ich esse fleisch nicht jeden tag, sondern nur gelegentlich.
+    - ich esse fleisch nicht jeden tag, sondern nur ab und zu
+    - gelegentlich esse ich fleisch
+    - nur sehr wenig fleisch kommt auf meinen teller
+    - ich esse fleisch nicht ständig, sondern nur gelegentlich
+    - ich esse fleisch nicht ständig, sondern nur ab und zu
+    
+- intent: i_eat_no_meat
+  examples: |
+    - ich esse kein fleisch
+    - ich esse kein fleisch mehr
+    - ich bin vegetarier
+    - ich bin veganer
+    - ich ernähre mich vegan
+    - ich ernähre mich vegetarisch
+    - ich ernähre mich fleischlos
+    - ich esse kein fleisch mehr
+    - ich vermeide fleisch in meiner ernährung
+    - ich verzichte auf fleisch
+    - ich verzichte auf fleisch in meiner ernährung
+    - ich verzichte auf fleisch in meiner täglichen ernährung
+    - fleisch kommt nicht auf meinen teller
+    - fleisch ist für mich tabu
+    - fleisch spielt keine rolle in meiner ernährung
+    - fleisch ist nicht teil meiner ernährung
+
+- synonym: fleisch
+  examples: |
+    - fleischkonsum
+
+- synonym: rind
+  examples: |
+    - rindfleisch
+
+- synonym: schwein
+  examples: |
+    - schweinefleisch
+
+- synonym: lamm
+  examples: |
+    - lammfleisch
+
+- synonym: huhn
+  examples: |
+    - geflügel
+    - hühnerfleisch
