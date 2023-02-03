@@ -133,3 +133,4 @@ dmypy.json
 # Rasa
 .rasa
 models
+.dot
