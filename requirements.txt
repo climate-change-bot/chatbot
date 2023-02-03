@@ -1,2 +1,3 @@
-rasa~=3.3.3
+rasa~=3.4.2
 spacy~=3.4.3
+sqlalchemy<2.0.0
