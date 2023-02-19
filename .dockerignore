@@ -3,3 +3,4 @@
 .gitignore
 rasa/tests
 rasa/.rasa
+.dot
