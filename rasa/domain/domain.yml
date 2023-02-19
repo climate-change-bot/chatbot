@@ -57,6 +57,9 @@ responses:
     - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim deinem nächsten Besuch kann ich dir diese hoffentlich beantworten :wink:. Es hilft aber sehr, wenn du weitere Fragen stellst. So kann ich mich weiterentwickeln."
 
 
+actions:
+  - action_custom_fallback
+
 session_config:
   session_expiration_time: 0
   carry_over_slots_to_new_session: false

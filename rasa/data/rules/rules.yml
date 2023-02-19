@@ -30,7 +30,7 @@ rules:
     - action: utter_contributes_to_climate_change
 
 # Fallback
-- rule: Apologize for low NLU confidence
+- rule: Using api call to gpt-3 as fallback solution
   steps:
     - intent: nlu_fallback
-    - action: utter_please_rephrase
+    - action: action_custom_fallback
