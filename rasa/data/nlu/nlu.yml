@@ -14,23 +14,6 @@ nlu:
     - guten abend
     - whats up
 
-- intent: goodbye
-  examples: |
-    - tschüss
-    - tschau
-    - machs gut
-    - bis bald wieder
-    - bye
-    - bye!
-    - bye bye
-    - ciao
-    - auf wiedersehen
-    - see you
-    - ich wünsche dir einen schönen abend
-    - ich wünsche dir einen geruhsamen und entspannten Abend
-    - ich wünsche dir einen schönen tag
-    - ich wünsche dir alles gute
-
 - intent: want_to_know_more
   examples: |
     - ich möchte mehr wissen

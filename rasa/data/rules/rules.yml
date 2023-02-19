@@ -12,11 +12,6 @@ rules:
     - intent: greet_again
     - action: utter_greet_again
 
-- rule: goodbye user
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
-
 - rule: What can I ask
   steps:
     - intent: question_what_can_i_ask
