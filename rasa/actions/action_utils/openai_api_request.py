@@ -26,7 +26,3 @@ def request_to_openai(events):
     )
     response_text = clean_response(response["choices"][0].text)
     return response_text
-
-
-if __name__ == "__main__":
-    request_to_openai('1')
