@@ -1,0 +1,28 @@
+version: "3.1"
+
+# Welche Treibhausgase gibt es?
+# Welchen Effekt haben Treibhausgase auf das Klima?
+
+nlu:
+- intent: question_what_are_greenhouse_gases
+  examples: |
+    - was ist [kohlendioxid]{"entity": "greenhouse_gas", "value":"kohlendioxid"}?
+    - was ist [kohlendioxid]{"entity": "greenhouse_gas", "value":"kohlendioxid"}
+    - was ist [Kohlenstoffdioxid]{"entity": "greenhouse_gas", "value":"kohlendioxid"}?
+    - was ist [Kohlenstoffdioxid]{"entity": "greenhouse_gas", "value":"kohlendioxid"}
+    - was ist [co2]{"entity": "greenhouse_gas", "value":"kohlendioxid"}?
+    - was ist [co2]{"entity": "greenhouse_gas", "value":"kohlendioxid"}
+    - was sind [treibhausgas]{"entity": "greenhouse_gas", "value":"treibhausgase"}?
+    - definiere was [treibhausgase]{"entity": "greenhouse_gas", "value":"treibhausgase"} sind
+    - beschreibe was [treibhausgase]{"entity": "greenhouse_gas", "value":"treibhausgase"} sind
+    - kannst du mir erklären was [methan]{"entity": "greenhouse_gas", "value":"methan"} ist?
+    - kannst du mir erklären was [ch4]{"entity": "greenhouse_gas", "value":"methan"} ist?
+    - was bedeutet [lachgas]{"entity": "greenhouse_gas", "value":"lachgas"}?
+    - was bedeutet [n2o]{"entity": "greenhouse_gas", "value":"lachgas"}?
+    - was steckt hinter dem begriff [ch4]{"entity": "greenhouse_gas", "value":"methan"}?
+    - was steckt hinter dem begriff [co2]{"entity": "greenhouse_gas", "value":"kohlendioxid"}?
+    - was bedeutet [ch4]{"entity": "greenhouse_gas", "value":"methan"}?
+    - was bedeutet [n2o]{"entity": "greenhouse_gas", "value":"lachgas"}?
+    - Was ist die definition von [n2o]{"entity": "greenhouse_gas", "value":"lachgas"}?
+    - Was ist die definition von [n2o]{"entity": "greenhouse_gas", "value":"lachgas"}
+

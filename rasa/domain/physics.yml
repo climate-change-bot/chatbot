@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - question_what_are_greenhouse_gases
+
+entities:
+  - greenhouse_gas
+
+slots:
+  greenhouse_gas:
+    type: categorical
+    values:
+      - treibhausgase
+      - kohlendioxid
+      - methan
+      - lachgas
+    mappings:
+      - type: from_entity
+        entity: greenhouse_gas
+
+responses:
+  utter_what_is_co2:
+    - text: "[Kohlenstoffdioxid (CO2)](https://de.wikipedia.org/wiki/Kohlenstoffdioxid) ist ein Treibhausgas. 
+    Es ist ein natürlicher Bestandteil der Atmosphäre und wird durch menschliche Aktivitäten, 
+    wie den Einsatz von fossilen Brennstoffen, erhöht."
+  utter_what_is_greenhouse_gas:
+    - text: "[Treibhausgase](https://www.umweltbundesamt.de/themen/klima-energie/klimaschutz-energiepolitik-in-deutschland/treibhausgas-emissionen/die-treibhausgase) sind Gase in der Atmosphäre welche dazu 
+    beitragen, dass die Wärmeenergie der Sonne im Erdklimasystem gespeichert wird und so der Planeten wärmer wird. 
+    Einige der wichtigsten Treibhausgase sind Wasserdampf, Kohlendioxid (CO2), Methan (CH4) und Lachgas (N2O). 
+    Diese Gase können natürlicherweise in der Atmosphäre vorkommen oder durch menschliche Aktivitäten wie die 
+    Verbrennung fossiler Brennstoffe, Entwaldung und intensive Landwirtschaft in die Atmosphäre freigesetzt werden."
+  utter_what_is_methan:
+    - text: "Methan ist ein farbloses, geruchloses Gas, das als Treibhausgas eine wichtige Rolle spielt. 
+    Methan ist ein besonders starkes Treibhausgas, da es die Wärmeenergie der Sonne etwa 25-mal 
+    stärker speichert als Kohlendioxid."
+  utter_what_is_nitrous_oxide:
+    - text: "Lachgas ist ein farbloses, geruchloses Gas, das als Treibhausgas eine wichtige Rolle spielt. 
+    Lachgas ist ein besonders starkes Treibhausgas, da es die Wärmeenergie der Sonne etwa 298-mal 
+    stärker speichert als Kohlendioxid."
