@@ -1,19 +1,6 @@
 version: "3.1"
 
 nlu:
-- intent: question_what_can_i_ask
-  examples: |
-    - was kann ich fragen?
-    - was darf ich fragen?
-    - was kann ich erfahren?
-    - was kann ich erfragen?
-    - was kann ich nachfragen?
-    - welche fragen kann ich stellen?
-    - welche fragen darf ich stellen?
-    - welche fragen sind erlaubt?
-    - welche fragen stehen zur verfügung?
-    - welche informationen kann ich erhalten?
-
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?

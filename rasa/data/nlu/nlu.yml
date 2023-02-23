@@ -29,6 +29,23 @@ nlu:
     - sicher nicht
     - Ich mag das nicht
 
+- intent: question_what_can_i_ask
+  examples: |
+    - was kann ich fragen?
+    - was darf ich fragen?
+    - was kann ich erfahren?
+    - was kann ich erfragen?
+    - was kann ich nachfragen?
+    - welche fragen kann ich stellen?
+    - welche fragen darf ich stellen?
+    - welche fragen sind erlaubt?
+    - welche fragen stehen zur verfügung?
+    - welche informationen kann ich erhalten?
+    - was weisst du denn zum klimawandel?
+    - was weisst du über den klimawandel?
+    - was weisst du denn?
+    - was weisst du denn überhaupt?
+
 # questions to challenge the bot
 
 - intent: chatbot_contributes_to_climate_change

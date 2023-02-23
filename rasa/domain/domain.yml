@@ -40,7 +40,8 @@ responses:
 
   # Misc
   utter_answer_what_can_i_ask:
-    - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat."
+    - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat. Ob ich immer eine passende Antwort habe 
+    ist eine andere Geschichte :smile:"
 
   # Questions to the user
   utter_further_question:
