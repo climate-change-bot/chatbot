@@ -4,8 +4,8 @@ nlu:
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?
-    - beschreibe den Klimawandel
-    - erklär mir den Klimawandel
+    - beschreibe den klimawandel
+    - erklär mir den klimawandel
     - was ist der klimawandel genau?
     - was versteht man unter klimawandel?
     - was ist der klimawandel überhaupt?
