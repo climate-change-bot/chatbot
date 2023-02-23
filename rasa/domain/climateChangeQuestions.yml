@@ -21,34 +21,52 @@ intents:
 responses:
   # Answers to climate change
   utter_answer_what_is_climate_change:
-    - text: "Als [Klimawandel](https://de.wikipedia.org/wiki/Klimawandel) wird die Veränderung des globalen Klimas bezeichnet."
+    - text: "Der [Klimawandel](https://de.wikipedia.org/wiki/Klimawandel) bezieht sich auf die langfristige Veränderung 
+    des globalen Klimas, insbesondere auf die Erhöhung der Durchschnittstemperatur der Erde."
   utter_answer_is_the_climate_change_caused_by_humans:
-    - text: "Der Klimawandel wird mit sehr grosser Wahrscheinlichkeit vom Menschen verursacht. Das wurde mehrfach durch Untersuchungen von [unabhängigen Wissenschaftler](https://www.klimafakten.de/behauptungen/behauptung-es-gibt-noch-keinen-wissenschaftlichen-konsens-zum-klimawandel) bestätigt."
+    - text: "Der Klimawandel wird mit sehr grosser Wahrscheinlichkeit vom Menschen verursacht. Das wurde mehrfach durch 
+    Untersuchungen von [unabhängigen Wissenschaftler](https://www.klimafakten.de/behauptungen/behauptung-es-gibt-noch-keinen-wissenschaftlichen-konsens-zum-klimawandel) bestätigt."
   utter_answer_what_causes_climate_change:
-    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen zurückzuführen. Die durch den Mensch verursachten Treibhausgase spielen dabei eine treibende Rolle."
+    - text: "Die globale Klimaerwärmung der letzten 50 Jahre ist laut dem Weltklimarat IPCC eindeutig auf den Menschen 
+    zurückzuführen. Die durch den Mensch verursachten Treibhausgase spielen dabei eine treibende Rolle."
   utter_answer_is_climate_real:
-    - text: "[Der Klimawandel ist sehr real](https://www.dw.com/de/faktencheck-warum-der-klimawandel-real-ist/a-62461158). Die Auswirkungen sind bereits heute sehr gut spürbar und werden in Zukunft noch viel schlimmer werden wenn wir nichts tun."
+    - text: "[Der Klimawandel ist sehr real](https://www.dw.com/de/faktencheck-warum-der-klimawandel-real-ist/a-62461158). 
+    Die Auswirkungen sind bereits heute sehr gut spürbar und werden in Zukunft noch viel schlimmer werden wenn wir nichts tun."
   utter_answer_climate_changed_before:
-    - text: "Ja das stimmt. Das Klima hat sich schon immer verändert. Jedoch wenn sich das Klima so schnell veränderte wie im Moment, führte das in der Vergangenheit zu einem Massensterben."
+    - text: "Ja das stimmt. Das Klima hat sich schon immer verändert. Jedoch wenn sich das Klima so schnell veränderte 
+    wie im Moment, führte das in der Vergangenheit zu einem Massensterben."
   utter_answer_is_the_sun:
-    - text: "Das ist leider nicht korrekt. Die Sonneneinstrahlung ist nicht stärker geworden. Trotzdem steigen die Temperaturen."
+    - text: "Das ist leider nicht korrekt. Die Sonneneinstrahlung ist nicht stärker geworden. Trotzdem steigen die 
+    Temperaturen."
   utter_answer_its_not_bad:
-    - text: "Die negativen Folgen des Klimawandel sind gravierend und werden von den Positiven bei weitem nicht ausgeglichen."
+    - text: "Die negativen Folgen des Klimawandel sind gravierend und werden von den Positiven bei weitem nicht 
+    ausgeglichen."
   utter_answer_models_are_unreliable:
-    - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung seit 1900 nachgerechnet."
+    - text: "Kein Model ist perfekt. Jedoch haben die aktuellen Modele erfolgreich die globale Temperaturentwicklung 
+    seit 1900 nachgerechnet."
   utter_answer_temp_record_is_unreliable:
     - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
   utter_answer_can_we_stop_climate_change:
     - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
   utter_answer_activism_vs_politics:
-    - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
+    - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema 
+    aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
   utter_answer_why_does_the_politics_nothing:
-    - text: "Es gibt sicher verschieden Meinungen dazu. Ein Punkt ist sicher das es Menschen gibt die davon profitieren so wie es jetzt ist. Diese wollen nicht unbedingt das sich etwas ändert und nehmen über [Lobbing](https://taz.de/Einfluss-von-Firmen-auf-EU-Klimapolitik/!5666698/) Einfluss auf die Politiker_innen."
+    - text: "Es gibt sicher verschieden Meinungen dazu. Ein Punkt ist sicher das es Menschen gibt die davon 
+    profitieren so wie es jetzt ist. Diese wollen nicht unbedingt das sich etwas ändert und nehmen über [Lobbing](https://taz.de/Einfluss-von-Firmen-auf-EU-Klimapolitik/!5666698/) Einfluss auf die Politiker_innen."
   utter_answer_why_do_we_fly:
-    - text: "Es gibt mehrere Gründe warum Menschen weiterhin fliegen, obwohl sie sich des Klimawandels bewusst sind. Einer davon ist, dass der Flugverkehr für viele Menschen eine bequeme und schnelle Art der Fortbewegung ist, insbesondere für Geschäftsreisen und Urlaubsreisen."
+    - text: "Es gibt mehrere Gründe warum Menschen weiterhin fliegen, obwohl sie sich des Klimawandels bewusst sind. 
+    Einer davon ist, dass der Flugverkehr für viele Menschen eine bequeme und schnelle Art der Fortbewegung ist, 
+    insbesondere für Geschäftsreisen und Urlaubsreisen."
   utter_answer_why_do_we_use_the_car:
-    - text: "Das Auto ist sehr bequem und verschafft uns eine grosse Mobilität. Zudem ist es für viele ein Statussymbol. Darauf zu verzichten ist deshalb nicht immer so einfach, auch wenn es eigentlich gut fürs Klima wäre..."
+    - text: "Das Auto ist sehr bequem und verschafft uns eine grosse Mobilität. Zudem ist es für viele ein Statussymbol. 
+    Darauf zu verzichten ist deshalb nicht immer so einfach, auch wenn es eigentlich gut fürs Klima wäre..."
   utter_what_are_the_effects_on_the_economic_system:
-    - text: "Wie sich der Klimawandel genau auf die Wirtschaft auswirken wird, ist nicht einfach abschätzbar. Negative Effekte können Ernteausfälle, Flutschäden, Ausfall von Lieferketten und Einbussen bei der Arbeitsproduktivität aufgrund von hohen Temperaturen sein. Wenn dich das Thema interessiert erfährst du auf dieser [Webseite](https://www.quarks.de/umwelt/klimawandel/so-teuer-werden-die-folgen-des-klimawandels/) mehr dazu."
+    - text: "Wie sich der Klimawandel genau auf die Wirtschaft auswirken wird, ist nicht einfach abschätzbar. 
+    Negative Effekte können Ernteausfälle, Flutschäden, Ausfall von Lieferketten und Einbussen bei der 
+    Arbeitsproduktivität aufgrund von hohen Temperaturen sein. Wenn dich das Thema interessiert erfährst du auf dieser 
+    [Webseite](https://www.quarks.de/umwelt/klimawandel/so-teuer-werden-die-folgen-des-klimawandels/) mehr dazu."
   utter_what_are_the_effects_on_the_energy_supply:
-    - text: "Es ist sehr wahrscheinlich, dass die Energieversorgung in Zukunft nicht mehr ausschliesslich auf fossilen Brennstoffen basieren wird. Die Energieversorgung wird sich vermutlich auf erneuerbare Energien wie Sonne, Wind und Wasser konzentrieren."
+    - text: "Es ist sehr wahrscheinlich, dass die Energieversorgung in Zukunft nicht mehr ausschliesslich auf 
+    fossilen Brennstoffen basieren wird. Die Energieversorgung wird sich vermutlich auf erneuerbare Energien wie 
+    Sonne, Wind und Wasser konzentrieren."

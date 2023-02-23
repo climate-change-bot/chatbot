@@ -20,6 +20,7 @@ nlu:
     - was sind möglichkeiten, um meinen co2-fußabdruck zu reduzieren?
     - was können wir dagegen tun?
     - was kann ich persönlich tun um etwas gegen den Klimawandel zu machen?
+    - wie können wir als individuen unseren teil dazu beitragen, den klimawandel zu bekämpfen?
 
 - intent: what_can_i_do_tipps_topic
   examples: |
