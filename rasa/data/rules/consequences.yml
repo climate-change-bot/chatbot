@@ -1,0 +1,64 @@
+version: "3.1"
+
+rules:
+- rule: What are the consequences of climate change
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+    - action: utter_what_are_the_consequences_of_climate_change
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for food
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: nahrungsmittel
+    - action: utter_what_are_the_consequences_of_climate_change_for_food
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for economy
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: wirtschaft
+    - action: utter_what_are_the_consequences_of_climate_change_for_economy
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for the animals
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: tier
+    - action: utter_what_are_the_consequences_of_climate_change_for_animals
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for the health
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: gesundheit
+    - action: utter_what_are_the_consequences_of_climate_change_for_health
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for the sea level
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: meeresspiegel
+    - action: utter_what_are_the_consequences_of_climate_change_for_sea_level
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change for the arctics
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: arktis
+    - action: utter_what_are_the_consequences_of_climate_change_for_arctics
+    - action: utter_further_question
+
+- rule: What are the consequences of climate change on the energy supply
+  steps:
+    - intent: question_what_are_the_consequences_of_climate_change
+      entities:
+        - consequence_category: energie
+    - action: utter_what_are_the_consequences_on_the_energy_supply
+    - action: utter_further_question

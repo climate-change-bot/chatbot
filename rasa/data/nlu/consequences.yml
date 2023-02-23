@@ -1,0 +1,28 @@
+version: "3.1"
+
+nlu:
+  - intent: question_what_are_the_consequences_of_climate_change
+    examples: |
+      - was sind die folgen des klimawandels?
+      - was sind die langfristigen auswirkungen des klimawandels?
+      - was sind die folgen des klimawandels für die [nahrungsmittel]{"entity": "consequence_category", "value":"nahrungsmittel"} produktion?
+      - welche folgen hat der klimawandel?
+      - welche folgen hat der klimawandel für die [landwirtschaft]{"entity": "consequence_category", "value":"nahrungsmittel"}?
+      - welche folgen hat der klimawandel für die produktion von [essen]{"entity": "consequence_category", "value":"nahrungsmittel"}
+      - welche folgen hat der klimawandel für die produktion von [nahrung]{"entity": "consequence_category", "value":"nahrungsmittel"}
+      - welche auswirkung hat der klimawandel?
+      - welche auswirkung hat der klimawandel auf die [energieversorgung]{"entity": "consequence_category", "value":"energie"}?
+      - welche auswirkung hat der klimawandel auf die [energie]{"entity": "consequence_category", "value":"energie"}
+      - welche auswirkung hat der klimawandel auf die [wirtschaft]{"entity": "consequence_category", "value":"wirtschaft"}
+      - welche [wirtschaftlichen]{"entity": "consequence_category", "value":"wirtschaft"} folgen hat der klimawandel?
+      - wie wirkt sich der klimawandel aus?
+      - wie wird der klimawandel die [wirtschaft]{"entity": "consequence_category", "value":"wirtschaft"} beeinflussen?
+      - wie wird der klimawandel die [energieinfrastruktur]{"entity": "consequence_category", "value":"energie"} beeinflussen?
+      - wie beeinflusst der klimawandel die [wirtschaft]{"entity": "consequence_category", "value":"wirtschaft"}?
+      - inwiefern beeinflusst der klimawandel die [wirtschaft]{"entity": "consequence_category", "value":"wirtschaft"}
+      - wie wirkt sich der klimawandel auf die [tiere]{"entity": "consequence_category", "value":"tier"} aus?
+      - welche folgen hat der klimawandel für die [gesundheit]{"entity": "consequence_category", "value":"gesundheit"} aus?
+      - welche auswirkungen hat der klimawandel auf den [meeresspiegel]{"entity": "consequence_category", "value":"meeresspiegel"}
+      - welche auswirkungen hat der klimawandel auf den [meerespiegel]{"entity": "consequence_category", "value":"meeresspiegel"}
+      - was sind die folgen des klimawandels für die [arktis]{"entity": "consequence_category", "value":"arktis"}?
+      - was sind die folgen des klimawandels für die [antarktis]{"entity": "consequence_category", "value":"arktis"}

@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - question_what_are_the_consequences_of_climate_change
+
+entities:
+  - consequence_category
+
+slots:
+  consequence_category:
+    type: categorical
+    values:
+      - nahrungsmittel
+      - wirtschaft
+      - tier
+      - gesundheit
+      - meeresspiegel
+      - arktis
+      - energie
+    mappings:
+      - type: from_entity
+        entity: consequence_category
+
+responses:
+  utter_what_are_the_consequences_of_climate_change:
+    - text: "Die direkten globalen Konsequenzen des Klimawandels sind unter anderem steigende Meeresspiegel, Zunahme von
+    Starkniederschlägen (Starkregen und Hagel), Zuname von Trockenheit und Dürre. Das führt zu Hunger- und Wasserkrisen,
+    insbesondere in Entwicklungsländer, existenzbedrohung durch Überschwemmungen und Waldbrände, Gesundheitsrisiken 
+    durch Zunahme der Häufigkeit und Intensität von Hitzeextremen und noch vielem mehr. "
+  utter_what_are_the_consequences_of_climate_change_for_food:
+    - text: "Durch die Zunahme von extremen Wetterbedingungen wie Trockenheit, Dürre und Überschwemmungen wird die 
+    globale Lebensmittelproduktion sehr wahrscheinlich sinken. Dabei ist das Risiko aber nicht gleich verteilt. 
+    Zum Beispiel wurde Westafrika als Hotspot im Hinblick auf negative Auswirkungen auf Ernteerträge und 
+    Lebensmittelproduktion identifiziert. Einen ausführliche Beschreibung dazu findest du auf dieser 
+    [Webseite](https://www.oxfam.de/blog/klimawandel-gefaehrdet-lebensmittelproduktion-tun)."
+  utter_what_are_the_consequences_of_climate_change_for_animals:
+    - text: "Nicht alle Tierarten sind gleich vom Klimawandel betroffen. Anpassungsfähige Arten können mit den 
+    Veränderungen umgehen. Eine [Studie des WWF](https://www.wwf.de/fileadmin/fm-wwf/Publikationen-PDF/WWF-Report-Artenschutz-in-Zeiten-des-Klimawandels.pdf) 
+    geht davon aus, das bei einer globalen Erhöhung der Temperatur um 2 Grad etwa 25% der Arten aussterben werden."
+  utter_what_are_the_consequences_of_climate_change_for_health:
+    - text: "Hohe Temperaturen bergen für Menschen ein [hohes Schädigungspotenzial](https://www.umweltbundesamt.de/daten/umwelt-gesundheit/gesundheitsrisiken-durch-hitze#indikatoren-der-lufttemperatur-heisse-tage-und-tropennachte). 
+    Vor allem für Menschen mit chronischen Vorerkrankungen und ältere Menschen. Durch den Klimawandel wird es vermehrt 
+    Perioden mit hohen Temperaturen geben."
+  utter_what_are_the_consequences_of_climate_change_for_sea_level:
+    - text: "Durch das Abschmelzen der Gletscher und den Polarkappen steigt der Meeresspiegel. Bei einem Anstieg der 
+    Temperatur um 1.5 Grad wird bis zum Ende des Jahrhunderts die Höhe des Meeres um etwa 0.26 bis 0.77m ansteigen."
+  utter_what_are_the_consequences_of_climate_change_for_arctics:
+    - text: "Durch den Anstieg der Temperatur schmelzen die Polkappen. Wie sich das auswirkt wird in diesem 
+    [Artikel von Quarks.de](https://www.quarks.de/umwelt/klimawandel/das-passiert-wenn-das-meereis-der-arktis-weg-ist/) beschreiben."
+  utter_what_are_the_consequences_of_climate_change_for_economy:
+    - text: "Wie sich der Klimawandel genau auf die Wirtschaft auswirken wird, ist nicht einfach abschätzbar. 
+    Negative Effekte können Ernteausfälle, Flutschäden, Ausfall von Lieferketten und Einbussen bei der 
+    Arbeitsproduktivität aufgrund von hohen Temperaturen sein. Wenn dich das Thema interessiert erfährst du auf dieser 
+    [Webseite](https://www.quarks.de/umwelt/klimawandel/so-teuer-werden-die-folgen-des-klimawandels/) mehr dazu."
+  utter_what_are_the_consequences_on_the_energy_supply:
+    - text: "Es ist sehr wahrscheinlich, dass die Energieversorgung in Zukunft nicht mehr ausschliesslich auf 
+    fossilen Brennstoffen basieren wird. Die Energieversorgung wird sich vermutlich auf erneuerbare Energien wie 
+    Sonne, Wind und Wasser konzentrieren."
