@@ -21,6 +21,7 @@ nlu:
     - ja gerne
     - bitte ja
     - ja
+    - ja darfst du
 
 - intent: deny
   examples: |
