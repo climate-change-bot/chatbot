@@ -1,20 +1,18 @@
 version: "3.1"
 
 rules:
+- rule: What is greenhouse gas
+  steps:
+    - intent: question_what_are_greenhouse_gases
+    - action: utter_what_is_greenhouse_gas
+    - action: utter_further_question
+
 - rule: What is co2
   steps:
     - intent: question_what_are_greenhouse_gases
       entities:
         - greenhouse_gas: kohlendioxid
     - action: utter_what_is_co2
-    - action: utter_further_question
-
-- rule: What is greenhouse gas
-  steps:
-    - intent: question_what_are_greenhouse_gases
-      entities:
-        - greenhouse_gas: treibhausgase
-    - action: utter_what_is_greenhouse_gas
     - action: utter_further_question
 
 - rule: What is methan

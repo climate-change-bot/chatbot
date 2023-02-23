@@ -16,6 +16,7 @@ nlu:
     - definiere was [treibhausgase]{"entity": "greenhouse_gas", "value":"treibhausgase"} sind
     - beschreibe was [treibhausgase]{"entity": "greenhouse_gas", "value":"treibhausgase"} sind
     - kannst du mir erklären was [methan]{"entity": "greenhouse_gas", "value":"methan"} ist?
+    - kannst du mir erklären was [metan]{"entity": "greenhouse_gas", "value":"methan"} ist?
     - kannst du mir erklären was [ch4]{"entity": "greenhouse_gas", "value":"methan"} ist?
     - was bedeutet [lachgas]{"entity": "greenhouse_gas", "value":"lachgas"}?
     - was bedeutet [n2o]{"entity": "greenhouse_gas", "value":"lachgas"}?

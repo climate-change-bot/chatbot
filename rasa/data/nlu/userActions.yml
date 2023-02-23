@@ -24,7 +24,14 @@ nlu:
 
 - intent: what_can_i_do_tipps_topic
   examples: |
-    - Ich möchte gerne mehr über [nahrungsmittel]{"entity": "topic"} erfahren
-    - [konsum]{"entity": "topic"} bitte
-    - [haushalt]{"entity": "topic"} würde mich interessieren
-    - [mobilität]{"entity": "topic"}
+    - ich möchte gerne mehr über [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"} erfahren
+    - mehr über [nahrung]{"entity": "topic", "value":"nahrungsmittel"} bitte
+    - kannst du mir mehr über [essen]{"entity": "topic", "value":"nahrungsmittel"} erzählen?
+    - [konsum]{"entity": "topic", "value":"konsum"} bitte
+    - wie [konsumiere]{"entity": "topic", "value":"konsum"} ich umweltfreundlich?
+    - [haushalt]{"entity": "topic", "value":"haushalt"} würde mich interessieren
+    - tipps zu [mobilität]{"entity": "topic", "value":"mobilität"}
+    - [mobilität]{"entity": "topic", "value":"mobilität"}
+    - was kann ich im [haushalt]{"entity": "topic", "value":"haushalt"} tun?
+    - was kann ich zu [hause]{"entity": "topic", "value":"haushalt"} tun?
+    - was kann ich [daheim]{"entity": "topic", "value":"haushalt"} tun?
