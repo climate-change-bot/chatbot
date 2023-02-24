@@ -19,5 +19,5 @@ class ActionOpenaiFallback(Action):
     ) -> List[Dict[Text, Any]]:
         bot_message = request_to_openai(tracker.events)
 
-        dispatcher.utter_message(text=bot_message)
+        dispatcher.utter_message(json_message={"openai": True, "text": bot_message})
         return []
