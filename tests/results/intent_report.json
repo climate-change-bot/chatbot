@@ -1,0 +1,325 @@
+{
+  "chitchat_you_repeat_your_self": {
+    "precision": 0.7777777777777778,
+    "recall": 0.7777777777777778,
+    "f1-score": 0.7777777777777778,
+    "support": 9,
+    "confused_with": {
+      "chitchat_you_are_boring": 2
+    }
+  },
+  "question_is_the_climate_change_caused_by_humans": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "want_to_know_more": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 6,
+    "confused_with": {
+      "chitchat_you_know_nothing": 1,
+      "what_can_i_do_tipps_topic": 1
+    }
+  },
+  "i_eat_lot_meat": {
+    "precision": 0.8695652173913043,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.851063829787234,
+    "support": 24,
+    "confused_with": {
+      "i_some_times_eat_meat": 4
+    }
+  },
+  "question_temp_record_is_unreliable": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1-score": 0.9090909090909091,
+    "support": 5,
+    "confused_with": {}
+  },
+  "question_what_can_i_do": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 18,
+    "confused_with": {
+      "question_why_is_meat_bad_for_the_climate": 1,
+      "question_effect_to_the_climate": 1
+    }
+  },
+  "question_climate_changed_before": {
+    "precision": 0.8461538461538461,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.8799999999999999,
+    "support": 12,
+    "confused_with": {
+      "question_is_the_sun": 1
+    }
+  },
+  "question_what_can_i_ask": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "chitchat_you_are_boring": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 8,
+    "confused_with": {}
+  },
+  "question_is_climate_real": {
+    "precision": 0.8333333333333334,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.8695652173913043,
+    "support": 11,
+    "confused_with": {
+      "question_what_causes_climate_change": 1
+    }
+  },
+  "question_what_are_the_consequences_of_climate_change": {
+    "precision": 0.9130434782608695,
+    "recall": 0.9130434782608695,
+    "f1-score": 0.9130434782608695,
+    "support": 23,
+    "confused_with": {
+      "question_why_is_meat_bad_for_the_climate": 1,
+      "question_what_contribution_does_diet_make_to_climate_change": 1
+    }
+  },
+  "question_can_i_eat_meat": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1-score": 0.8333333333333333,
+    "support": 5,
+    "confused_with": {}
+  },
+  "question_can_we_stop_climate_change": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "question_activism_vs_politics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "chitchat": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "what_can_i_do_tipps_topic": 1,
+      "question_why_is_meat_bad_for_the_climate": 1,
+      "chitchat_you_know_nothing": 1
+    }
+  },
+  "question_why_does_the_politics_nothing": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.9565217391304348,
+    "support": 11,
+    "confused_with": {}
+  },
+  "question_what_food_should_i_eat": {
+    "precision": 0.7692307692307693,
+    "recall": 0.7692307692307693,
+    "f1-score": 0.7692307692307693,
+    "support": 13,
+    "confused_with": {
+      "question_effect_to_the_climate": 2,
+      "question_what_contribution_does_diet_make_to_climate_change": 1
+    }
+  },
+  "question_why_do_we_use_the_car": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 8,
+    "confused_with": {}
+  },
+  "i_eat_no_meat": {
+    "precision": 0.8666666666666667,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.8666666666666667,
+    "support": 15,
+    "confused_with": {
+      "i_some_times_eat_meat": 1,
+      "question_why_does_the_politics_nothing": 1
+    }
+  },
+  "chitchat_you_know_nothing": {
+    "precision": 0.8666666666666667,
+    "recall": 0.8125,
+    "f1-score": 0.8387096774193549,
+    "support": 16,
+    "confused_with": {
+      "question_why_do_we_use_the_car": 2,
+      "chitchat_you_repeat_your_self": 1
+    }
+  },
+  "question_why_do_we_fly": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "question_what_is_climate_change": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.8333333333333334,
+    "support": 12,
+    "confused_with": {
+      "question_what_causes_climate_change": 1,
+      "chitchat_you_repeat_your_self": 1
+    }
+  },
+  "question_its_not_bad": {
+    "precision": 1.0,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.8333333333333333,
+    "support": 7,
+    "confused_with": {
+      "question_climate_changed_before": 1,
+      "question_what_are_the_consequences_of_climate_change": 1
+    }
+  },
+  "i_some_times_eat_meat": {
+    "precision": 0.7368421052631579,
+    "recall": 0.7368421052631579,
+    "f1-score": 0.7368421052631579,
+    "support": 19,
+    "confused_with": {
+      "i_eat_lot_meat": 3,
+      "i_eat_no_meat": 2
+    }
+  },
+  "question_models_are_unreliable": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "what_can_i_do_tipps_topic": {
+    "precision": 0.7142857142857143,
+    "recall": 0.45454545454545453,
+    "f1-score": 0.5555555555555556,
+    "support": 11,
+    "confused_with": {
+      "question_what_can_i_do": 3,
+      "question_can_i_eat_meat": 1
+    }
+  },
+  "greet_again": {
+    "precision": 0.875,
+    "recall": 0.875,
+    "f1-score": 0.875,
+    "support": 8,
+    "confused_with": {
+      "question_is_climate_real": 1
+    }
+  },
+  "question_what_are_greenhouse_gases": {
+    "precision": 1.0,
+    "recall": 0.8947368421052632,
+    "f1-score": 0.9444444444444444,
+    "support": 19,
+    "confused_with": {
+      "question_what_is_climate_change": 2
+    }
+  },
+  "question_why_is_meat_bad_for_the_climate": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.64,
+    "support": 13,
+    "confused_with": {
+      "question_how_much_does_meat_pollute_the_climate": 4,
+      "question_can_i_eat_meat": 1
+    }
+  },
+  "question_what_contribution_does_diet_make_to_climate_change": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 10,
+    "confused_with": {}
+  },
+  "question_is_the_sun": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9166666666666666,
+    "support": 12,
+    "confused_with": {
+      "question_climate_changed_before": 1
+    }
+  },
+  "chitchat_do_you_know_everything": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "question_effect_to_the_climate": {
+    "precision": 0.8235294117647058,
+    "recall": 0.8235294117647058,
+    "f1-score": 0.8235294117647058,
+    "support": 17,
+    "confused_with": {
+      "question_what_food_should_i_eat": 2,
+      "question_what_contribution_does_diet_make_to_climate_change": 1
+    }
+  },
+  "question_what_causes_climate_change": {
+    "precision": 0.9130434782608695,
+    "recall": 0.9130434782608695,
+    "f1-score": 0.9130434782608695,
+    "support": 23,
+    "confused_with": {
+      "question_is_climate_real": 1,
+      "question_temp_record_is_unreliable": 1
+    }
+  },
+  "question_how_much_does_meat_pollute_the_climate": {
+    "precision": 0.8260869565217391,
+    "recall": 0.95,
+    "f1-score": 0.8837209302325583,
+    "support": 20,
+    "confused_with": {
+      "question_why_is_meat_bad_for_the_climate": 1
+    }
+  },
+  "accuracy": 0.8644859813084113,
+  "macro avg": {
+    "precision": 0.8460622229294229,
+    "recall": 0.8578764920753364,
+    "f1-score": 0.8466166790872685,
+    "support": 428
+  },
+  "weighted avg": {
+    "precision": 0.858388758403996,
+    "recall": 0.8644859813084113,
+    "f1-score": 0.8577324630916494,
+    "support": 428
+  },
+  "micro avg": {
+    "precision": 0.8644859813084113,
+    "recall": 0.8644859813084113,
+    "f1-score": 0.8644859813084113,
+    "support": 428
+  }
+}

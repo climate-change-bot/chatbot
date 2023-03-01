@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "precision": 0.625,
+    "recall": 0.45454545454545453,
+    "f1-score": 0.5263157894736842,
+    "support": 11,
+    "confused_with": {
+      "consequence_category": 1
+    }
+  },
+  "meat_type": {
+    "precision": 0.9473684210526315,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.9473684210526315,
+    "support": 38,
+    "confused_with": {}
+  },
+  "greenhouse_gas": {
+    "precision": 0.8823529411764706,
+    "recall": 0.7894736842105263,
+    "f1-score": 0.8333333333333333,
+    "support": 19,
+    "confused_with": {}
+  },
+  "influence_type_on_climate": {
+    "precision": 1.0,
+    "recall": 0.8235294117647058,
+    "f1-score": 0.9032258064516129,
+    "support": 17,
+    "confused_with": {}
+  },
+  "consequence_category": {
+    "precision": 0.8,
+    "recall": 0.4444444444444444,
+    "f1-score": 0.5714285714285714,
+    "support": 18,
+    "confused_with": {
+      "topic": 2
+    }
+  },
+  "micro avg": {
+    "precision": 0.896551724137931,
+    "recall": 0.7572815533980582,
+    "f1-score": 0.8210526315789473,
+    "support": 103
+  },
+  "macro avg": {
+    "precision": 0.8509442724458204,
+    "recall": 0.6918722832035525,
+    "f1-score": 0.7563343843479666,
+    "support": 103
+  },
+  "weighted avg": {
+    "precision": 0.8838806396344946,
+    "recall": 0.7572815533980582,
+    "f1-score": 0.8083821360479182,
+    "support": 103
+  },
+  "accuracy": 0.9899227410144441
+}

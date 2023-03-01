@@ -1,0 +1,466 @@
+[
+  {
+    "text": "du bist unflexibel in deinen antworten",
+    "intent": "chitchat_you_repeat_your_self",
+    "intent_prediction": {
+      "name": "chitchat_you_are_boring",
+      "confidence": 0.5446369051933289
+    }
+  },
+  {
+    "text": "warum weisst du so wenig?",
+    "intent": "chitchat_you_know_nothing",
+    "intent_prediction": {
+      "name": "question_why_do_we_use_the_car",
+      "confidence": 0.25578078627586365
+    }
+  },
+  {
+    "text": "hund oder katze",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "what_can_i_do_tipps_topic",
+      "confidence": 0.16740067303180695
+    }
+  },
+  {
+    "text": "gibt es den klimawandel überhaupt?",
+    "intent": "question_is_climate_real",
+    "intent_prediction": {
+      "name": "question_what_causes_climate_change",
+      "confidence": 0.6274236440658569
+    }
+  },
+  {
+    "text": "ist der klimawandel nicht ein natürlicher sonnenzyklus?",
+    "intent": "question_is_the_sun",
+    "intent_prediction": {
+      "name": "question_climate_changed_before",
+      "confidence": 0.5435740351676941
+    }
+  },
+  {
+    "text": "die auswirkungen des klimawandels sind übertrieben",
+    "intent": "question_its_not_bad",
+    "intent_prediction": {
+      "name": "question_what_are_the_consequences_of_climate_change",
+      "confidence": 0.575473427772522
+    }
+  },
+  {
+    "text": "welche nahrungsmittel haben den größten positiven einfluss auf das klima?",
+    "intent": "question_effect_to_the_climate",
+    "intent_prediction": {
+      "name": "question_what_food_should_i_eat",
+      "confidence": 0.4103747010231018
+    }
+  },
+  {
+    "text": "wie groß ist die klimabelastung durch huhn?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.4825679361820221
+    }
+  },
+  {
+    "text": "fleisch kommt gelegentlich auf meinen teller",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_no_meat",
+      "confidence": 0.9744724631309509
+    }
+  },
+  {
+    "text": "nur sehr wenig fleisch kommt auf meinen teller",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_no_meat",
+      "confidence": 0.939970076084137
+    }
+  },
+  {
+    "text": "welche lebensmittel soll ich im hinblick auf den klimawandel konsumieren?",
+    "intent": "question_what_food_should_i_eat",
+    "intent_prediction": {
+      "name": "question_effect_to_the_climate",
+      "confidence": 0.3652847111225128
+    }
+  },
+  {
+    "text": "was sind meine optionen?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "question_effect_to_the_climate",
+      "confidence": 0.44434279203414917
+    }
+  },
+  {
+    "text": "ich möchte gerne mehr über nahrungsmittel erfahren",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_food_should_i_eat",
+      "confidence": 0.6191117167472839
+    }
+  },
+  {
+    "text": "kannst du mir mehr über essen erzählen?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_can_i_eat_meat",
+      "confidence": 0.24326425790786743
+    }
+  },
+  {
+    "text": "Hast du lust auf ein date?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "greet_again",
+      "confidence": 0.24582332372665405
+    }
+  },
+  {
+    "text": "warum gibt es klimawandel?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
+      "name": "question_is_climate_real",
+      "confidence": 0.337521493434906
+    }
+  },
+  {
+    "text": "der klimawandel wird oft übertrieben",
+    "intent": "question_its_not_bad",
+    "intent_prediction": {
+      "name": "question_climate_changed_before",
+      "confidence": 0.4393046200275421
+    }
+  },
+  {
+    "text": "weshalb sollte ich kein fleisch essen?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_can_i_eat_meat",
+      "confidence": 0.2568163573741913
+    }
+  },
+  {
+    "text": "in welchem masse trägt lamm zum klimaproblem bei?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.36918920278549194
+    }
+  },
+  {
+    "text": "täglich nehme ich fleisch zu mir",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.47803157567977905
+    }
+  },
+  {
+    "text": "welche nahrungsmittel empfiehlst du?",
+    "intent": "question_what_food_should_i_eat",
+    "intent_prediction": {
+      "name": "question_effect_to_the_climate",
+      "confidence": 0.6058451533317566
+    }
+  },
+  {
+    "text": "ja darfst du",
+    "intent": "want_to_know_more",
+    "intent_prediction": {
+      "name": "chitchat_you_know_nothing",
+      "confidence": 0.9814280271530151
+    }
+  },
+  {
+    "text": "Was ist die definition von n2o?",
+    "intent": "question_what_are_greenhouse_gases",
+    "intent_prediction": {
+      "name": "question_what_is_climate_change",
+      "confidence": 0.5559560656547546
+    }
+  },
+  {
+    "text": "Was ist die definition von n2o",
+    "intent": "question_what_are_greenhouse_gases",
+    "intent_prediction": {
+      "name": "question_what_is_climate_change",
+      "confidence": 0.38016343116760254
+    }
+  },
+  {
+    "text": "was kann ich zu hause tun?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.9269923567771912
+    }
+  },
+  {
+    "text": "du bringst immer die gleichen argumente",
+    "intent": "chitchat_you_repeat_your_self",
+    "intent_prediction": {
+      "name": "chitchat_you_are_boring",
+      "confidence": 0.18220214545726776
+    }
+  },
+  {
+    "text": "wie sehen die radieschen von unten aus",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "question_what_are_the_consequences_of_climate_change",
+      "confidence": 0.2818279564380646
+    }
+  },
+  {
+    "text": "ist der klimawandel nicht ein natürlicher prozess?",
+    "intent": "question_climate_changed_before",
+    "intent_prediction": {
+      "name": "question_is_the_sun",
+      "confidence": 0.26783713698387146
+    }
+  },
+  {
+    "text": "welche lebensmittel sollte ich vermeiden?",
+    "intent": "question_effect_to_the_climate",
+    "intent_prediction": {
+      "name": "question_what_food_should_i_eat",
+      "confidence": 0.5653783679008484
+    }
+  },
+  {
+    "text": "was muss ich bei meiner ernährung beachten, um den klimawandel zu verringern?",
+    "intent": "question_what_food_should_i_eat",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.39293596148490906
+    }
+  },
+  {
+    "text": "whats up",
+    "intent": "greet_again",
+    "intent_prediction": {
+      "name": "question_is_climate_real",
+      "confidence": 0.3179222345352173
+    }
+  },
+  {
+    "text": "was kann ich im haushalt tun?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.8361671566963196
+    }
+  },
+  {
+    "text": "das ist echt zeitverschwendung",
+    "intent": "chitchat_you_know_nothing",
+    "intent_prediction": {
+      "name": "question_why_do_we_use_the_car",
+      "confidence": 0.13618870079517365
+    }
+  },
+  {
+    "text": "wie ist das wetter?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.48152264952659607
+    }
+  },
+  {
+    "text": "was versteht man unter klimawandel?",
+    "intent": "question_what_is_climate_change",
+    "intent_prediction": {
+      "name": "question_what_causes_climate_change",
+      "confidence": 0.37690699100494385
+    }
+  },
+  {
+    "text": "wie wirkt sich der klimawandel aus?",
+    "intent": "question_what_are_the_consequences_of_climate_change",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.2625030279159546
+    }
+  },
+  {
+    "text": "wie wirkt sich der klimawandel auf die tiere aus?",
+    "intent": "question_what_are_the_consequences_of_climate_change",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.4060695469379425
+    }
+  },
+  {
+    "text": "was sind die klimafreundlichsten in meiner ernährung?",
+    "intent": "question_effect_to_the_climate",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.5882272720336914
+    }
+  },
+  {
+    "text": "wie beeinflusst fleisch die klimabilanz?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.7147006988525391
+    }
+  },
+  {
+    "text": "wie stark belastet lamm das klima?",
+    "intent": "question_how_much_does_meat_pollute_the_climate",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.9774159789085388
+    }
+  },
+  {
+    "text": "ich esse 4 mal pro woche fleisch",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.535632848739624
+    }
+  },
+  {
+    "text": "ich esse 3 mal pro woche fleisch",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.5920997262001038
+    }
+  },
+  {
+    "text": "ich esse oft fleisch",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.7024537920951843
+    }
+  },
+  {
+    "text": "ich möchte mehr wissen",
+    "intent": "want_to_know_more",
+    "intent_prediction": {
+      "name": "what_can_i_do_tipps_topic",
+      "confidence": 0.3316827118396759
+    }
+  },
+  {
+    "text": "wie rette ich das klima?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.6125916242599487
+    }
+  },
+  {
+    "text": "wie helfe ich dem klima?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.3148970901966095
+    }
+  },
+  {
+    "text": "wie konsumiere ich umweltfreundlich?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.2986329197883606
+    }
+  },
+  {
+    "text": "du muss noch besser werden",
+    "intent": "chitchat_you_know_nothing",
+    "intent_prediction": {
+      "name": "chitchat_you_repeat_your_self",
+      "confidence": 0.6547470092773438
+    }
+  },
+  {
+    "text": "was machst du so?",
+    "intent": "chitchat",
+    "intent_prediction": {
+      "name": "chitchat_you_know_nothing",
+      "confidence": 0.4681550860404968
+    }
+  },
+  {
+    "text": "kannst du das konzept des klimawandels beschreiben?",
+    "intent": "question_what_is_climate_change",
+    "intent_prediction": {
+      "name": "chitchat_you_repeat_your_self",
+      "confidence": 0.2449541836977005
+    }
+  },
+  {
+    "text": "weshalb steigen die temperaturen?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
+      "name": "question_temp_record_is_unreliable",
+      "confidence": 0.9249175190925598
+    }
+  },
+  {
+    "text": "wie stark trägt fleisch zur klimabelastung bei?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.5932384133338928
+    }
+  },
+  {
+    "text": "ich esse nicht täglich fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.9779727458953857
+    }
+  },
+  {
+    "text": "ich esse 2 mal pro woche fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.9908758401870728
+    }
+  },
+  {
+    "text": "2 mal die woche",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.9875782132148743
+    }
+  },
+  {
+    "text": "fleisch kommt nicht auf meinen teller",
+    "intent": "i_eat_no_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.9425429701805115
+    }
+  },
+  {
+    "text": "fleisch ist nicht teil meiner ernährung",
+    "intent": "i_eat_no_meat",
+    "intent_prediction": {
+      "name": "question_why_does_the_politics_nothing",
+      "confidence": 0.2089664787054062
+    }
+  },
+  {
+    "text": "was kann ich daheim tun?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.990247905254364
+    }
+  }
+]
