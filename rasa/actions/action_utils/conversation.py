@@ -4,7 +4,13 @@ from markdown import markdown
 
 def _get_cleaned_text(text):
     html = markdown(text)
-    return ' '.join(BeautifulSoup(html).findAll(text=True))
+    return BeautifulSoup(html, features="html.parser").get_text()
+
+
+def _get_text(event):
+    if event['text']:
+        return event['text']
+    return event['data']['custom']['text']
 
 
 def get_last_conversation(events, max_number_of_last_conversations):
@@ -13,7 +19,7 @@ def get_last_conversation(events, max_number_of_last_conversations):
     conversation = []
     for event in events_cleaned[0:max_number_of_last_conversations]:
         if event['event'] == 'user':
-            conversation.append("Benutzer: " + _get_cleaned_text(event['text']) + "\n")
+            conversation.append("Benutzer: " + _get_cleaned_text(_get_text(event)) + "\n")
         elif event['event'] == 'bot':
-            conversation.append("Chatbot: " + _get_cleaned_text(event['text']) + "\n")
+            conversation.append("Chatbot: " + _get_cleaned_text(_get_text(event)) + "\n")
     return list(reversed(conversation))
