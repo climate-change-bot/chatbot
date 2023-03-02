@@ -19,7 +19,9 @@ def get_last_conversation(events, max_number_of_last_conversations):
     conversation = []
     for event in events_cleaned[0:max_number_of_last_conversations]:
         if event['event'] == 'user':
-            conversation.append("Benutzer: " + _get_cleaned_text(_get_text(event)) + "\n")
+            content = _get_cleaned_text(_get_text(event))
+            if content != '/greet':
+                conversation.append({'role': 'user', 'content': content})
         elif event['event'] == 'bot':
-            conversation.append("Chatbot: " + _get_cleaned_text(_get_text(event)) + "\n")
+            conversation.append({'role': 'assistant', 'content': _get_cleaned_text(_get_text(event))})
     return list(reversed(conversation))

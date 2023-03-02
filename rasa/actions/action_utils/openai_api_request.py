@@ -2,27 +2,28 @@ import os
 import openai
 
 from .conversation import get_last_conversation
-from .response import clean_response
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-BASE_REQUEST = "Nächste Antwort wenn sich die letzte Antwort des Benutzer auf den Klimawandel bezieht. Andernfalls " \
-               "beantworte die Fragen nicht und antworte, dass nur Fragen zum Klimawandel beantwortet werden. " \
-               "Verwende generell eine vertraute Anrede (du), freundliche Sprache und keine Ausrufezeichen. " \
-               "Verwende nicht das Wort bekämpfen.\n"
+MODEL_INSTRUCTION = "Du bist ein freundlicher Chatbot, welcher nur Fragen zum Klimawandel beantwortet."
+
+FIRST_USER_INSTRUCTION = "Beantworte die Frage des user nur, wenn sie mit dem Klimawandel zu tun hat. " \
+                         "Ansonsten antworte das du nur Fragen zum Klimawandel beantwortest. " \
+                         "Verwende eine vertraute Anrede (du). Freundliche Sprache. Keine Ausrufezeichen. " \
+                         "Vermeide das Wort bekämpfen. Grüsse den user nicht."
 
 
 def request_to_openai(events):
-    conversation_items = get_last_conversation(events, 5)
-    text = BASE_REQUEST
-    for conversation in conversation_items:
-        text += conversation
+    messages = [{'role': 'system', 'content': MODEL_INSTRUCTION}]
+    conversation_items = get_last_conversation(events, 10)
+    messages.extend(conversation_items)
+    messages.insert(-1, {'role': 'user', 'content': FIRST_USER_INSTRUCTION})
 
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=text,
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
         max_tokens=400,
         temperature=0.7
     )
-    response_text = clean_response(response["choices"][0].text)
+    response_text = response["choices"][0]['message']['content']
     return response_text
