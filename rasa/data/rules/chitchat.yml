@@ -1,16 +1,6 @@
 version: "3.1"
 
 rules:
-- rule: Generell chitchat
-  steps:
-    - intent: chitchat
-    - action: utter_chitchat
-
-- rule: Chitchat how are you
-  steps:
-    - intent: chitchat_how_are_you
-    - action: utter_chitchat_how_are_you
-
 - rule: Chitchat you are boring
   steps:
     - intent: chitchat_you_are_boring

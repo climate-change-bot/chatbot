@@ -1,12 +1,6 @@
 version: "3.1"
 
 nlu:
-- intent: chitchat_how_are_you
-  examples: |
-    - wie geht es dir?
-    - fühlst du dich gut?
-    - alles gut?
-
 - intent: chitchat_do_you_know_everything
   examples: |
     - weisst du zu allen fragen eine antwort?
@@ -61,11 +55,3 @@ nlu:
     - warum verstehst du mich nicht?
     - du bist noch lange nicht ausgereift
     - du bist noch nicht ausgereift
-
-- intent: chitchat
-  examples: |
-    - was machst du so?
-    - wie ist das wetter?
-    - wie sehen die radieschen von unten aus
-    - hund oder katze
-    - Hast du lust auf ein date?
