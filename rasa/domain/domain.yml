@@ -46,13 +46,10 @@ responses:
   # Questions to the user
   utter_further_question:
     - text: "Hast du eine weitere Frage?"
+    - text: "Hast du weitere Fragen zum Klimawandel?"
     - text: "Was möchtest du sonst noch wissen?"
     - text: "Gibt's noch mehr das du wissen möchtest?"
     - text: "Darf ich dir noch weitere Fragen beantworten?"
-
-  utter_please_rephrase:
-    - text: "Ups, auf diese Frage habe ich noch keine Antwort. [Roger](https://www.linkedin.com/in/roger-waldvogel/) wird sich aber darum kümmern und beim deinem nächsten Besuch kann ich dir diese hoffentlich beantworten :wink:. Es hilft aber sehr, wenn du weitere Fragen stellst. So kann ich mich weiterentwickeln."
-
 
 actions:
   - action_custom_fallback
