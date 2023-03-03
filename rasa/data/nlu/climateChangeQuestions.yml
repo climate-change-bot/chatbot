@@ -4,6 +4,7 @@ nlu:
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?
+    - ich möchte wissen was der klimawandel ist
     - beschreibe den klimawandel
     - erklär mir den klimawandel
     - was ist der klimawandel genau?
@@ -59,6 +60,7 @@ nlu:
 - intent: question_is_the_climate_change_caused_by_humans
   examples: |
     - wird der klimawandel durch den menschen verursacht?
+    - verursacht der mensch den klimawandel?
     - ist der klimawandel durch den menschen verursacht?
     - ist der klimawandel menschengemacht?
     - ist der klimawandel mensch gemacht?
@@ -66,6 +68,7 @@ nlu:
     - ist der mensch der hauptverursacher des klimawandels?
     - tragen menschliche aktivitäten zum klimawandel bei?
     - haben menschen einen einfluss auf den klimawandel?
+    - welchen einfluss hat die Menschheit auf den klimawandel?
     - welche rolle spielen menschen bei der verursachung des klimawandels?
 
 - intent: question_climate_changed_before
@@ -102,8 +105,13 @@ nlu:
   examples: |
     - der klimawandel ist doch gar nicht schlimm
     - ist der klimawandel schlimm?
+    - der klimawandel ist kein problem
+    - der klimawandel wird überbewertet
+    - der klimawandel ist harmlos
+    - es gibt keinen grund, sich sorgen über den klimawandel zu machen
     - ich habe gehört das es gar nicht so schlimm sei
     - der klimawandel wird oft übertrieben
+    - der klimawandel wird übertrieben dargestellt
     - es gibt keine notwendigkeit sich über den klimawandel sorgen zu machen
     - die auswirkungen des klimawandels sind übertrieben
     - der klimawandel ist nicht so schlimm, wie die medien es darstellen
@@ -112,7 +120,12 @@ nlu:
   examples: |
     - die modelle stimmen gar nicht
     - klimamodelle sind falsch
+    - klimamodelle sind ungenau
+    - klimamodelle sind irreführend
+    - klimamodelle sind unbrauchbar
+    - klimamodelle sind nicht aussagekräftig
     - die vorhersagen der klimamodelle sind nicht zuverlässig
+    - klimamodelle haben sich als unzuverlässig erwiesen
     - die klimamodelle haben sich in der vergangenheit als falsch erwiesen
     - die klimamodelle beruhen auf ungenauen Annahmen
     - die klimamodelle sind nicht auf die Realität anwendbar
@@ -120,8 +133,13 @@ nlu:
 - intent: question_temp_record_is_unreliable
   examples: |
     - die temperature wird falsch gemessen
+    - temperaturen werden falsch gemessen
+    - die temperaturmessungen sind unzuverlässig
     - die temperaturmessungen sind nicht akkurat
+    - die temperaturmessungen sind nicht vertrauenswürdig
+    - die temperaturmessungen sind fehlerhaft
     - die temperaturmessungen sind nicht repräsentativ
+    - die temperaturmessungen sind nicht aussagekräftig
     - die messung der temperatur ist falsch
     - die messmethoden der temperaturen sind ungenau
 
