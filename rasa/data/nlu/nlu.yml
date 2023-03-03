@@ -26,6 +26,8 @@ nlu:
 - intent: deny
   examples: |
     - nein
+    - nain
+    - no
     - nop
     - sicher nicht
     - Ich mag das nicht
