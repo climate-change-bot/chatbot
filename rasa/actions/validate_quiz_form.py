@@ -4,6 +4,7 @@ import random
 from rasa_sdk.executor import CollectingDispatcher, Tracker
 from rasa_sdk.forms import FormValidationAction
 from rasa_sdk.types import DomainDict
+from rasa.shared.core.domain import Domain
 
 
 class ValidateQuizForm(FormValidationAction):
@@ -56,7 +57,8 @@ class ValidateQuizForm(FormValidationAction):
             # This hack is needed because rasa has a bug and calls the method multiple times
             if next_utter != last_utter_action and next_utter != last_utter_bot_action:
                 self._last_send_template[tracker.sender_id] = next_utter
-                dispatcher.utter_message(response=next_utter)
+                response_text = Domain.from_dict(domain).responses[next_utter][0]["text"]
+                dispatcher.utter_message(json_message={'text': response_text, 'isQuizAnswer': True})
                 if self._is_last_question(domain_slots, tracker.slots):
                     number = self._number_of_correct_answers(domain_slots, tracker.slots)
                     dispatcher.utter_message(text=f"Du hast {number} richtige Antworten")
