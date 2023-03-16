@@ -1,4 +1,5 @@
 from typing import Text, List
+import random
 
 from rasa_sdk.executor import CollectingDispatcher, Tracker
 from rasa_sdk.forms import FormValidationAction
@@ -7,6 +8,7 @@ from rasa_sdk.types import DomainDict
 
 class ValidateQuizForm(FormValidationAction):
     _last_send_template = {}
+    _mixed_slots = {}
 
     def name(self) -> Text:
         return "validate_quiz_form"
@@ -58,5 +60,10 @@ class ValidateQuizForm(FormValidationAction):
                 if self._is_last_question(domain_slots, tracker.slots):
                     number = self._number_of_correct_answers(domain_slots, tracker.slots)
                     dispatcher.utter_message(text=f"Du hast {number} richtige Antworten")
+        else:
+            self._mixed_slots[tracker.sender_id] = domain_slots.copy()
+            random.shuffle(self._mixed_slots[tracker.sender_id])
 
+        if tracker.sender_id in self._mixed_slots:
+            return self._mixed_slots[tracker.sender_id]
         return domain_slots
