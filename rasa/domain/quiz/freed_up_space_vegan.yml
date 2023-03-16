@@ -1,0 +1,33 @@
+version: "3.1"
+
+entities:
+  - freed_up_space_vegan
+
+slots:
+  freed_up_space_vegan:
+    type: categorical
+    values:
+      - true_africa
+      - switzerland
+      - germany
+    mappings:
+      - type: from_entity
+        entity: freed_up_space_vegan
+
+responses:
+  utter_ask_quiz_form_freed_up_space_vegan:
+    - text: "Wie gross wäre die Fläche, welche nicht mehr Landwirtschaftlich genutzt werden müsste, wenn sich alle 
+    Menschen vegan ernähren würden?"
+      buttons:
+        - title: "Schweiz"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"switzerland"}}'
+        - title: "Deutschland"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"germany"}}'
+        - title: "Afrika"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"true_africa"}}'
+  utter_quiz_freed_up_space_vegan_true_africa:
+    - text: "Afrika ist richtig"
+  utter_quiz_freed_up_space_vegan_switzerland:
+    - text: "Schweiz ist falsch"
+  utter_quiz_freed_up_space_vegan_germany:
+    - text: "Deutschland ist falsch"

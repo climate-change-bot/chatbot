@@ -1,0 +1,22 @@
+version: "3.1"
+
+intents:
+  - start_quiz
+  - quiz_answer
+
+actions:
+  - validate_quiz_form
+
+forms:
+  quiz_form:
+    required_slots:
+      - highest_co2_emissions
+      - difference_weather_climate
+      - gas_with_the_most_influence
+      - freed_up_space_vegan
+      # - Welches Nahrungsmittel für den Menschen verursacht am meisten Treibhausgas-Emissionen?
+      # - Wer hat den pro Kopf C02 Ausstoss erfunden?
+      # - Was ist der Rebound-Effekt?
+      # - Was passiert mit dem Meeresspiegel, wenn die globale Durchschnittstemperatur weiter steigt?
+      # - Was sind Permafrost-Böden?
+      # - Wie lange kann Kohlendioxid in der Atmosphäre verbleiben?

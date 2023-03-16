@@ -1,0 +1,37 @@
+version: "3.1"
+
+entities:
+  - highest_co2_emissions
+
+slots:
+  highest_co2_emissions:
+    type: categorical
+    values:
+      - china
+      - true_america
+      - canada
+      - germany
+    mappings:
+      - type: from_entity
+        entity: highest_co2_emissions
+
+responses:
+  utter_ask_quiz_form_highest_co2_emissions:
+    - text: "Welches Land hat den höchsten CO2 Ausstoss pro Kopf?"
+      buttons:
+        - title: "China"
+          payload: '/quiz_answer{{"highest_co2_emissions":"china"}}'
+        - title: "Amerika"
+          payload: '/quiz_answer{{"highest_co2_emissions":"true_america"}}'
+        - title: "Kanada"
+          payload: '/quiz_answer{{"highest_co2_emissions":"canada"}}'
+        - title: "Deutschland"
+          payload: '/quiz_answer{{"highest_co2_emissions":"germany"}}'
+  utter_quiz_highest_co2_emissions_china:
+    - text: "China ist falsch"
+  utter_quiz_highest_co2_emissions_true_america:
+    - text: "Amerika ist richtig"
+  utter_quiz_highest_co2_emissions_canada:
+    - text: "Kanada ist falsch"
+  utter_quiz_highest_co2_emissions_germany:
+    - text: "Deutschland ist falsch"

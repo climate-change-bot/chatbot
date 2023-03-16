@@ -1,28 +1,9 @@
 version: "3.1"
 
-intents:
-  - start_quiz
-  - quiz_answer
-
-actions:
-  - validate_quiz_form
-
 entities:
-  - highest_co2_emissions
   - difference_weather_climate
 
 slots:
-  highest_co2_emissions:
-    type: categorical
-    values:
-      - true_china
-      - america
-      - canada
-      - germany
-    mappings:
-      - type: from_entity
-        entity: highest_co2_emissions
-
   difference_weather_climate:
     type: categorical
     values:
@@ -33,33 +14,7 @@ slots:
       - type: from_entity
         entity: difference_weather_climate
 
-forms:
-  quiz_form:
-    required_slots:
-      - highest_co2_emissions
-      - difference_weather_climate
-
 responses:
-  utter_ask_quiz_form_highest_co2_emissions:
-    - text: "Welches Land hat den höchsten CO2 Ausstoss pro Kopf?"
-      buttons:
-        - title: "China"
-          payload: '/quiz_answer{{"highest_co2_emissions":"true_china"}}'
-        - title: "Amerika"
-          payload: '/quiz_answer{{"highest_co2_emissions":"america"}}'
-        - title: "Kanada"
-          payload: '/quiz_answer{{"highest_co2_emissions":"canada"}}'
-        - title: "Deutschland"
-          payload: '/quiz_answer{{"highest_co2_emissions":"germany"}}'
-  utter_quiz_highest_co2_emissions_true_china:
-    - text: "China ist richtig"
-  utter_quiz_highest_co2_emissions_america:
-    - text: "Amerika ist falsch"
-  utter_quiz_highest_co2_emissions_canada:
-    - text: "Kanada ist falsch"
-  utter_quiz_highest_co2_emissions_germany:
-    - text: "Deutschland ist falsch"
-
   utter_ask_quiz_form_difference_weather_climate:
     - text: "Was ist der Unterschied zwischen Klimawandel und Wetter?"
       buttons:

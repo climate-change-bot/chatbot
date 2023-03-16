@@ -1,0 +1,38 @@
+version: "3.1"
+
+entities:
+  - gas_with_the_most_influence
+
+slots:
+  gas_with_the_most_influence:
+    type: categorical
+    values:
+      - true_co2
+      - methan
+      - nitrous_oxide
+      - ozone
+    mappings:
+      - type: from_entity
+        entity: gas_with_the_most_influence
+
+responses:
+  utter_ask_quiz_form_gas_with_the_most_influence:
+    - text: "Welches Treibhausgas wird vor allem für den globalen Temperaturanstieg der letzten 100 Jahre 
+    verantwortlich gemacht?"
+      buttons:
+        - title: "Methan"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"methan"}}'
+        - title: "Lachgas"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"nitrous_oxide"}}'
+        - title: "Kohlendioxid"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"true_co2"}}'
+        - title: "Ozon"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"ozone"}}'
+  utter_quiz_gas_with_the_most_influence_true_co2:
+    - text: "Kohlendioxid ist richtig"
+  utter_quiz_gas_with_the_most_influence_methan:
+    - text: "Methan ist falsch"
+  utter_quiz_gas_with_the_most_influence_nitrous_oxide:
+    - text: "Lachgas ist falsch"
+  utter_quiz_gas_with_the_most_influence_ozone:
+    - text: "Ozon ist falsch"
