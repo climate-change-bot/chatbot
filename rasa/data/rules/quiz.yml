@@ -1,0 +1,16 @@
+version: "3.1"
+
+rules:
+- rule: start quiz
+  steps:
+  - intent: start_quiz
+  - action: quiz_form
+  - active_loop: quiz_form
+
+- rule: reset slots when quiz has ended
+  condition:
+    - active_loop: quiz_form
+  steps:
+    - action: quiz_form
+    - active_loop: null
+    - action: action_reset_slots

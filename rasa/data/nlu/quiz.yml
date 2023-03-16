@@ -1,0 +1,9 @@
+version: "3.1"
+
+nlu:
+- intent: start_quiz
+  examples: |
+    - ich möchte ein quiz machen
+    - starte das quiz
+    - quiz bitte
+    - das quiz würde mich sehr interessieren
