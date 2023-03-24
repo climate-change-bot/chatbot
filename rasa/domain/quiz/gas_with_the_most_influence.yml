@@ -31,7 +31,7 @@ responses:
   utter_quiz_gas_with_the_most_influence_true_co2:
     - text: "**Richtig!** Kohlendioxid (CO2) ist in der Tat das hauptsächlich verantwortliche Treibhausgas für den globalen Temperaturanstieg der letzten 100 Jahre. CO2 entsteht durch Verbrennung fossiler Brennstoffe, Entwaldung und andere menschliche Aktivitäten. Es hat eine längere Verweildauer als andere Treibhausgase in der Atmosphäre, was zu einer kontinuierlichen Erwärmung der Erde führt."
   utter_quiz_gas_with_the_most_influence_methan:
-    - text: "Das ist leider falsch. Methan ist zwar auch ein sehr bedeutendes Treibhausgase, jedoch wird CO2 für den globalen Temperaturanstieg der letzten 100 Jahre verantwortlich gemacht."
+    - text: "Das ist leider falsch. Methan ist zwar auch ein sehr bedeutendes Treibhausgase, jedoch wird hauptsächlich Kohlendioxid (CO2) für den globalen Temperaturanstieg der letzten 100 Jahre verantwortlich gemacht."
   utter_quiz_gas_with_the_most_influence_nitrous_oxide:
     - text: "Das ist leider falsch. Obwohl Lachgas ein Treibhausgas ist, wird hauptsächlich Kohlendioxid (CO2) für den globalen Temperaturanstieg der vergangenen 100 Jahre verantwortlich gemacht."
   utter_quiz_gas_with_the_most_influence_ozone:
