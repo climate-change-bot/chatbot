@@ -41,6 +41,19 @@ class ValidateQuizForm(FormValidationAction):
                 correct_answers += 1
         return correct_answers
 
+    @staticmethod
+    def _send_quiz_end_message(number, dispatcher):
+        end_message = "Falls du noch Fragen zum Klimawandel hast, beantworte ich dir diese gerne."
+        if number == 8:
+            dispatcher.utter_message(text=f"Wow, du hast alle Fragen richtig beantwortet! Herzliche Gratulation! "
+                                          f"{end_message}")
+        elif number > 4:
+            dispatcher.utter_message(text=f"Sehr gut, du hast {number} von 8 Fragen richtig beantwortet. {end_message}")
+        else:
+            dispatcher.utter_message(text=f"Du hast {number} von 8 Fragen richtig beantwortet. Falls du möchtest, "
+                                          f"kannst du das Quiz auch noch einmal wiederholen, oder du stellst mir Fragen"
+                                          f"zu den Punkten, welche dir noch unklar sind.")
+
     async def required_slots(
             self,
             domain_slots: List[Text],
@@ -61,7 +74,7 @@ class ValidateQuizForm(FormValidationAction):
                 dispatcher.utter_message(json_message={'text': response_text, 'isQuizAnswer': True})
                 if self._is_last_question(domain_slots, tracker.slots):
                     number = self._number_of_correct_answers(domain_slots, tracker.slots)
-                    dispatcher.utter_message(text=f"Du hast {number} richtige Antworten")
+                    self._send_quiz_end_message(number, dispatcher)
         else:
             self._mixed_slots[tracker.sender_id] = domain_slots.copy()
             random.shuffle(self._mixed_slots[tracker.sender_id])
