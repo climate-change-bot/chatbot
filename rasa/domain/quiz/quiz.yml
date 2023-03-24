@@ -21,3 +21,7 @@ forms:
 
       # - Was sind Permafrost-Böden?
       # - Wie lange kann Kohlendioxid in der Atmosphäre verbleiben?
+
+responses:
+  utter_start_quiz:
+    - text: "Sehr schön, dann starten wird doch das Quiz. Ich werde dir 8 Fragen stellen um dein Wissen zu testen. Viel Spass :smile:"

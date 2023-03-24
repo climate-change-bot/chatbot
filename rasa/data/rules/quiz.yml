@@ -4,6 +4,7 @@ rules:
 - rule: start quiz
   steps:
   - intent: start_quiz
+  - action: utter_start_quiz
   - action: quiz_form
   - active_loop: quiz_form
 
