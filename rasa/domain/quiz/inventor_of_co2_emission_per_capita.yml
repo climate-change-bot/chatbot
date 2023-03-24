@@ -17,7 +17,7 @@ slots:
 
 responses:
   utter_ask_quiz_form_inventor_of_co2_emissions_per_capita:
-    - text: "Wer hat das Konzept des CO2-Ausstoßes pro Kopf entwickelt?"
+    - text: "Wer hat das Konzept des CO2-Fussabdruck entwickelt?"
       buttons:
         - title: "Britischer Mineralölkonzern (BP)"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"true_bp"}}'
@@ -28,10 +28,10 @@ responses:
         - title: "Vereinte Nationen (UNO)"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"uno"}}'
   utter_quiz_inventor_of_co2_emissions_per_capita_true_bp:
-    - text: "BP ist richtig"
+    - text: "Das ist **richtig!** Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
   utter_quiz_inventor_of_co2_emissions_per_capita_greenpeace:
-    - text: "greenpease ist falsch"
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
   utter_quiz_inventor_of_co2_emissions_per_capita_ipcc:
-    - text: "ipcc ist falsch"
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
   utter_quiz_inventor_of_co2_emissions_per_capita_uno:
-    - text: "Uno ist falsch"
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."

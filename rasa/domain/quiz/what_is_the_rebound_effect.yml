@@ -28,10 +28,10 @@ responses:
         - title: "Rückgang der Treibhausgasemissionen"
           payload: '/quiz_answer{{"what_is_the_rebound_effect":"less_greenhouse_gases"}}'
   utter_quiz_what_is_the_rebound_effect_true_higher_energy_consumption:
-    - text: "Energieeinsparungen führen zu erhöhtem Verbrauch ist richtig"
+    - text: "**Richtig!** Dieses Phänomen tritt auf, wenn die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_better_air_quality:
-    - text: "Verbesserte Luftqualität nach Umweltschutzmassnahmen ist falsch"
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_recovery_ecological_damage:
-    - text: "Erholung von ökologischen Schäden ist falsch"
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_less_greenhouse_gases:
-    - text: "Rückgang der Treibhausgasemissionen ist falsch"
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."

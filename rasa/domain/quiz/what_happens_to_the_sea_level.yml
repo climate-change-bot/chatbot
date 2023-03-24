@@ -25,8 +25,8 @@ responses:
         - title: "Der Meeresspiegel steigt"
           payload: '/quiz_answer{{"what_happens_to_the_sea_level":"true_sea_level_rise"}}'
   utter_quiz_what_happens_to_the_sea_level_true_sea_level_rise:
-    - text: "Meeresspiegel steigt ist richtig"
+    - text: "Das ist richtig. Die Stärke des Meeresspiegelanstiegs hängt jedoch von der Zunahme der globalen Durchschnittstemperatur ab. In rund 100 Jahren wird der durchschnittliche Meeresspiegel voraussichtlich etwa einen Meter höher liegen als heute."
   utter_quiz_what_happens_to_the_sea_level_lower_sea_level:
-    - text: "Meeresspiegel sinkt ist falsch"
+    - text: "Das ist nicht korrekt. Der Meeresspiegel steigt an wenn sich die Temperaturen erhöhen."
   utter_quiz_what_happens_to_the_sea_level_same_sea_level:
-    - text: "Meeresspiegel verändert sich nicht ist falsch"
+    - text: "Das ist nicht korrekt. Der Meeresspiegel steigt an wenn sich die Temperaturen erhöhen."

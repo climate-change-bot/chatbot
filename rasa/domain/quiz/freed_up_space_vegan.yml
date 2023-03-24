@@ -26,8 +26,8 @@ responses:
         - title: "Afrika"
           payload: '/quiz_answer{{"freed_up_space_vegan":"true_africa"}}'
   utter_quiz_freed_up_space_vegan_true_africa:
-    - text: "Afrika ist richtig"
+    - text: "Afrika ist **richtig!**. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."
   utter_quiz_freed_up_space_vegan_switzerland:
-    - text: "Schweiz ist falsch"
+    - text: "Das ist leider falsch. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."
   utter_quiz_freed_up_space_vegan_germany:
-    - text: "Deutschland ist falsch"
+    - text: "Das ist leider falsch. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."
