@@ -1,0 +1,32 @@
+version: "3.1"
+
+entities:
+  - what_happens_to_the_sea_level
+
+slots:
+  what_happens_to_the_sea_level:
+    type: categorical
+    values:
+      - true_sea_level_rise
+      - same_sea_level
+      - lower_sea_level
+    mappings:
+      - type: from_entity
+        entity: what_happens_to_the_sea_level
+
+responses:
+  utter_ask_quiz_form_what_happens_to_the_sea_level:
+    - text: "Was passiert mit dem Meeresspiegel, wenn die globale Durchschnittstemperatur weiter steigt?"
+      buttons:
+        - title: "Der Meeresspiegel verändert sich nicht"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"same_sea_level"}}'
+        - title: "Der Meeresspiegel sinkt"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"lower_sea_level"}}'
+        - title: "Der Meeresspiegel steigt"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"true_sea_level_rise"}}'
+  utter_quiz_what_happens_to_the_sea_level_true_sea_level_rise:
+    - text: "Meeresspiegel steigt ist richtig"
+  utter_quiz_what_happens_to_the_sea_level_lower_sea_level:
+    - text: "Meeresspiegel sinkt ist falsch"
+  utter_quiz_what_happens_to_the_sea_level_same_sea_level:
+    - text: "Meeresspiegel verändert sich nicht ist falsch"

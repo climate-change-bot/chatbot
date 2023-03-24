@@ -1,0 +1,37 @@
+version: "3.1"
+
+entities:
+  - food_causing_most_greenhouse_gas
+
+slots:
+  food_causing_most_greenhouse_gas:
+    type: categorical
+    values:
+      - true_beef
+      - soya
+      - chicken
+      - potatoes
+    mappings:
+      - type: from_entity
+        entity: food_causing_most_greenhouse_gas
+
+responses:
+  utter_ask_quiz_form_food_causing_most_greenhouse_gas:
+    - text: "Welches Nahrungsmittel für den Menschen verursacht am meisten Treibhausgas-Emissionen?"
+      buttons:
+        - title: "Soja"
+          payload: '/quiz_answer{{"food_causing_most_greenhouse_gas":"soya"}}'
+        - title: "Huhn"
+          payload: '/quiz_answer{{"food_causing_most_greenhouse_gas":"chicken"}}'
+        - title: "Kartoffeln"
+          payload: '/quiz_answer{{"food_causing_most_greenhouse_gas":"potatoes"}}'
+        - title: "Rindfleisch"
+          payload: '/quiz_answer{{"food_causing_most_greenhouse_gas":"true_beef"}}'
+  utter_quiz_food_causing_most_greenhouse_gas_true_beef:
+    - text: "Rindfleisch ist richtig"
+  utter_quiz_food_causing_most_greenhouse_gas_soya:
+    - text: "Soja ist falsch"
+  utter_quiz_food_causing_most_greenhouse_gas_chicken:
+    - text: "Huhn ist falsch"
+  utter_quiz_food_causing_most_greenhouse_gas_potatoes:
+    - text: "Kartoffeln ist falsch"

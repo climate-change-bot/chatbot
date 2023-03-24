@@ -1,0 +1,37 @@
+version: "3.1"
+
+entities:
+  - what_is_the_rebound_effect
+
+slots:
+  what_is_the_rebound_effect:
+    type: categorical
+    values:
+      - true_higher_energy_consumption
+      - better_air_quality
+      - recovery_ecological_damage
+      - less_greenhouse_gases
+    mappings:
+      - type: from_entity
+        entity: what_is_the_rebound_effect
+
+responses:
+  utter_ask_quiz_form_what_is_the_rebound_effect:
+    - text: "Was ist der Rebound-Effekt?"
+      buttons:
+        - title: "Verbesserte Luftqualität nach Umweltschutzmassnahmen"
+          payload: '/quiz_answer{{"what_is_the_rebound_effect":"better_air_quality"}}'
+        - title: "Erholung von ökologischen Schäden"
+          payload: '/quiz_answer{{"what_is_the_rebound_effect":"recovery_ecological_damage"}}'
+        - title: "Energieeinsparungen führen zu erhöhtem Verbrauch"
+          payload: '/quiz_answer{{"what_is_the_rebound_effect":"true_higher_energy_consumption"}}'
+        - title: "Rückgang der Treibhausgasemissionen"
+          payload: '/quiz_answer{{"what_is_the_rebound_effect":"less_greenhouse_gases"}}'
+  utter_quiz_what_is_the_rebound_effect_true_higher_energy_consumption:
+    - text: "Energieeinsparungen führen zu erhöhtem Verbrauch ist richtig"
+  utter_quiz_what_is_the_rebound_effect_better_air_quality:
+    - text: "Verbesserte Luftqualität nach Umweltschutzmassnahmen ist falsch"
+  utter_quiz_what_is_the_rebound_effect_recovery_ecological_damage:
+    - text: "Erholung von ökologischen Schäden ist falsch"
+  utter_quiz_what_is_the_rebound_effect_less_greenhouse_gases:
+    - text: "Rückgang der Treibhausgasemissionen ist falsch"

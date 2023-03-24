@@ -1,0 +1,37 @@
+version: "3.1"
+
+entities:
+  - inventor_of_co2_emissions_per_capita
+
+slots:
+  inventor_of_co2_emissions_per_capita:
+    type: categorical
+    values:
+      - true_bp
+      - ipcc
+      - greenpeace
+      - uno
+    mappings:
+      - type: from_entity
+        entity: inventor_of_co2_emissions_per_capita
+
+responses:
+  utter_ask_quiz_form_inventor_of_co2_emissions_per_capita:
+    - text: "Wer hat das Konzept des CO2-Ausstoßes pro Kopf entwickelt?"
+      buttons:
+        - title: "Britischer Mineralölkonzern (BP)"
+          payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"true_bp"}}'
+        - title: "Greenpeace"
+          payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"greenpeace"}}'
+        - title: "Weltklimarat (ipcc)"
+          payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"ipcc"}}'
+        - title: "Vereinte Nationen (UNO)"
+          payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"uno"}}'
+  utter_quiz_inventor_of_co2_emissions_per_capita_true_bp:
+    - text: "BP ist richtig"
+  utter_quiz_inventor_of_co2_emissions_per_capita_greenpeace:
+    - text: "greenpease ist falsch"
+  utter_quiz_inventor_of_co2_emissions_per_capita_ipcc:
+    - text: "ipcc ist falsch"
+  utter_quiz_inventor_of_co2_emissions_per_capita_uno:
+    - text: "Uno ist falsch"
