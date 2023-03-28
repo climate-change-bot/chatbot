@@ -1,4 +1,3 @@
-from abc import ABC
 from typing import List
 
 from langdetect import detect
@@ -18,7 +17,7 @@ class LanguageFilter(GraphComponent, IntentClassifier):
         if len(messages) > 0:
             message = messages[0]
             user_text = message.data['text']
-            if user_text != '/greet' and len(user_text) > 10:
+            if isinstance(user_text, str) and user_text != '/greet' and len(user_text.strip()) > 15:
                 try:
                     detected_language = detect(user_text)
                 except:
