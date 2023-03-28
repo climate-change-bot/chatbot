@@ -29,3 +29,8 @@ rules:
   steps:
     - intent: nlu_fallback
     - action: action_custom_fallback
+
+- rule: Other language then german
+  steps:
+    - intent: language_error
+    - action: utter_only_german

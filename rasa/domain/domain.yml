@@ -51,6 +51,10 @@ responses:
     - text: "Gibt's noch mehr das du wissen möchtest?"
     - text: "Darf ich dir noch weitere Fragen beantworten?"
 
+  # Only German
+  utter_only_german:
+    - text: "Leider kann ich im Moment nur auf Deutsch mit dir kommunizieren."
+
 actions:
   - action_custom_fallback
 

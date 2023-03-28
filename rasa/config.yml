@@ -29,6 +29,7 @@ pipeline:
    - name: FallbackClassifier
      threshold: 0.83
      ambiguity_threshold: 0.1
+   - name: "middleware.language_filter.LanguageFilter"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
