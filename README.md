@@ -1,4 +1,4 @@
-# RASA Chatbot Component for Climate Change Bot
+# RASA/ChatGPT Chatbot Component for Climate Change Bot
 
 [![ci](https://github.com/climate-change-bot/chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/climate-change-bot/chatbot/actions/workflows/ci.yml)
 
