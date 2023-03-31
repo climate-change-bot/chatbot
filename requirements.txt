@@ -4,4 +4,3 @@ openai~=0.27.0
 beautifulsoup4~=4.11.2
 markdown~=3.4.1
 sqlalchemy<2.0.0
-fasttext-langdetect~=1.0.5
