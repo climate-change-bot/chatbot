@@ -5,13 +5,16 @@ from .conversation import get_last_conversation, get_cleaned_chat_gpt_answer
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-MODEL_INSTRUCTION = "Beantworte ausschliesslich Fragen die mit dem Klimawandel zu tun haben."
+MODEL_INSTRUCTION = "Beantworte ausschliesslich Fragen die mit dem Klimawandel zu tun haben. " \
+                    "Versuche mit möglichst wenig Worten die Frage zu beantworten. " \
+                    "Antworte direkt auf die Frage des users ohne ihn zu begrüssen" \
+                    "Frage den User am Schluss ob er weitere Fragen zum Klimawandel hat."
 
 
 FIRST_USER_INSTRUCTION = "Beantworte die nächste Frage des users nur, wenn sie mit dem Klimawandel zu tun hat. " \
                          "Ansonsten antworte das du nur Fragen zum Klimawandel beantwortest. " \
                          "Verwende eine vertraute Anrede (du) und eine freundliche Sprache. " \
-                         "Vermeide das Wort 'bekämpfen'."
+                         "Vermeide das Wort 'bekämpfen' und antworte ohne Umschweife auf die Frage. "
 
 
 def request_to_openai(events):
