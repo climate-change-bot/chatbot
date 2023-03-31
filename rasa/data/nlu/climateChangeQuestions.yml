@@ -167,7 +167,7 @@ nlu:
     - braucht es eher aktivismus oder politik?
     - braucht es eher politik oder aktivismus?
     - politik oder aktivismus?
-    - aktivismus der politik?
+    - aktivismus oder politik?
 
 - intent: question_why_does_the_politics_nothing
   examples: |
@@ -182,27 +182,3 @@ nlu:
     - warum unternimmt die regierung so wenig gegen den klimawandel?
     - warum setzt die politik keine konkreten ziele zum klimaschutz um?
     - warum ist die politik in sachen klimaschutz so ineffektiv?
-
-- intent: question_why_do_we_fly
-  examples: |
-    - warum fliegen wir?
-    - warum fliegen wir so viel?
-    - weshalb fliegen wir so viel?
-    - weshalb verzichten wir nicht auf das fliegen?
-    - weshalb fliegen wir nicht weniger?
-    - warum benutzen wir das flugzeug so oft?
-    - warum benutzen wir das flugzeug?
-    - was ist der grund das wir so viel fliegen?
-    - was sind die gründe das wir so viel fliegen?
-
-- intent: question_why_do_we_use_the_car
-  examples: |
-    - warum benutzen wir das auto so oft?
-    - warum benutzen wir so oft das auto?
-    - warum fahren wir so viel mit dem auto?
-    - weshalb fahren wir so viel auto?
-    - weshalb verzichten wir nicht öfters auf das auto?
-    - weshalb fahren wir nicht weniger mit dem auto?
-    - warum benutzen wir das auto so oft?
-    - was ist der grund das wir so viel auto fahren?
-    - was sind die gründe das wir so viel auto fahren?
