@@ -5,7 +5,6 @@ nlu:
   examples: |
     - was kann ich tun?
     - was kann ich im alltag tun?
-    - Was tun?
     - was kann ich machen?
     - was kann ich als einzelperson tun?
     - was kann ich tun, um meinen beitrag zum klimaschutz zu leisten?
@@ -18,7 +17,6 @@ nlu:
     - was sind meine optionen?
     - wie kann ich meinen co2-fußabdruck reduzieren?
     - was sind möglichkeiten, um meinen co2-fußabdruck zu reduzieren?
-    - was können wir dagegen tun?
     - was kann ich persönlich tun um etwas gegen den Klimawandel zu machen?
     - wie können wir als individuen unseren teil dazu beitragen, den klimawandel zu bekämpfen?
 
@@ -32,6 +30,7 @@ nlu:
     - [haushalt]{"entity": "topic", "value":"haushalt"} würde mich interessieren
     - tipps zu [mobilität]{"entity": "topic", "value":"mobilität"}
     - [mobilität]{"entity": "topic", "value":"mobilität"}
+    - [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"}
     - was kann ich im [haushalt]{"entity": "topic", "value":"haushalt"} tun?
     - was kann ich zu [hause]{"entity": "topic", "value":"haushalt"} tun?
     - was kann ich [daheim]{"entity": "topic", "value":"haushalt"} tun?
