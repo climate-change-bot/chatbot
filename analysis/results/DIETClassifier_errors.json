@@ -1,46 +1,53 @@
 [
   {
-    "text": "hund oder katze",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "meat_type",
-        "start": 0,
-        "end": 4,
-        "confidence_entity": 0.9905174374580383,
-        "value": "hund",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "was sind die folgen des klimawandels für die nahrungsmittel produktion?",
+    "text": "welche nahrungsmittel haben den größten positiven einfluss auf das klima?",
     "entities": [
       {
-        "start": 45,
-        "end": 59,
-        "value": "nahrungsmittel",
-        "entity": "consequence_category"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "welche folgen hat der klimawandel für die produktion von nahrung",
-    "entities": [
-      {
-        "start": 57,
-        "end": 64,
-        "value": "nahrungsmittel",
-        "entity": "consequence_category"
+        "start": 40,
+        "end": 49,
+        "value": "positive_for_climate",
+        "entity": "influence_type_on_climate"
       }
     ],
     "predicted_entities": [
       {
         "entity": "topic",
-        "start": 57,
-        "end": 64,
-        "confidence_entity": 0.9280138611793518,
+        "start": 7,
+        "end": 21,
+        "confidence_entity": 0.7069668769836426,
+        "value": "nahrungsmittel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "was kann ich daheim tun?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "value": "haushalt",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "welche folgen hat der klimawandel für die landwirtschaft?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 56,
+        "value": "nahrungsmittel",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "consequence_category",
+        "start": 42,
+        "end": 56,
+        "confidence_entity": 0.9220935702323914,
         "value": "nahrungsmittel",
         "extractor": "DIETClassifier",
         "processors": [
@@ -48,18 +55,6 @@
         ]
       }
     ]
-  },
-  {
-    "text": "welche auswirkung hat der klimawandel auf die energie",
-    "entities": [
-      {
-        "start": 46,
-        "end": 53,
-        "value": "energie",
-        "entity": "consequence_category"
-      }
-    ],
-    "predicted_entities": []
   },
   {
     "text": "welche wirtschaftlichen folgen hat der klimawandel?",
@@ -74,35 +69,68 @@
     "predicted_entities": []
   },
   {
-    "text": "welches sind die besten lebensmittel?",
+    "text": "wie wirkt sich der klimawandel auf die tiere aus?",
     "entities": [
       {
-        "start": 17,
-        "end": 23,
-        "value": "positive_for_climate",
-        "entity": "influence_type_on_climate"
+        "start": 39,
+        "end": 44,
+        "value": "tier",
+        "entity": "consequence_category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "topic",
+        "start": 39,
+        "end": 44,
+        "confidence_entity": 0.4113909602165222,
+        "value": "tier",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "welche folgen hat der klimawandel für die gesundheit aus?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 52,
+        "value": "gesundheit",
+        "entity": "consequence_category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "topic",
+        "start": 42,
+        "end": 52,
+        "confidence_entity": 0.6751340627670288,
+        "value": "gesundheit",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "wie konsumiere ich umweltfreundlich?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "value": "konsum",
+        "entity": "topic"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "welche nahrungsmittel haben den größten positiven einfluss auf das klima?",
+    "text": "welche folgen hat der klimawandel für die produktion von essen",
     "entities": [
       {
-        "start": 40,
-        "end": 49,
-        "value": "positive_for_climate",
-        "entity": "influence_type_on_climate"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "ich möchte gerne mehr über nahrungsmittel erfahren",
-    "entities": [
-      {
-        "start": 27,
-        "end": 41,
+        "start": 57,
+        "end": 62,
         "value": "nahrungsmittel",
         "entity": "topic"
       }
@@ -110,11 +138,104 @@
     "predicted_entities": []
   },
   {
-    "text": "kannst du mir mehr über essen erzählen?",
+    "text": "welche auswirkung hat der klimawandel auf die energie",
     "entities": [
       {
-        "start": 24,
-        "end": 29,
+        "start": 46,
+        "end": 53,
+        "value": "energie",
+        "entity": "consequence_category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "topic",
+        "start": 46,
+        "end": 53,
+        "confidence_entity": 0.4678105115890503,
+        "value": "energie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "was sind die folgen des klimawandels für die antarktis",
+    "entities": [
+      {
+        "start": 45,
+        "end": 54,
+        "value": "arktis",
+        "entity": "consequence_category"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "greenhouse_gas",
+        "start": 45,
+        "end": 54,
+        "confidence_entity": 0.7441136837005615,
+        "value": "arktis",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "welche lebensmittel haben den größten negativen einfluss auf das klima?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 47,
+        "value": "negative_for_climate",
+        "entity": "influence_type_on_climate"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "welche lebensmittel tragen am meisten zum klimawandel bei?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 53,
+        "value": "negative_for_climate",
+        "entity": "influence_type_on_climate"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "konsum bitte",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "konsum",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "was kann ich zu hause tun?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "haushalt",
+        "entity": "topic"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "was sind die folgen des klimawandels für die nahrungsmittel produktion?",
+    "entities": [
+      {
+        "start": 45,
+        "end": 59,
         "value": "nahrungsmittel",
         "entity": "topic"
       }
@@ -134,40 +255,51 @@
     "predicted_entities": []
   },
   {
-    "text": "kann ich weiterhin fleisch essen?",
+    "text": "welches sind die besten lebensmittel?",
     "entities": [
       {
-        "start": 19,
-        "end": 26,
-        "value": "fleisch",
-        "entity": "meat_type"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "welche lebensmittel tragen am meisten zum klimawandel bei?",
-    "entities": [
-      {
-        "start": 42,
-        "end": 53,
-        "value": "negative_for_climate",
+        "start": 17,
+        "end": 23,
+        "value": "positive_for_climate",
         "entity": "influence_type_on_climate"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "weshalb sollte ich kein fleisch essen?",
+    "text": "welche nahrungsmittel sollte ich wegen ihrer klimaschädlichen wirkung vermeiden?",
     "entities": [
       {
-        "start": 24,
-        "end": 31,
-        "value": "fleisch",
-        "entity": "meat_type"
+        "start": 70,
+        "end": 79,
+        "value": "negative_for_climate",
+        "entity": "influence_type_on_climate"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "influence_type_on_climate",
+        "start": 45,
+        "end": 61,
+        "confidence_entity": 0.9889143109321594,
+        "value": "negative_for_climate",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "influence_type_on_climate",
+        "start": 70,
+        "end": 79,
+        "confidence_entity": 0.9949988126754761,
+        "value": "negative_for_climate",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
   },
   {
     "text": "wie viel co2 wird durch den konsum von lamm verursacht?",
@@ -184,7 +316,7 @@
         "entity": "topic",
         "start": 28,
         "end": 34,
-        "confidence_entity": 0.99273681640625,
+        "confidence_entity": 0.9935176372528076,
         "value": "konsum",
         "extractor": "DIETClassifier"
       },
@@ -192,125 +324,23 @@
         "entity": "meat_type",
         "start": 39,
         "end": 43,
-        "confidence_entity": 0.998166561126709,
+        "confidence_entity": 0.9979786276817322,
         "value": "lamm",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "welche nahrungsmittel empfiehlst du?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "consequence_category",
-        "start": 7,
-        "end": 21,
-        "confidence_entity": 0.5315172076225281,
-        "value": "nahrungsmittel",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "was ist co2",
-    "entities": [
-      {
-        "start": 8,
-        "end": 11,
-        "value": "kohlendioxid",
-        "entity": "greenhouse_gas"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "was bedeutet n2o?",
-    "entities": [
-      {
-        "start": 13,
-        "end": 16,
-        "value": "lachgas",
-        "entity": "greenhouse_gas"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Was ist die definition von n2o?",
+    "text": "ich möchte gerne mehr über nahrungsmittel erfahren",
     "entities": [
       {
         "start": 27,
-        "end": 30,
-        "value": "lachgas",
-        "entity": "greenhouse_gas"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Was ist die definition von n2o",
-    "entities": [
-      {
-        "start": 27,
-        "end": 30,
-        "value": "lachgas",
-        "entity": "greenhouse_gas"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "mehr über nahrung bitte",
-    "entities": [
-      {
-        "start": 10,
-        "end": 17,
+        "end": 41,
         "value": "nahrungsmittel",
         "entity": "topic"
       }
     ],
-    "predicted_entities": [
-      {
-        "entity": "consequence_category",
-        "start": 10,
-        "end": 17,
-        "confidence_entity": 0.9231184124946594,
-        "value": "nahrungsmittel",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "wie sehen die radieschen von unten aus",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "greenhouse_gas",
-        "start": 14,
-        "end": 24,
-        "confidence_entity": 0.8091247081756592,
-        "value": "radieschen",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "die messmethoden der temperaturen sind ungenau",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "greenhouse_gas",
-        "start": 4,
-        "end": 16,
-        "confidence_entity": 0.9851147532463074,
-        "value": "messmethoden",
-        "extractor": "DIETClassifier"
-      }
-    ]
+    "predicted_entities": []
   },
   {
     "text": "welche auswirkung hat der klimawandel auf die energieversorgung?",
@@ -325,108 +355,24 @@
     "predicted_entities": []
   },
   {
-    "text": "wie wird der klimawandel die energieinfrastruktur beeinflussen?",
+    "text": "welche lebensmittel sind besonders klimaschädlich?",
     "entities": [
       {
-        "start": 29,
+        "start": 35,
         "end": 49,
-        "value": "energie",
-        "entity": "consequence_category"
+        "value": "negative_for_climate",
+        "entity": "influence_type_on_climate"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "konsum bitte",
+    "text": "kannst du mir mehr über essen erzählen?",
     "entities": [
       {
-        "start": 0,
-        "end": 6,
-        "value": "konsum",
-        "entity": "topic"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "welche folgen hat der klimawandel für die produktion von essen",
-    "entities": [
-      {
-        "start": 57,
-        "end": 62,
+        "start": 24,
+        "end": 29,
         "value": "nahrungsmittel",
-        "entity": "consequence_category"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "topic",
-        "start": 57,
-        "end": 62,
-        "confidence_entity": 0.7850649356842041,
-        "value": "nahrungsmittel",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "wie wirkt sich der klimawandel auf die tiere aus?",
-    "entities": [
-      {
-        "start": 39,
-        "end": 44,
-        "value": "tier",
-        "entity": "consequence_category"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "meat_type",
-        "start": 39,
-        "end": 44,
-        "confidence_entity": 0.7332255840301514,
-        "value": "tier",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "was sind die folgen des klimawandels für die antarktis",
-    "entities": [
-      {
-        "start": 45,
-        "end": 54,
-        "value": "arktis",
-        "entity": "consequence_category"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "wie konsumiere ich umweltfreundlich?",
-    "entities": [
-      {
-        "start": 4,
-        "end": 14,
-        "value": "konsum",
-        "entity": "topic"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "was kann ich daheim tun?",
-    "entities": [
-      {
-        "start": 13,
-        "end": 19,
-        "value": "haushalt",
         "entity": "topic"
       }
     ],
