@@ -5,11 +5,11 @@ nlu:
     examples: |
       - was sind die folgen des klimawandels?
       - was sind die langfristigen auswirkungen des klimawandels?
-      - was sind die folgen des klimawandels für die [nahrungsmittel]{"entity": "consequence_category", "value":"nahrungsmittel"} produktion?
+      - was sind die folgen des klimawandels für die [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"} produktion?
       - welche folgen hat der klimawandel?
-      - welche folgen hat der klimawandel für die [landwirtschaft]{"entity": "consequence_category", "value":"nahrungsmittel"}?
-      - welche folgen hat der klimawandel für die produktion von [essen]{"entity": "consequence_category", "value":"nahrungsmittel"}
-      - welche folgen hat der klimawandel für die produktion von [nahrung]{"entity": "consequence_category", "value":"nahrungsmittel"}
+      - welche folgen hat der klimawandel für die [landwirtschaft]{"entity": "topic", "value":"nahrungsmittel"}?
+      - welche folgen hat der klimawandel für die produktion von [essen]{"entity": "topic", "value":"nahrungsmittel"}
+      - welche folgen hat der klimawandel für die produktion von [nahrung]{"entity": "topic", "value":"nahrungsmittel"}
       - welche auswirkung hat der klimawandel?
       - welche auswirkung hat der klimawandel auf die [energieversorgung]{"entity": "consequence_category", "value":"energie"}?
       - welche auswirkung hat der klimawandel auf die [energie]{"entity": "consequence_category", "value":"energie"}

@@ -11,7 +11,7 @@ rules:
   steps:
     - intent: question_what_are_the_consequences_of_climate_change
       entities:
-        - consequence_category: nahrungsmittel
+        - topic: nahrungsmittel
     - action: utter_what_are_the_consequences_of_climate_change_for_food
     - action: utter_further_question
 

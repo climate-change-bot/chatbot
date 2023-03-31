@@ -10,7 +10,6 @@ slots:
   consequence_category:
     type: categorical
     values:
-      - nahrungsmittel
       - wirtschaft
       - tier
       - gesundheit
