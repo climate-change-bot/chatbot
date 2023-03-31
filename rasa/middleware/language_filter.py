@@ -1,6 +1,6 @@
 from typing import List
 
-from langdetect import detect
+from ftlangdetect import detect
 
 from rasa.engine.graph import GraphComponent
 from rasa.engine.recipes.default_recipe import DefaultV1Recipe
@@ -21,8 +21,9 @@ class LanguageFilter(GraphComponent, IntentClassifier):
                 try:
                     detected_language = detect(user_text)
                 except:
-                    detected_language = "unknown"
+                    detected_language = {'lang': 'unknown'}
 
-                if detected_language != "de":
+                if detected_language['lang'] != 'de' or (
+                        detected_language['lang'] == 'de' and detected_language['score'] < 0.5):
                     message.set("intent", {"name": "language_error", "confidence": 1.0}, add_to_output=True)
         return messages
