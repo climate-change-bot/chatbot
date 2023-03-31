@@ -15,8 +15,8 @@ stories:
   steps:
     - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
-    - slot_was_set:
-        - topic: "konsum"
+      entities:
+        - topic: konsum
     - action: utter_more_about_consume_second_hand
     - action: utter_more_about_consume_question
     - checkpoint: checkpoint_what_can_i_do_consume_more_questions
@@ -40,8 +40,8 @@ stories:
   steps:
     - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
-    - slot_was_set:
-        - topic: "mobilität"
+      entities:
+        - topic: mobilität
     - action: utter_more_about_mobility_public_transportation
     - action: utter_more_about_mobility_question
     - checkpoint: checkpoint_what_can_i_do_mobility_more_questions
@@ -65,8 +65,8 @@ stories:
   steps:
     - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
-    - slot_was_set:
-        - topic: "haushalt"
+      entities:
+      - topic: haushalt
     - action: utter_more_about_household_flow_regulator
     - action: utter_more_about_household_question
     - checkpoint: checkpoint_what_can_i_do_household_more_questions
@@ -90,8 +90,8 @@ stories:
   steps:
     - checkpoint: checkpoint_what_can_i_do
     - intent: what_can_i_do_tipps_topic
-    - slot_was_set:
-        - topic: "nahrungsmittel"
+      entities:
+        - topic: nahrungsmittel
     - action: utter_more_about_food_animal_products
     - action: utter_more_about_food_question
     - checkpoint: checkpoint_what_can_i_do_food_more_questions
