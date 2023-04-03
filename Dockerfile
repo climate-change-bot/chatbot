@@ -1,4 +1,4 @@
-FROM python:3.8-slim as base
+FROM python:3.10-slim as base
 
 RUN mkdir -p /rasa
 WORKDIR /rasa
