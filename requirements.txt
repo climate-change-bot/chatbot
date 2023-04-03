@@ -1,4 +1,4 @@
-rasa~=3.4.2
+rasa~=3.5.3
 spacy~=3.4.3
 openai~=0.27.0
 beautifulsoup4~=4.11.2
