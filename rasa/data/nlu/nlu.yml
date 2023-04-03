@@ -23,15 +23,6 @@ nlu:
     - ja
     - ja darfst du
 
-- intent: deny
-  examples: |
-    - nein
-    - nain
-    - no
-    - nop
-    - sicher nicht
-    - Ich mag das nicht
-
 - intent: question_what_can_i_ask
   examples: |
     - was kann ich fragen?

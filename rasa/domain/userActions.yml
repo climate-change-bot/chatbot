@@ -13,8 +13,6 @@ responses:
     - text: "Ich habe schon mal einen [Link](https://utopia.de/galerien/klimaschutz-tipps/#3) mit einigen guten Tipps für dich."
   utter_answer_what_can_i_do_general_next_questions:
     - text: "Möchtest du noch mehr Tipps? Welches Thema (Konsum, Mobilität, Haushalt, Nahrungsmittel) interessiert dich?"
-  utter_answer_what_can_i_do_no_more_tips:
-    - text: "Alles klar :smile:. Hast du eine weitere Frage zum Klimawandel?"
 
   # What can I do answers (consume)
   utter_more_about_consume_question:
