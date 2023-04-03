@@ -1,49 +1,39 @@
-# The config recipe.
-# https://rasa.com/docs/rasa/model-configuration/
 recipe: default.v1
 
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
 language: de
 
 pipeline:
- # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-   - name: SpacyNLP
-     model: de_core_news_md
-   - name: SpacyTokenizer
-   - name: SpacyFeaturizer
-   - name: RegexFeaturizer
-   - name: LexicalSyntacticFeaturizer
-   - name: CountVectorsFeaturizer
-   - name: CountVectorsFeaturizer
-     analyzer: char_wb
-     min_ngram: 1
-     max_ngram: 4
-   - name: DIETClassifier
-     epochs: 250
-     constrain_similarities: true
-   - name: EntitySynonymMapper
-   - name: ResponseSelector
-     epochs: 100
-     constrain_similarities: true
-   - name: FallbackClassifier
-     threshold: 0.83
-     ambiguity_threshold: 0.1
+- name: SpacyNLP
+  model: de_core_news_md
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 250
+  constrain_similarities: true
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 100
+  constrain_similarities: true
+- name: FallbackClassifier
+  threshold: 0.83
+  ambiguity_threshold: 0.1
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
 policies:
-# See https://rasa.com/docs/rasa/policies for more information.
-   - name: MemoizationPolicy
-     max_history: 5
-   - name: RulePolicy
-     core_fallback_threshold: 0.4
-     core_fallback_action_name: "action_custom_fallback"
-     enable_fallback_prediction: True
-#   - name: UnexpecTEDIntentPolicy
-#     max_history: 5
-#     epochs: 100
-   - name: TEDPolicy
-     max_history: 10
-     epochs: 150
-     constrain_similarities: true
+- name: MemoizationPolicy
+  max_history: 5
+- name: RulePolicy
+  core_fallback_threshold: 0.4
+  core_fallback_action_name: action_custom_fallback
+  enable_fallback_prediction: true
+- name: TEDPolicy
+  max_history: 10
+  epochs: 150
+  constrain_similarities: true
+assistant_id: 20230403-141959-complex-infrastructure
