@@ -14,7 +14,8 @@ FIRST_USER_INSTRUCTION = "Beantworte die vorherige Nachricht des Users nur, wenn
                          "oder wenn die Nachricht im Kontext zu den vorherigen Nachrichten passt. " \
                          "Ansonsten antworte das du nur Fragen zum Klimawandel beantwortest. " \
                          "Verwende eine vertraute Anrede (du). " \
-                         "Antworte direkt auf die Frage des Users ohne ihn zu begrüssen oder zu erwähnen das die Frage gut ist. "
+                         "Antworte direkt auf die Frage des Users ohne ihn zu begrüssen oder zu erwähnen " \
+                         "das die Frage gut ist. "
 
 
 def request_to_openai(events):
