@@ -26,6 +26,7 @@ nlu:
 - intent: question_what_can_i_ask
   examples: |
     - was kann ich fragen?
+    - was kann ich dich fragen?
     - was darf ich fragen?
     - was kann ich erfahren?
     - was kann ich erfragen?
@@ -39,6 +40,19 @@ nlu:
     - was weisst du über den klimawandel?
     - was weisst du denn?
     - was weisst du denn überhaupt?
+
+- intent: question_source_of_information
+  examples: |
+    - von wo weisst du das alles?
+    - woher weist du das alles?
+    - woher hast du deine informationen?
+    - wo beziehst du deine daten her?
+    - aus welchen quellen schöpfst du dein wissen?
+    - welche ressourcen nutzt du für dein wissen?
+    - wie erfährst du die dinge, die du weisst?
+    - woher nimmst du die informationen, die du mir gibst?
+    - woher stammen deine kenntnisse?
+    - welche informationsquellen verwendest du?
 
 # questions to challenge the bot
 

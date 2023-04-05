@@ -6,6 +6,7 @@ intents:
   - want_to_know_more
   - deny
   - question_what_can_i_ask
+  - question_source_of_information
   - chatbot_contributes_to_climate_change
 
 entities:
@@ -36,12 +37,14 @@ responses:
 
   # Questions to challenge the bot
   utter_contributes_to_climate_change:
-    - text: "Leider trage ich auch ein bisschen zum Klimawandel bei. Meine [Server](https://sustainability.aboutamazon.com/environment/the-cloud?energyType=true) laufen noch nicht mit grünem Strom. Wenn ich aber bewirken kann das mehr Menschen Massnahmen zum Schutz des Klimas umsetzen, wiegt dies bei weitem meinen minimalen Stromverbrauch auf."
+    - text: "Leider trage ich auch ein bisschen zum Klimawandel bei. Meine [Server](https://sustainability.aboutamazon.com/environment/the-cloud?energyType=true) laufen noch nicht mit grünem Strom. Zudem verwendet ich noch ChatGPT. Wie hoch der Stromverbrauch für diese Komponente ist, kann ich leider nicht beurteilen. Wenn ich aber bewirken kann das mehr Menschen Massnahmen zum Schutz des Klimas umsetzen, wiegt dies bei weitem meinen Stromverbrauch auf."
 
   # Misc
   utter_answer_what_can_i_ask:
-    - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat. Ob ich immer eine passende Antwort habe 
-    ist eine andere Geschichte :smile:"
+    - text: "Du kannst mich alles Fragen was mit dem Klimawandel zu tun hat."
+
+  utter_source_of_information:
+    - text: "Das ist nicht ganz einfach zu beantworten. Ich bestehe aus zwei Komponenten. Zum einen kann ich dir vordefinierte Antworten liefern, welche von [Roger Waldvogel](https://www.linkedin.com/in/roger-waldvogel/) aus wissenschaftlich Quellen zusammen gestellt wurden. Für jede Frage wo keine vordefinierte Antwort existiert, wird die Anfrage an ChatGPT weitergeleitet. Woher ChatGPT genau seine Quellen bezieht, ist leider nicht bekannt. Gemäss ersten Analysen der Antworten, scheinen aber wissenschaftlich korrekte Quellen verwendet zu werden."
 
   # Questions to the user
   utter_further_question:
