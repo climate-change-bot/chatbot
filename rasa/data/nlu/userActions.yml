@@ -6,6 +6,7 @@ nlu:
     - was kann ich tun?
     - was kann ich im alltag tun?
     - was kann ich machen?
+    - was kann ich persönlich machen?
     - was kann ich als einzelperson tun?
     - was kann ich tun, um meinen beitrag zum klimaschutz zu leisten?
     - was kann ich als einzelperson ausrichten?
@@ -30,6 +31,7 @@ nlu:
     - [haushalt]{"entity": "topic", "value":"haushalt"} würde mich interessieren
     - tipps zu [mobilität]{"entity": "topic", "value":"mobilität"}
     - [mobilität]{"entity": "topic", "value":"mobilität"}
+    - das thema [haushalt]{"entity": "topic", "value":"haushalt"} fände ich spannend
     - [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"}
     - was kann ich im [haushalt]{"entity": "topic", "value":"haushalt"} tun?
     - was kann ich zu [hause]{"entity": "topic", "value":"haushalt"} tun?
