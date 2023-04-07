@@ -1,0 +1,32 @@
+version: "3.1"
+
+entities:
+  - freed_up_space_vegan
+
+slots:
+  freed_up_space_vegan:
+    type: categorical
+    values:
+      - true_africa
+      - switzerland
+      - germany
+    mappings:
+      - type: from_entity
+        entity: freed_up_space_vegan
+
+responses:
+  utter_ask_quiz_form_freed_up_space_vegan:
+    - text: "Wie viel landwirtschaftliche Fläche könnte eingespart werden, wenn alle Menschen sich vegan ernähren würden?"
+      buttons:
+        - title: "Schweiz"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"switzerland"}}'
+        - title: "Deutschland"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"germany"}}'
+        - title: "Afrika"
+          payload: '/quiz_answer{{"freed_up_space_vegan":"true_africa"}}'
+  utter_quiz_freed_up_space_vegan_true_africa:
+    - text: "Afrika ist **richtig!**. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."
+  utter_quiz_freed_up_space_vegan_switzerland:
+    - text: "Das ist leider falsch. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."
+  utter_quiz_freed_up_space_vegan_germany:
+    - text: "Das ist leider falsch. Wenn sich alle Menschen für eine vegane Ernährung entscheiden würden, liesse sich eine landwirtschaftliche Fläche so groß wie Afrika einsparen. Diese Fläche könnte der Natur zurückgegeben werden, wodurch eine erhebliche Menge CO2 gebunden würde. Zudem würden Wildtiere mehr Raum erhalten, was für die Erhaltung der Biodiversität von entscheidender Bedeutung ist."

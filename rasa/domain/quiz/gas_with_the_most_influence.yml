@@ -1,0 +1,38 @@
+version: "3.1"
+
+entities:
+  - gas_with_the_most_influence
+
+slots:
+  gas_with_the_most_influence:
+    type: categorical
+    values:
+      - true_co2
+      - methan
+      - nitrous_oxide
+      - ozone
+    mappings:
+      - type: from_entity
+        entity: gas_with_the_most_influence
+
+responses:
+  utter_ask_quiz_form_gas_with_the_most_influence:
+    - text: "Welches Treibhausgas wird vor allem für den globalen Temperaturanstieg der letzten 100 Jahre 
+    verantwortlich gemacht?"
+      buttons:
+        - title: "Methan"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"methan"}}'
+        - title: "Lachgas"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"nitrous_oxide"}}'
+        - title: "Kohlendioxid"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"true_co2"}}'
+        - title: "Ozon"
+          payload: '/quiz_answer{{"gas_with_the_most_influence":"ozone"}}'
+  utter_quiz_gas_with_the_most_influence_true_co2:
+    - text: "**Richtig!** Kohlendioxid (CO2) ist in der Tat das hauptsächlich verantwortliche Treibhausgas für den globalen Temperaturanstieg der letzten 100 Jahre. CO2 entsteht durch Verbrennung fossiler Brennstoffe, Entwaldung und andere menschliche Aktivitäten. Es hat eine längere Verweildauer als andere Treibhausgase in der Atmosphäre, was zu einer kontinuierlichen Erwärmung der Erde führt."
+  utter_quiz_gas_with_the_most_influence_methan:
+    - text: "Das ist leider falsch. Methan ist zwar auch ein sehr bedeutendes Treibhausgase, jedoch wird hauptsächlich Kohlendioxid (CO2) für den globalen Temperaturanstieg der letzten 100 Jahre verantwortlich gemacht."
+  utter_quiz_gas_with_the_most_influence_nitrous_oxide:
+    - text: "Das ist leider falsch. Obwohl Lachgas ein Treibhausgas ist, wird hauptsächlich Kohlendioxid (CO2) für den globalen Temperaturanstieg der vergangenen 100 Jahre verantwortlich gemacht."
+  utter_quiz_gas_with_the_most_influence_ozone:
+    - text: "Das ist leider falsch. Obwohl Ozon ein Treibhausgas ist, wird hauptsächlich Kohlendioxid (CO2) für den globalen Temperaturanstieg der vergangenen 100 Jahre verantwortlich gemacht."

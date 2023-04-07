@@ -1,0 +1,32 @@
+version: "3.1"
+
+entities:
+  - what_happens_to_the_sea_level
+
+slots:
+  what_happens_to_the_sea_level:
+    type: categorical
+    values:
+      - true_sea_level_rise
+      - same_sea_level
+      - lower_sea_level
+    mappings:
+      - type: from_entity
+        entity: what_happens_to_the_sea_level
+
+responses:
+  utter_ask_quiz_form_what_happens_to_the_sea_level:
+    - text: "Was passiert mit dem Meeresspiegel, wenn die globale Durchschnittstemperatur weiter steigt?"
+      buttons:
+        - title: "Der Meeresspiegel verändert sich nicht"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"same_sea_level"}}'
+        - title: "Der Meeresspiegel sinkt"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"lower_sea_level"}}'
+        - title: "Der Meeresspiegel steigt"
+          payload: '/quiz_answer{{"what_happens_to_the_sea_level":"true_sea_level_rise"}}'
+  utter_quiz_what_happens_to_the_sea_level_true_sea_level_rise:
+    - text: "Das ist richtig. Die Stärke des Meeresspiegelanstiegs hängt jedoch von der Zunahme der globalen Durchschnittstemperatur ab. In rund 100 Jahren wird der durchschnittliche Meeresspiegel voraussichtlich etwa einen Meter höher liegen als heute."
+  utter_quiz_what_happens_to_the_sea_level_lower_sea_level:
+    - text: "Das ist nicht korrekt. Der Meeresspiegel steigt an wenn sich die Temperaturen erhöhen."
+  utter_quiz_what_happens_to_the_sea_level_same_sea_level:
+    - text: "Das ist nicht korrekt. Der Meeresspiegel steigt an wenn sich die Temperaturen erhöhen."

@@ -1,0 +1,23 @@
+version: "3.1"
+
+nlu:
+- intent: start_quiz
+  examples: |
+    - ich möchte ein quiz machen
+    - starte das quiz
+    - starte quiz
+    - beginne mit dem quiz
+    - quiz bitte
+    - ein quiz bitte
+    - quiz los
+    - noch ein quiz
+    - ich möchte das quiz noch einmal machen
+    - das quiz würde mich sehr interessieren
+    - ich möchte mein wissen testen
+    - ich will mein wissen testen
+    - teste mein wissen
+    - teste mein wissen zum klimawandel
+    - ich hätte lust auf eine herausforderung
+    - ich würde gerne ein spiel machen
+    - ich bin bereit für eine geistige anstrengung
+    - ich würde gerne meine fähigkeiten unter beweis stellen

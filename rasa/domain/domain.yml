@@ -28,7 +28,8 @@ responses:
 
   # Greeting
   utter_welcome:
-    - text: "Herzlich Willkommen! Welche Frage zum Klimawandel hast du?"
+    - text: "Herzlich Willkommen :smile: Welche Frage zum Klimawandel hast du oder möchtest du dein Wissen zum 
+    Klimawandel mit einem Quiz testen?"
   utter_greet_again:
     - text: "Hallo :smile:"
     - text: "Servus :smile:"
@@ -60,6 +61,7 @@ responses:
 
 actions:
   - action_custom_fallback
+  - action_reset_slots
 
 session_config:
   session_expiration_time: 0

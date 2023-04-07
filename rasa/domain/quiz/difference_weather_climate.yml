@@ -1,0 +1,32 @@
+version: "3.1"
+
+entities:
+  - difference_weather_climate
+
+slots:
+  difference_weather_climate:
+    type: categorical
+    values:
+      - true_global_climate_weather_short_time
+      - climate_temperature_weather_pattern
+      - climate_is_regional
+    mappings:
+      - type: from_entity
+        entity: difference_weather_climate
+
+responses:
+  utter_ask_quiz_form_difference_weather_climate:
+    - text: "Was ist der Unterschied zwischen Klimawandel und Wetter?"
+      buttons:
+        - title: "Der Klimawandel bezieht sich auf Veränderungen in der Temperatur während das Wetter die Niederschlagsmuster beschreibt."
+          payload: '/quiz_answer{{"difference_weather_climate":"climate_temperature_weather_pattern"}}'
+        - title: "Klimawandel tritt nur in bestimmten Regionen auf während Wetter global ist."
+          payload: '/quiz_answer{{"difference_weather_climate":"climate_is_regional"}}'
+        - title: "Der Klimawandel beschreibt langfristige Veränderungen des globalen Klimas während das Wetter kurzfristige Veränderungen der atmosphärischen Bedingungen beschreibt. "
+          payload: '/quiz_answer{{"difference_weather_climate":"true_global_climate_weather_short_time"}}'
+  utter_quiz_difference_weather_climate_true_global_climate_weather_short_time:
+    - text: "**Richtig!** Das Klima bezieht sich auf den Durchschnitt von Wetterbedingungen über längere Zeiträume (mindestens 30 Jahre) hinweg, während Wetter die täglichen oder stündlichen Veränderungen im Bereich von Temperatur, Niederschlag und Wind darstellt."
+  utter_quiz_difference_weather_climate_climate_is_regional:
+    - text: "Das ist leider nicht korrekt. Der Klimawandel ist nicht regional, sondern global. Korrekt wäre gewesen, dass der Klimawandel langfristige Veränderungen beschreibt und das Wetter kurzfristige Veränderungen der atmosphärischen Bedingungen."
+  utter_quiz_difference_weather_climate_climate_temperature_weather_pattern:
+    - text: "Das ist leider nicht korrekt. Korrekt wäre gewesen, dass der Klimawandel langfristige Veränderungen beschreibt und das Wetter kurzfristige Veränderungen der atmosphärischen Bedingungen."

@@ -1,0 +1,37 @@
+version: "3.1"
+
+entities:
+  - highest_co2_emissions
+
+slots:
+  highest_co2_emissions:
+    type: categorical
+    values:
+      - china
+      - america
+      - true_katar
+      - germany
+    mappings:
+      - type: from_entity
+        entity: highest_co2_emissions
+
+responses:
+  utter_ask_quiz_form_highest_co2_emissions:
+    - text: "Welches dieser Länder hat im 2021 den höchsten CO2 Ausstoss pro Kopf?"
+      buttons:
+        - title: "China"
+          payload: '/quiz_answer{{"highest_co2_emissions":"china"}}'
+        - title: "Amerika"
+          payload: '/quiz_answer{{"highest_co2_emissions":"america"}}'
+        - title: "Katar"
+          payload: '/quiz_answer{{"highest_co2_emissions":"true_katar"}}'
+        - title: "Deutschland"
+          payload: '/quiz_answer{{"highest_co2_emissions":"germany"}}'
+  utter_quiz_highest_co2_emissions_china:
+    - text: "Das ist falsch. China verursacht zwar von allen Ländern am meisten CO2, jedoch leben dort auch sehr viele Menschen. Im Jahr 2021 verursacht China rund 8.05 Tonnen CO2 pro Kopf. Zum Vergleich: Der Spitzenreiter ist Katar mit 35.59 Tonnen CO2 pro Kopf und Amerika 14.86 Tonnen CO2 pro Kopf."
+  utter_quiz_highest_co2_emissions_america:
+    - text: "Das ist falsch. Amerika gehört zwar zu dem Spitzenreitern mit 14.86 Tonnen CO2 pro Kopf, jedoch wird es noch übertroffen von Katar mit 35.59 Tonnen CO2 pro Kopf."
+  utter_quiz_highest_co2_emissions_true_katar:
+    - text: "Das ist **richtig!** Katar ist mit 35.59 Tonnen CO2 pro Kopf der Spitzenreiter."
+  utter_quiz_highest_co2_emissions_germany:
+    - text: "Das ist falsch. Deutsch verursacht etwa 8.09 Tonnen CO2 pro Kopf, was viel weniger ist als Katar (35.59 Tonnen CO2 pro Kopf)."

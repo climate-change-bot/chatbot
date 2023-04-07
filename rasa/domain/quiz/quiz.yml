@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - start_quiz
+  - quiz_answer
+
+actions:
+  - validate_quiz_form
+
+forms:
+  quiz_form:
+    required_slots:
+      - what_is_the_rebound_effect
+      - what_happens_to_the_sea_level
+      - highest_co2_emissions
+      - difference_weather_climate
+      - gas_with_the_most_influence
+      - freed_up_space_vegan
+      - food_causing_most_greenhouse_gas
+      - inventor_of_co2_emissions_per_capita
+
+      # - Was sind Permafrost-Böden?
+      # - Wie lange kann Kohlendioxid in der Atmosphäre verbleiben?
+
+responses:
+  utter_start_quiz:
+    - text: "Sehr schön, dann starten wird doch das Quiz. Ich werde dir 8 Fragen stellen um dein Wissen zu testen. Viel Spass :smile:"
