@@ -43,16 +43,16 @@ class ValidateQuizForm(FormValidationAction):
 
     @staticmethod
     def _send_quiz_end_message(number, dispatcher):
-        end_message = "Falls du noch Fragen zum Klimawandel hast, beantworte ich dir diese gerne."
+        end_message = "Weitere Fragen zum Klimawandel beantworte ich dir sehr gerne :smile:."
         if number == 8:
             dispatcher.utter_message(text=f"Wow, du hast alle Fragen richtig beantwortet! Herzliche Gratulation! "
                                           f"{end_message}")
         elif number > 4:
             dispatcher.utter_message(text=f"Sehr gut, du hast {number} von 8 Fragen richtig beantwortet. {end_message}")
         else:
-            dispatcher.utter_message(text=f"Du hast {number} von 8 Fragen richtig beantwortet. Falls du möchtest, "
-                                          f"kannst du das Quiz auch noch einmal wiederholen, oder du stellst mir Fragen"
-                                          f"zu den Punkten, welche dir noch unklar sind.")
+            dispatcher.utter_message(text=f"Du hast {number} von 8 Fragen richtig beantwortet. Wenn du willst, "
+                                          f"kannst du das Quiz erneut machen oder mir Fragen zu Themen stellen, "
+                                          f"die dir noch unklar sind.")
 
     async def required_slots(
             self,
