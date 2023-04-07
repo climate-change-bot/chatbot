@@ -17,7 +17,7 @@ slots:
 
 responses:
   utter_ask_quiz_form_inventor_of_co2_emissions_per_capita:
-    - text: "Wer hat das Konzept des CO2-Fussabdruck entwickelt?"
+    - text: "Welche Organisation machte das Konzept des CO2-Fußabdrucks einer breiten Öffentlichkeit bekannt?"
       buttons:
         - title: "Britischer Mineralölkonzern (BP)"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"true_bp"}}'

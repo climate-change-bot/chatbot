@@ -16,8 +16,7 @@ slots:
 
 responses:
   utter_ask_quiz_form_freed_up_space_vegan:
-    - text: "Wie gross wäre die Fläche, welche nicht mehr Landwirtschaftlich genutzt werden müsste, wenn sich alle 
-    Menschen vegan ernähren würden?"
+    - text: "Wie viel landwirtschaftliche Fläche könnte eingespart werden, wenn alle Menschen sich vegan ernähren würden?"
       buttons:
         - title: "Schweiz"
           payload: '/quiz_answer{{"freed_up_space_vegan":"switzerland"}}'
