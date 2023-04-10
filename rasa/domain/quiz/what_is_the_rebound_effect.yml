@@ -23,15 +23,15 @@ responses:
           payload: '/quiz_answer{{"what_is_the_rebound_effect":"better_air_quality"}}'
         - title: "Erholung von ökologischen Schäden"
           payload: '/quiz_answer{{"what_is_the_rebound_effect":"recovery_ecological_damage"}}'
-        - title: "Energieeinsparungen führen zu erhöhtem Verbrauch"
+        - title: "Energieeffizienz führt zu erhöhtem Verbrauch"
           payload: '/quiz_answer{{"what_is_the_rebound_effect":"true_higher_energy_consumption"}}'
         - title: "Rückgang der Treibhausgasemissionen"
           payload: '/quiz_answer{{"what_is_the_rebound_effect":"less_greenhouse_gases"}}'
   utter_quiz_what_is_the_rebound_effect_true_higher_energy_consumption:
     - text: "**Richtig!** Dieses Phänomen tritt auf, wenn die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_better_air_quality:
-    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen, dass die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_recovery_ecological_damage:
-    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen, dass die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
   utter_quiz_what_is_the_rebound_effect_less_greenhouse_gases:
-    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen das die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
+    - text: "Das ist leider falsch. Der Rebound-Effekt beschreibt das Phänomen, dass die Energieeffizienz durch technologische Verbesserungen zunimmt, aber der tatsächliche Energieverbrauch paradoxerweise steigt, da die Menschen dazu neigen, die effizienteren Technologien häufiger oder intensiver zu nutzen."
