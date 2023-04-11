@@ -19,7 +19,7 @@ responses:
   utter_ask_quiz_form_inventor_of_co2_emissions_per_capita:
     - text: "Welche Organisation machte das Konzept des CO2-Fussabdrucks einer breiten Öffentlichkeit bekannt?"
       buttons:
-        - title: "Britischer Mineralölkonzern (BP)"
+        - title: "BP (ehemals British Petroleum)"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"true_bp"}}'
         - title: "Greenpeace"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"greenpeace"}}'
@@ -28,10 +28,10 @@ responses:
         - title: "Vereinte Nationen (UNO)"
           payload: '/quiz_answer{{"inventor_of_co2_emissions_per_capita":"uno"}}'
   utter_quiz_inventor_of_co2_emissions_per_capita_true_bp:
-    - text: "Das ist **richtig!** Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
+    - text: "Das ist **richtig!** Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken. Quelle: [Wie der CO2-Fussabdruck die Klima-Realität verschleiert](https://www.ardalpha.de/wissen/umwelt/nachhaltigkeit/co2-fussabdruck-carbon-footprint-shell-exxon-bp-taeuschung-klima-100.html)."
   utter_quiz_inventor_of_co2_emissions_per_capita_greenpeace:
-    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken. Quelle: [Wie der CO2-Fussabdruck die Klima-Realität verschleiert](https://www.ardalpha.de/wissen/umwelt/nachhaltigkeit/co2-fussabdruck-carbon-footprint-shell-exxon-bp-taeuschung-klima-100.html)."
   utter_quiz_inventor_of_co2_emissions_per_capita_ipcc:
-    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken. Quelle: [Wie der CO2-Fussabdruck die Klima-Realität verschleiert](https://www.ardalpha.de/wissen/umwelt/nachhaltigkeit/co2-fussabdruck-carbon-footprint-shell-exxon-bp-taeuschung-klima-100.html)."
   utter_quiz_inventor_of_co2_emissions_per_capita_uno:
-    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken."
+    - text: "Das ist nicht korrekt. Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken. Quelle: [Wie der CO2-Fussabdruck die Klima-Realität verschleiert](https://www.ardalpha.de/wissen/umwelt/nachhaltigkeit/co2-fussabdruck-carbon-footprint-shell-exxon-bp-taeuschung-klima-100.html)."
