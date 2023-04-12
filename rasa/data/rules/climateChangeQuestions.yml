@@ -72,3 +72,9 @@ rules:
     - intent: question_why_does_the_politics_nothing
     - action: utter_answer_why_does_the_politics_nothing
     - action: utter_further_question
+
+- rule: Origin of carbon foot print
+  steps:
+    - intent: question_origin_of_carbon_footprint
+    - action: utter_answer_origin_of_carbon_footprint
+    - action: utter_further_question

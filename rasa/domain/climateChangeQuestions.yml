@@ -13,6 +13,7 @@ intents:
   - question_can_we_stop_climate_change
   - question_activism_vs_politics
   - question_why_does_the_politics_nothing
+  - question_origin_of_carbon_footprint
 
 responses:
   # Answers to climate change
@@ -44,3 +45,5 @@ responses:
     - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
   utter_answer_why_does_the_politics_nothing:
     - text: "Es gibt sicher verschieden Meinungen dazu. Ein Punkt ist sicher das es Menschen gibt die davon profitieren so wie es jetzt ist. Diese wollen nicht unbedingt das sich etwas ändert und nehmen über [Lobbing](https://taz.de/Einfluss-von-Firmen-auf-EU-Klimapolitik/!5666698/) Einfluss auf die Politiker_innen."
+  utter_answer_origin_of_carbon_footprint:
+    - text: "Allgemeine Bekanntheit erreichte der Begriff *carbon footprint* durch eine 250 Millionen US-Dollar teure Werbekampagne des Öl- und Gas-Konzerns BP im Jahr 2004 als Versuch, die Wahrnehmung der Verantwortung für die globale Erwärmung von der fossilen Energiewirtschaft hin zum individuellen Verbraucher zu lenken. Quelle: [Wie der CO2-Fussabdruck die Klima-Realität verschleiert](https://www.ardalpha.de/wissen/umwelt/nachhaltigkeit/co2-fussabdruck-carbon-footprint-shell-exxon-bp-taeuschung-klima-100.html)."
