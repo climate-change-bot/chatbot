@@ -58,6 +58,17 @@ nlu:
     - woher stammen deine kenntnisse?
     - welche informationsquellen verwendest du?
 
+- intent: question_who_invented_you
+  examples: |
+    - wer hat dich erfunden?
+    - wer hat diesen chatbot entwickelt?
+    - wer hat dich entwickelt?
+    - wer hat dich erschaffen?
+    - wer hat dich programmiert?
+    - wer ist dein schöpfer?
+    - wer hat dich zum leben erweckt?
+    - von wem wurdest du entwickelt?
+
 # questions to challenge the bot
 
 - intent: chatbot_contributes_to_climate_change

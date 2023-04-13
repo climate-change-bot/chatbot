@@ -22,6 +22,11 @@ rules:
     - intent: question_source_of_information
     - action: utter_source_of_information
 
+- rule: Who invented you
+  steps:
+    - intent: question_who_invented_you
+    - action: utter_who_invented_you
+
 # Challenge chatbot
 
 - rule: Chatbot contributes to climate change

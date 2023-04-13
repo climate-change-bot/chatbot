@@ -47,6 +47,9 @@ responses:
   utter_source_of_information:
     - text: "Das ist nicht ganz einfach zu beantworten. Ich bestehe aus zwei Komponenten. Zum einen kann ich dir vordefinierte Antworten liefern, welche von [Roger Waldvogel](https://www.linkedin.com/in/roger-waldvogel/) aus wissenschaftlich Quellen zusammen gestellt wurden. Für jede Frage wo keine vordefinierte Antwort existiert, wird die Anfrage an ChatGPT weitergeleitet. Woher ChatGPT genau seine Quellen bezieht, ist leider nicht bekannt. Gemäss ersten Analysen der Antworten, scheinen aber wissenschaftlich korrekte Quellen verwendet zu werden."
 
+  utter_who_invented_you:
+    - text: "Ich werde von [Roger Waldvogel](https://www.linkedin.com/in/roger-waldvogel/) entwickelt."
+
   # Questions to the user
   utter_further_question:
     - text: "Hast du eine weitere Frage?"
