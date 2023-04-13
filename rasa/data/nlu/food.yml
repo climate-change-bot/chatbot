@@ -52,6 +52,7 @@ nlu:
 
 - intent: question_why_is_meat_bad_for_the_climate
   examples: |
+    - wieso sollten wir kein [fleisch]{"entity": "meat_type", "value": "fleisch"} mehr essen?
     - weshalb sollte ich kein [fleisch]{"entity": "meat_type", "value": "fleisch"} essen?
     - wie ist die auswirkung von [fleisch]{"entity": "meat_type", "value": "fleisch"} auf das klima?
     - wie stark trägt [fleisch]{"entity": "meat_type", "value": "fleisch"} zur klimabelastung bei?

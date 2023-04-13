@@ -4,6 +4,7 @@ nlu:
 - intent: question_what_is_climate_change
   examples: |
     - was ist der klimawandel?
+    - Was ist ein klimawandel?
     - ich möchte wissen was der klimawandel ist
     - beschreibe den klimawandel
     - erklär mir den klimawandel
@@ -20,6 +21,10 @@ nlu:
 - intent: question_is_climate_real
   examples: |
     - gibt es den klimawandel wirklich?
+    - gibt es die klimakrise wirklich?
+    - den klimawandel gibts nicht
+    - den klimawandel gibt es gar nicht
+    - gibt es den klimawandel?
     - existiert der klimawandel wirklich?
     - ist der klimawandel real?
     - ist der klimawandel eine erfindung?
@@ -34,6 +39,8 @@ nlu:
 - intent: question_what_causes_climate_change
   examples: |
     - was verursacht den klimawandel?
+    - warum verändert sich das klima?
+    - was kannst du mir über den klimawandel erzählen?
     - wer verursacht den klimawandel?
     - von wem wird der klimawandel verursacht?
     - weshalb steigen die temperaturen?
@@ -55,6 +62,8 @@ nlu:
     - welche faktoren tragen zum klimawandel bei?
     - welche konkreten treiber gibt es für den klimawandel?
     - warum gibt es klimawandel?
+    - wieso gibt es klimawandel?
+    - weshalb gibt es den klimawandel?
     - wodurch wird der klimawandel hauptsächlich verursacht?
 
 - intent: question_is_the_climate_change_caused_by_humans
