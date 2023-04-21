@@ -6,6 +6,7 @@ intents:
   - want_to_know_more
   - deny
   - question_what_can_i_ask
+  - question_who_invented_you
   - question_source_of_information
   - chatbot_contributes_to_climate_change
 
