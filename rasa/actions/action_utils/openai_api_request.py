@@ -5,10 +5,10 @@ from .conversation import get_last_conversation, get_cleaned_chat_gpt_answer
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-MODEL_INSTRUCTION = "Beantworte ausschliesslich Fragen die mit dem Klimawandel zu tun haben. " \
+MODEL_INSTRUCTION = "Beantworte die vorherige Nachricht des Users nur, wenn sie mit dem Klimawandel zu tun hat " \
+                    "oder wenn die Nachricht im Kontext zu den vorherigen Nachrichten passt. " \
                     "Versuche mit möglichst wenig Worten die Frage zu beantworten. " \
-                    "Antworte direkt auf die Frage des users." \
-                    "Frage den User am Schluss ob er weitere Fragen zum Klimawandel hat."
+                    "Antworte direkt auf die Frage des users."
 
 FIRST_USER_INSTRUCTION = "Beantworte die vorherige Nachricht des Users nur, wenn sie mit dem Klimawandel zu tun hat " \
                          "oder wenn die Nachricht im Kontext zu den vorherigen Nachrichten passt. " \
