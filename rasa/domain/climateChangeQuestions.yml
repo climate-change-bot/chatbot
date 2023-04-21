@@ -11,6 +11,7 @@ intents:
   - question_models_are_unreliable
   - question_temp_record_is_unreliable
   - question_can_we_stop_climate_change
+  - question_how_can_we_stop_climate_change
   - question_activism_vs_politics
   - question_why_does_the_politics_nothing
   - question_origin_of_carbon_footprint
@@ -41,6 +42,8 @@ responses:
     - text: "Die Temperatur wird von Thermometer und Satellite gemessen und ist sehr genau."
   utter_answer_can_we_stop_climate_change:
     - text: "Wenn wir sofort handeln haben wir noch eine Chance zumindest die Auswirkungen zu begrenzen."
+  utter_how_can_we_stop_climate_change:
+    - text: "Um den Klimawandel zu stoppen, müssen wir unsere Treibhausgasemissionen reduzieren. Dazu müssen wir beispielsweise erneuerbare Energien wie Wind- und Solarenergie fördern, den Verkehr und die Industrie dekarbonisieren und unseren Konsum nachhaltiger gestalten. Ein weitere wichtiger Punkt ist die Reduktion des Fleischkonsum. Dieser verursacht extrem viele Treibhausgase. Wenn du mehr zum Fleischkonsum wissen möchten, empfehle ich dir dieses Video von [Dinge Erklärt](https://www.youtube.com/watch?v=8eeYdcCql24)."
   utter_answer_activism_vs_politics:
     - text: "Ich denke es braucht beides. Aktivismus hilft dabei das die Öffentlichkeit mehr auf das Thema aufmerksam wird und die Politik braucht es um griffige Massnahmen umzusetzen."
   utter_answer_why_does_the_politics_nothing:

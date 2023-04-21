@@ -165,6 +165,17 @@ nlu:
     - haben wir noch eine chance den klimawandel zu verhindern?
     - kann man den klimawandel noch aufhalten bevor es zu spät ist?
 
+- intent: question_how_can_we_stop_climate_change
+  examples: |
+    - wie stoppt man den klimawandel?
+    - wie bekämpft man den klimawandel?
+    - wie können wird den klimawandel stoppen?
+    - was können wir gegen den klimawandel tun?
+    - wie können wir dem klimawandel entgegenwirken?
+    - welche massnahmen können wir ergreifen, um das klima zu schützen?
+    - was können wir tun, um den klimawandel einzudämmen?
+    - was sind unsere optionen, um den klimawandel zu bekämpfen?
+
 - intent: question_activism_vs_politics
   examples: |
     - ist aktivismus besser als politik?
