@@ -3,6 +3,7 @@ version: "3.1"
 nlu:
 - intent: question_what_can_i_do
   examples: |
+    - was tun?
     - was kann ich tun?
     - wie kann ich den klimawandel stoppen?
     - was kann ich im alltag tun?
