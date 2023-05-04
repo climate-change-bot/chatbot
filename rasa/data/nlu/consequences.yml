@@ -4,6 +4,7 @@ nlu:
   - intent: question_what_are_the_consequences_of_climate_change
     examples: |
       - was sind die folgen des klimawandels?
+      - welche auswirkungen hat der klimawandel
       - was sind die langfristigen auswirkungen des klimawandels?
       - was sind die folgen des klimawandels für die [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"} produktion?
       - welche folgen hat der klimawandel?

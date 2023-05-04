@@ -5,12 +5,19 @@ nlu:
   examples: |
     - was tun?
     - was kann ich tun?
+    - was kann ich beitragen?
     - wie kann ich den klimawandel stoppen?
+    - was kann ich tun um den klimawandel zu stoppen?
     - was kann ich im alltag tun?
     - was kann ich machen?
     - was kann ich persönlich machen?
     - was kann ich als einzelperson tun?
+    - wie kann ich am effizientesten co2 reduzieren?
+    - wie kann ich persönlich beitragen dass weniger co2 in der luft ist?
+    - wie kann ich als privatperson am meisten gegen den klimawandel beitragen?
+    - was kann mein beitrag fürs klima sein?
     - was kann ich tun, um meinen beitrag zum klimaschutz zu leisten?
+    - was kann ich persönlich tun, um den klimawandel aufzuhalten?
     - was kann ich als einzelperson ausrichten?
     - wie rette ich das klima?
     - wie helfe ich dem klima?
@@ -18,10 +25,19 @@ nlu:
     - was kann ich tun um den klimawandel zu bekämpfen?
     - wie kann ich meinen lebensstil verändern, um den klimawandel zu bekämpfen?
     - was sind meine optionen?
+    - was kann ich für den klimawandel tun?
     - wie kann ich meinen co2-fußabdruck reduzieren?
     - was sind möglichkeiten, um meinen co2-fußabdruck zu reduzieren?
     - was kann ich persönlich tun um etwas gegen den Klimawandel zu machen?
     - wie können wir als individuen unseren teil dazu beitragen, den klimawandel zu bekämpfen?
+    - was kann ich persönlich gegen den klimawandel tun?
+    - was kann ich in meinem alltag tun, um den klimawandel zu stoppen?
+    - welche kleinen veränderungen in meinem leben kann ich machen, um klimabewusster zu leben?
+    - welche möglichkeiten habe ich im alltag, um etwas gegen den klimawandel zu unternehmen?
+    - welche möglichkeiten habe ich meinen ausstoss zu verringern?
+    - was kann man als normaler mensch tun, um den klimawandel zu stoppen?
+    - was kann ich in meinem täglichen ablauf ändern, um etwas für den klimawandel zu tun?
+    - was kannst du für tipps im alltag geben?
 
 - intent: what_can_i_do_tipps_topic
   examples: |
@@ -31,6 +47,9 @@ nlu:
     - [konsum]{"entity": "topic", "value":"konsum"} bitte
     - wie [konsumiere]{"entity": "topic", "value":"konsum"} ich umweltfreundlich?
     - [haushalt]{"entity": "topic", "value":"haushalt"} würde mich interessieren
+    - [nahrungsmittel]{"entity": "topic", "value":"nahrungsmittel"} interessieren mich
+    - das thema [konsum]{"entity": "topic", "value":"konsum"} würde mich noch mehr interessieren
+    - zum thema [konsum]{"entity": "topic", "value":"konsum"}
     - tipps zu [mobilität]{"entity": "topic", "value":"mobilität"}
     - [mobilität]{"entity": "topic", "value":"mobilität"}
     - das thema [haushalt]{"entity": "topic", "value":"haushalt"} fände ich spannend
@@ -38,3 +57,5 @@ nlu:
     - was kann ich im [haushalt]{"entity": "topic", "value":"haushalt"} tun?
     - was kann ich zu [hause]{"entity": "topic", "value":"haushalt"} tun?
     - was kann ich [daheim]{"entity": "topic", "value":"haushalt"} tun?
+    - Hast du noch einen tipp zu [nahrungsmitteln]{"entity": "topic", "value":"nahrungsmittel"}
+    - was kann man im [haushalt]{"entity": "topic", "value":"haushalt"} tun, um dem klimawandel entgegenzuwirken?

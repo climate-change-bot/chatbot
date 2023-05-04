@@ -5,11 +5,17 @@ nlu:
   examples: |
     - ich möchte ein quiz machen
     - ich möchte das quiz machen
+    - ich möchte gerne das quiz machen
     - starte das quiz
     - ja, ein quiz
     - startest du bitte das quiz?
-    - okay, kann ich das Quiz machen?
+    - okay, kann ich das quiz machen?
+    - und wo finde ich das quiz?
     - starte quiz
+    - klimaquiz?
+    - quiz?
+    - ein quizz
+    - mach das quiz
     - beginne mit dem quiz
     - quiz bitte
     - ein quiz bitte
@@ -18,15 +24,35 @@ nlu:
     - ich möchte das quiz noch einmal machen
     - kann ich nochmals ein quiz machen?
     - das quiz würde mich sehr interessieren
+    - ich möchte mein wissen mit einem quiz testen
+    - Ich möchte mein wissen im quiz testen
     - ich möchte mein wissen testen
     - ich möchte den quiz machen
     - ich möchte den test machen
+    - ich möchte das quiz machen.
     - ich will mein wissen testen
     - ich möchte mein wissen zum klimawandel in einen quiz testen
+    - ich möchte mein wissen zum klimawandel mit einem quiz testen
+    - Ich möchte gerne mein wissen zum klimawandel mit einem quiz testen
+    - gerne möchte ich mein wissen testen mit einem quiz
     - teste mein wissen
     - teste mein wissen zum klimawandel
+    - kannst du nochmals mein wissen testen?
+    - ich möchte gerne mein wissen testen
+    - kannst du mir nochmals quizfragen mit multiple choice stellen?
     - ich hätte lust auf eine herausforderung
     - ich würde gerne ein spiel machen
     - ich bin bereit für eine geistige anstrengung
     - ich würde gerne meine fähigkeiten unter beweis stellen
+    - Ich würde gerne mein wissen zum klimawandel in einem quiz testen
     - ich möcht gerne ein quiz machen zum thema klimawandel
+    - hast du ein quiz?
+    - quiz nochmal machen
+    - wollen wir ein spiel spielen?
+    - wie wäre es nochmals mit einem quiz?
+    - alles klar. zeig mir gerne dein klimaquiz
+    - teste mich doch mit dem quiz
+    - Ich würde mein wissen gerne testen
+    - ich würde gerne das quiz testen
+    - ein quiz wäre toll
+    - ein quiz klingt super
