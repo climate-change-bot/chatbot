@@ -1,458 +1,10 @@
 [
   {
-    "text": "was ist der klimawandel genau?",
+    "text": "beschreibe den klimawandel",
     "intent": "question_what_is_climate_change",
     "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was bedeutet der begriff klimawandel?",
-    "intent": "question_what_is_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die treiber des klimawandels?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "die modelle stimmen gar nicht",
-    "intent": "question_models_are_unreliable",
-    "intent_prediction": {
-      "name": "question_its_not_bad",
-      "confidence": 0.3688570261001587
-    }
-  },
-  {
-    "text": "kann der klimawandel noch gestoppt werden?",
-    "intent": "question_can_we_stop_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "aktivismus oder politik?",
-    "intent": "question_activism_vs_politics",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "weshalb ist die politik so passiv?",
-    "intent": "question_why_does_the_politics_nothing",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "welche nahrungsmittel haben den größten positiven einfluss auf das klima?",
-    "intent": "question_effect_to_the_climate",
-    "intent_prediction": {
-      "name": "question_what_food_should_i_eat",
-      "confidence": 0.39817479252815247
-    }
-  },
-  {
-    "text": "wie beeinflusst fleisch die klimabilanz?",
-    "intent": "question_why_is_meat_bad_for_the_climate",
-    "intent_prediction": {
-      "name": "question_how_much_does_meat_pollute_the_climate",
-      "confidence": 0.7849295735359192
-    }
-  },
-  {
-    "text": "ich bin ein täglicher fleischesser",
-    "intent": "i_eat_lot_meat",
-    "intent_prediction": {
-      "name": "i_eat_no_meat",
-      "confidence": 0.48902609944343567
-    }
-  },
-  {
-    "text": "fleisch ist ein fester bestandteil meiner täglichen ernährung",
-    "intent": "i_eat_lot_meat",
-    "intent_prediction": {
-      "name": "i_eat_no_meat",
-      "confidence": 0.520189642906189
-    }
-  },
-  {
-    "text": "nop",
-    "intent": "deny",
-    "intent_prediction": {
-      "name": "question_why_does_the_politics_nothing",
-      "confidence": 0.3314868211746216
-    }
-  },
-  {
-    "text": "was bedeutet n2o?",
-    "intent": "question_what_are_greenhouse_gases",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was kann ich daheim tun?",
-    "intent": "what_can_i_do_tipps_topic",
-    "intent_prediction": {
-      "name": "question_what_can_i_do",
-      "confidence": 0.9953315854072571
-    }
-  },
-  {
-    "text": "ist der klimawandel real?",
-    "intent": "question_is_climate_real",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die primären treiber des klimawandels?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "ist der klimawandel nicht ein natürlicher prozess?",
-    "intent": "question_climate_changed_before",
-    "intent_prediction": {
-      "name": "question_is_the_sun",
-      "confidence": 0.3853052258491516
-    }
-  },
-  {
-    "text": "ich habe gehört die sonne ist die ursache",
-    "intent": "question_is_the_sun",
-    "intent_prediction": {
-      "name": "question_its_not_bad",
-      "confidence": 0.17342732846736908
-    }
-  },
-  {
-    "text": "ist es die sonne?",
-    "intent": "question_is_the_sun",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "können wir den klimawandel noch stoppen?",
-    "intent": "question_can_we_stop_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "ist aktivismus besser als politik?",
-    "intent": "question_activism_vs_politics",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "politik oder aktivismus?",
-    "intent": "question_activism_vs_politics",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "kann ich weiterhin guten gewissens schwein essen?",
-    "intent": "question_can_i_eat_meat",
-    "intent_prediction": {
-      "name": "question_why_is_meat_bad_for_the_climate",
-      "confidence": 0.3751913011074066
-    }
-  },
-  {
-    "text": "wie stark trägt fleisch zur klimabelastung bei?",
-    "intent": "question_why_is_meat_bad_for_the_climate",
-    "intent_prediction": {
-      "name": "question_how_much_does_meat_pollute_the_climate",
-      "confidence": 0.8481195569038391
-    }
-  },
-  {
-    "text": "wie gross ist der co2-fussabdruck von fleisch?",
-    "intent": "question_how_much_does_meat_pollute_the_climate",
-    "intent_prediction": {
-      "name": "question_why_is_meat_bad_for_the_climate",
-      "confidence": 0.49316468834877014
-    }
-  },
-  {
-    "text": "whats up",
-    "intent": "greet_again",
-    "intent_prediction": {
-      "name": "question_activism_vs_politics",
-      "confidence": 0.16084100306034088
-    }
-  },
-  {
-    "text": "Ich mag das nicht",
-    "intent": "deny",
-    "intent_prediction": {
-      "name": "question_climate_changed_before",
-      "confidence": 0.20366168022155762
-    }
-  },
-  {
-    "text": "was ist Kohlenstoffdioxid",
-    "intent": "question_what_are_greenhouse_gases",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "wie konsumiere ich umweltfreundlich?",
-    "intent": "what_can_i_do_tipps_topic",
-    "intent_prediction": {
-      "name": "question_what_can_i_do",
-      "confidence": 0.28146207332611084
-    }
-  },
-  {
-    "text": "nahrungsmittel",
-    "intent": "what_can_i_do_tipps_topic",
-    "intent_prediction": {
-      "name": "question_effect_to_the_climate",
-      "confidence": 0.5299252867698669
-    }
-  },
-  {
-    "text": "was ist der klimawandel?",
-    "intent": "question_what_is_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was versteht man unter klimawandel?",
-    "intent": "question_what_is_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "gibt es den klimawandel überhaupt?",
-    "intent": "question_is_climate_real",
-    "intent_prediction": {
-      "name": "question_what_is_climate_change",
-      "confidence": 0.23573045432567596
-    }
-  },
-  {
-    "text": "weshalb steigen die temperaturen?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "warum gibt es klimawandel?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "die sonne verursacht den klimawandel",
-    "intent": "question_is_the_sun",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "der klimawandel ist kein problem",
-    "intent": "question_its_not_bad",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "hat die menschheit noch eine chance?",
-    "intent": "question_can_we_stop_climate_change",
-    "intent_prediction": {
-      "name": "question_is_the_climate_change_caused_by_humans",
-      "confidence": 0.35291948914527893
-    }
-  },
-  {
-    "text": "warum macht die politik so wenig gegen den klimawandel?",
-    "intent": "question_why_does_the_politics_nothing",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die folgen des klimawandels für die antarktis",
-    "intent": "question_what_are_the_consequences_of_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "weshalb sollte ich kein fleisch essen?",
-    "intent": "question_why_is_meat_bad_for_the_climate",
-    "intent_prediction": {
-      "name": "question_what_food_should_i_eat",
-      "confidence": 0.3379683196544647
-    }
-  },
-  {
-    "text": "ich esse oft fleisch",
-    "intent": "i_eat_lot_meat",
-    "intent_prediction": {
-      "name": "i_some_times_eat_meat",
-      "confidence": 0.9526970386505127
-    }
-  },
-  {
-    "text": "ich esse 2 mal pro woche fleisch",
-    "intent": "i_some_times_eat_meat",
-    "intent_prediction": {
-      "name": "i_eat_lot_meat",
-      "confidence": 0.8458678722381592
-    }
-  },
-  {
-    "text": "fleisch ist für mich tabu",
-    "intent": "i_eat_no_meat",
-    "intent_prediction": {
-      "name": "question_why_is_meat_bad_for_the_climate",
-      "confidence": 0.5373787879943848
-    }
-  },
-  {
-    "text": "was ist kohlendioxid?",
-    "intent": "question_what_are_greenhouse_gases",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was ist kohlendioxid",
-    "intent": "question_what_are_greenhouse_gases",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was ist Kohlenstoffdioxid?",
-    "intent": "question_what_are_greenhouse_gases",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind meine optionen?",
-    "intent": "question_what_can_i_do",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was kann ich zu hause tun?",
-    "intent": "what_can_i_do_tipps_topic",
-    "intent_prediction": {
-      "name": "question_what_can_i_do",
-      "confidence": 0.9759417772293091
-    }
-  },
-  {
-    "text": "kannst du das konzept des klimawandels beschreiben?",
-    "intent": "question_what_is_climate_change",
-    "intent_prediction": {
-      "name": "question_what_causes_climate_change",
-      "confidence": 0.15025852620601654
-    }
-  },
-  {
-    "text": "was verursacht den klimawandel?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "kann man den klimawandel aufhalten?",
-    "intent": "question_can_we_stop_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "ist politik besser als aktivismus?",
-    "intent": "question_activism_vs_politics",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "weshalb ist die politik passiv?",
-    "intent": "question_why_does_the_politics_nothing",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die folgen des klimawandels?",
-    "intent": "question_what_are_the_consequences_of_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die folgen des klimawandels für die arktis?",
-    "intent": "question_what_are_the_consequences_of_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "welche nahrungsmittel sollte ich wegen ihrer klimaschädlichen wirkung vermeiden?",
-    "intent": "question_effect_to_the_climate",
-    "intent_prediction": {
-      "name": "question_what_food_should_i_eat",
-      "confidence": 0.6475052833557129
+      "name": "question_is_climate_real",
+      "confidence": 0.5496794581413269
     }
   },
   {
@@ -460,191 +12,119 @@
     "intent": "i_eat_no_meat",
     "intent_prediction": {
       "name": "i_some_times_eat_meat",
-      "confidence": 0.978438675403595
+      "confidence": 0.9748560190200806
     }
   },
   {
-    "text": "welche nahrungsmittel empfiehlst du?",
-    "intent": "question_what_food_should_i_eat",
+    "text": "guten morgen",
+    "intent": "greet_again",
     "intent_prediction": {
-      "name": "question_effect_to_the_climate",
-      "confidence": 0.652114748954773
+      "name": "start_quiz",
+      "confidence": 0.26532939076423645
     }
   },
   {
-    "text": "no",
-    "intent": "deny",
+    "text": "von wem wurdest du entwickelt?",
+    "intent": "question_who_invented_you",
     "intent_prediction": {
-      "name": "question_climate_changed_before",
-      "confidence": 0.26865851879119873
+      "name": "question_source_of_information",
+      "confidence": 0.44140133261680603
     }
   },
   {
-    "text": "welche informationen kann ich erhalten?",
-    "intent": "question_what_can_i_ask",
-    "intent_prediction": {
-      "name": "question_what_can_i_do",
-      "confidence": 0.4367453455924988
-    }
-  },
-  {
-    "text": "was kann ich im alltag tun?",
+    "text": "was kann ich beitragen?",
     "intent": "question_what_can_i_do",
-    "intent_prediction": {
-      "name": "what_can_i_do_tipps_topic",
-      "confidence": 0.7348084449768066
-    }
-  },
-  {
-    "text": "ich möchte gerne mehr über nahrungsmittel erfahren",
-    "intent": "what_can_i_do_tipps_topic",
-    "intent_prediction": {
-      "name": "want_to_know_more",
-      "confidence": 0.3641977906227112
-    }
-  },
-  {
-    "text": "erklär mir den klimawandel",
-    "intent": "question_what_is_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "was sind die ursachen des klimawandels?",
-    "intent": "question_what_causes_climate_change",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "tragen menschliche aktivitäten zum klimawandel bei?",
-    "intent": "question_is_the_climate_change_caused_by_humans",
-    "intent_prediction": {
-      "name": "question_why_is_meat_bad_for_the_climate",
-      "confidence": 0.37655165791511536
-    }
-  },
-  {
-    "text": "die auswirkungen des klimawandels sind übertrieben",
-    "intent": "question_its_not_bad",
-    "intent_prediction": {
-      "name": "question_what_are_the_consequences_of_climate_change",
-      "confidence": 0.485211044549942
-    }
-  },
-  {
-    "text": "klimamodelle sind falsch",
-    "intent": "question_models_are_unreliable",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "temperaturen werden falsch gemessen",
-    "intent": "question_temp_record_is_unreliable",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "warum tut die regierung so wenig gegen den klimawandel?",
-    "intent": "question_why_does_the_politics_nothing",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "kann ich noch huhn essen?",
-    "intent": "question_can_i_eat_meat",
     "intent_prediction": {
       "name": "question_what_can_i_ask",
-      "confidence": 0.33629509806632996
-    }
-  },
-  {
-    "text": "in welchem masse trägt lamm zum klimaproblem bei?",
-    "intent": "question_why_is_meat_bad_for_the_climate",
-    "intent_prediction": {
-      "name": "question_effect_to_the_climate",
-      "confidence": 0.7545396089553833
-    }
-  },
-  {
-    "text": "wie stark belastet lamm das klima?",
-    "intent": "question_how_much_does_meat_pollute_the_climate",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
-    }
-  },
-  {
-    "text": "meine mahlzeiten am tag beinhalten immer fleisch",
-    "intent": "i_eat_lot_meat",
-    "intent_prediction": {
-      "name": "greet_again",
-      "confidence": 0.18941907584667206
-    }
-  },
-  {
-    "text": "ich esse nicht täglich fleisch",
-    "intent": "i_some_times_eat_meat",
-    "intent_prediction": {
-      "name": "i_eat_lot_meat",
-      "confidence": 0.9933655858039856
-    }
-  },
-  {
-    "text": "nein",
-    "intent": "deny",
-    "intent_prediction": {
-      "name": "want_to_know_more",
-      "confidence": 0.7274364233016968
-    }
-  },
-  {
-    "text": "sicher nicht",
-    "intent": "deny",
-    "intent_prediction": {
-      "name": "question_models_are_unreliable",
-      "confidence": 0.27316123247146606
-    }
-  },
-  {
-    "text": "was kann ich tun?",
-    "intent": "question_what_can_i_do",
-    "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
+      "confidence": 0.6008060574531555
     }
   },
   {
     "text": "wie können wir als individuen unseren teil dazu beitragen, den klimawandel zu bekämpfen?",
     "intent": "question_what_can_i_do",
     "intent_prediction": {
+      "name": "question_how_can_we_stop_climate_change",
+      "confidence": 0.6353557109832764
+    }
+  },
+  {
+    "text": "was kann ich daheim tun?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.9973894953727722
+    }
+  },
+  {
+    "text": "warum gibt es klimawandel?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
       "name": "question_is_climate_real",
-      "confidence": 0.16330382227897644
+      "confidence": 0.7154684662818909
     }
   },
   {
-    "text": "kannst du mir mehr über essen erzählen?",
-    "intent": "what_can_i_do_tipps_topic",
+    "text": "wieso gibt es klimawandel?",
+    "intent": "question_what_causes_climate_change",
     "intent_prediction": {
-      "name": "question_can_i_eat_meat",
-      "confidence": 0.1838589608669281
+      "name": "question_is_climate_real",
+      "confidence": 0.9601312279701233
     }
   },
   {
-    "text": "tipps zu mobilität",
-    "intent": "what_can_i_do_tipps_topic",
+    "text": "was können wir gegen den klimawandel tun?",
+    "intent": "question_how_can_we_stop_climate_change",
     "intent_prediction": {
-      "name": "language_error",
-      "confidence": 1.0
+      "name": "question_what_can_i_do",
+      "confidence": 0.7103717923164368
+    }
+  },
+  {
+    "text": "weshalb sollte ich kein fleisch essen?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_what_food_should_i_eat",
+      "confidence": 0.7735797166824341
+    }
+  },
+  {
+    "text": "in welchem masse trägt lamm zum klimaproblem bei?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.5040484070777893
+    }
+  },
+  {
+    "text": "fleisch kommt gelegentlich auf meinen teller",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_no_meat",
+      "confidence": 0.5844857096672058
+    }
+  },
+  {
+    "text": "was kann ich erfahren?",
+    "intent": "question_what_can_i_ask",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.8588076233863831
+    }
+  },
+  {
+    "text": "was weisst du über den klimawandel?",
+    "intent": "question_what_can_i_ask",
+    "intent_prediction": {
+      "name": "question_what_causes_climate_change",
+      "confidence": 0.9402270317077637
+    }
+  },
+  {
+    "text": "was kannst du für tipps im alltag geben?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "what_can_i_do_tipps_topic",
+      "confidence": 0.4382130801677704
     }
   },
   {
@@ -652,7 +132,327 @@
     "intent": "what_can_i_do_tipps_topic",
     "intent_prediction": {
       "name": "question_what_can_i_do",
-      "confidence": 0.8635638356208801
+      "confidence": 0.8761039972305298
+    }
+  },
+  {
+    "text": "was kann ich zu hause tun?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.9804471731185913
+    }
+  },
+  {
+    "text": "was ist der hauptgrund für den klimawandel?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
+      "name": "question_what_is_climate_change",
+      "confidence": 0.3700469434261322
+    }
+  },
+  {
+    "text": "welchen einfluss hat die Menschheit auf den klimawandel?",
+    "intent": "question_is_the_climate_change_caused_by_humans",
+    "intent_prediction": {
+      "name": "question_what_are_the_consequences_of_climate_change",
+      "confidence": 0.6215226650238037
+    }
+  },
+  {
+    "text": "was können wir tun, um den klimawandel einzudämmen?",
+    "intent": "question_how_can_we_stop_climate_change",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.5032318234443665
+    }
+  },
+  {
+    "text": "ich bin ein täglicher fleischesser",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "start_quiz",
+      "confidence": 0.7836326956748962
+    }
+  },
+  {
+    "text": "ich esse nicht täglich fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.9636477828025818
+    }
+  },
+  {
+    "text": "ich esse 2 mal pro woche fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.8504396080970764
+    }
+  },
+  {
+    "text": "ich verzichte auf fleisch in meiner täglichen ernährung",
+    "intent": "i_eat_no_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.6885478496551514
+    }
+  },
+  {
+    "text": "welche nahrungsmittel empfiehlst du?",
+    "intent": "question_what_food_should_i_eat",
+    "intent_prediction": {
+      "name": "question_what_can_i_ask",
+      "confidence": 0.4925691485404968
+    }
+  },
+  {
+    "text": "whats up",
+    "intent": "greet_again",
+    "intent_prediction": {
+      "name": "start_quiz",
+      "confidence": 0.9740989804267883
+    }
+  },
+  {
+    "text": "mehr bitte",
+    "intent": "want_to_know_more",
+    "intent_prediction": {
+      "name": "what_can_i_do_tipps_topic",
+      "confidence": 0.23629242181777954
+    }
+  },
+  {
+    "text": "ich bin bereit für eine geistige anstrengung",
+    "intent": "start_quiz",
+    "intent_prediction": {
+      "name": "i_eat_no_meat",
+      "confidence": 0.472796767950058
+    }
+  },
+  {
+    "text": "was sind meine optionen?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "question_what_can_i_ask",
+      "confidence": 0.15820586681365967
+    }
+  },
+  {
+    "text": "kannst du mir mehr über essen erzählen?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_causes_climate_change",
+      "confidence": 0.8141358494758606
+    }
+  },
+  {
+    "text": "Hast du noch einen tipp zu nahrungsmitteln",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_can_we_stop_climate_change",
+      "confidence": 0.3168964982032776
+    }
+  },
+  {
+    "text": "kannst du das konzept des klimawandels beschreiben?",
+    "intent": "question_what_is_climate_change",
+    "intent_prediction": {
+      "name": "question_climate_changed_before",
+      "confidence": 0.2099400907754898
+    }
+  },
+  {
+    "text": "warum verändert sich das klima?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
+      "name": "question_climate_changed_before",
+      "confidence": 0.4236164391040802
+    }
+  },
+  {
+    "text": "wie stark trägt fleisch zur klimabelastung bei?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.7616089582443237
+    }
+  },
+  {
+    "text": "wie beeinflusst fleisch die klimabilanz?",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_how_much_does_meat_pollute_the_climate",
+      "confidence": 0.9550250768661499
+    }
+  },
+  {
+    "text": "was versteht man unter klimawandel?",
+    "intent": "question_what_is_climate_change",
+    "intent_prediction": {
+      "name": "question_what_causes_climate_change",
+      "confidence": 0.7291393876075745
+    }
+  },
+  {
+    "text": "was kannst du mir über den klimawandel erzählen?",
+    "intent": "question_what_causes_climate_change",
+    "intent_prediction": {
+      "name": "what_can_i_do_tipps_topic",
+      "confidence": 0.5677815675735474
+    }
+  },
+  {
+    "text": "die auswirkungen des klimawandels sind übertrieben",
+    "intent": "question_its_not_bad",
+    "intent_prediction": {
+      "name": "question_what_are_the_consequences_of_climate_change",
+      "confidence": 0.8389001488685608
+    }
+  },
+  {
+    "text": "hat die menschheit noch eine chance?",
+    "intent": "question_can_we_stop_climate_change",
+    "intent_prediction": {
+      "name": "question_is_the_climate_change_caused_by_humans",
+      "confidence": 0.7225357294082642
+    }
+  },
+  {
+    "text": "wer hat den co2-fussabdruck pro kopf erfunden?",
+    "intent": "question_origin_of_carbon_footprint",
+    "intent_prediction": {
+      "name": "question_who_invented_you",
+      "confidence": 0.43093276023864746
+    }
+  },
+  {
+    "text": "wie stark belastet lamm das klima?",
+    "intent": "question_how_much_does_meat_pollute_the_climate",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.7995624542236328
+    }
+  },
+  {
+    "text": "ich esse oft fleisch",
+    "intent": "i_eat_lot_meat",
+    "intent_prediction": {
+      "name": "i_some_times_eat_meat",
+      "confidence": 0.9641158580780029
+    }
+  },
+  {
+    "text": "ich esse nur einmal pro woche fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.6097110509872437
+    }
+  },
+  {
+    "text": "2 mal die woche",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.7609627842903137
+    }
+  },
+  {
+    "text": "fleisch ist für mich tabu",
+    "intent": "i_eat_no_meat",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.2453954517841339
+    }
+  },
+  {
+    "text": "was muss ich bei meiner ernährung beachten, um den klimawandel zu verringern?",
+    "intent": "question_what_food_should_i_eat",
+    "intent_prediction": {
+      "name": "question_what_contribution_does_diet_make_to_climate_change",
+      "confidence": 0.6211751103401184
+    }
+  },
+  {
+    "text": "was tun?",
+    "intent": "question_what_can_i_do",
+    "intent_prediction": {
+      "name": "question_what_are_greenhouse_gases",
+      "confidence": 0.47290733456611633
+    }
+  },
+  {
+    "text": "ist der klimawandel nicht ein natürlicher prozess?",
+    "intent": "question_climate_changed_before",
+    "intent_prediction": {
+      "name": "question_is_climate_real",
+      "confidence": 0.2044287919998169
+    }
+  },
+  {
+    "text": "kann man den klimawandel aufhalten?",
+    "intent": "question_can_we_stop_climate_change",
+    "intent_prediction": {
+      "name": "question_how_can_we_stop_climate_change",
+      "confidence": 0.7625027298927307
+    }
+  },
+  {
+    "text": "was sind unsere optionen, um den klimawandel zu bekämpfen?",
+    "intent": "question_how_can_we_stop_climate_change",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.9526528120040894
+    }
+  },
+  {
+    "text": "wie relevant ist der fleischkonsum",
+    "intent": "question_why_is_meat_bad_for_the_climate",
+    "intent_prediction": {
+      "name": "question_its_not_bad",
+      "confidence": 0.22962670028209686
+    }
+  },
+  {
+    "text": "wie schneidet schwein in bezug auf co2-emissionen ab?",
+    "intent": "question_how_much_does_meat_pollute_the_climate",
+    "intent_prediction": {
+      "name": "question_why_is_meat_bad_for_the_climate",
+      "confidence": 0.42537346482276917
+    }
+  },
+  {
+    "text": "ich esse ab und zu fleisch",
+    "intent": "i_some_times_eat_meat",
+    "intent_prediction": {
+      "name": "i_eat_lot_meat",
+      "confidence": 0.5269349217414856
+    }
+  },
+  {
+    "text": "wer ist dein schöpfer?",
+    "intent": "question_who_invented_you",
+    "intent_prediction": {
+      "name": "question_what_is_climate_change",
+      "confidence": 0.29649513959884644
+    }
+  },
+  {
+    "text": "ich hätte lust auf eine herausforderung",
+    "intent": "start_quiz",
+    "intent_prediction": {
+      "name": "question_origin_of_carbon_footprint",
+      "confidence": 0.16305159032344818
+    }
+  },
+  {
+    "text": "wie konsumiere ich umweltfreundlich?",
+    "intent": "what_can_i_do_tipps_topic",
+    "intent_prediction": {
+      "name": "question_what_can_i_do",
+      "confidence": 0.28400659561157227
     }
   }
 ]
