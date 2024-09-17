@@ -1,6 +1,6 @@
-rasa~=3.5.3
+rasa~=3.6.20
 spacy~=3.4.3
-openai~=0.27.0
+openai~=1.45.1
 beautifulsoup4~=4.11.2
 markdown~=3.4.1
 sqlalchemy<2.0.0
