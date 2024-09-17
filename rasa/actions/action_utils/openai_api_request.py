@@ -1,9 +1,8 @@
-import os
-import openai
+from openai import OpenAI
 
 from .conversation import get_last_conversation, get_cleaned_chat_gpt_answer
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI()
 
 MODEL_INSTRUCTION = "Beantworte die vorherige Nachricht des Users nur, wenn sie mit dem Klimawandel zu tun hat " \
                     "oder wenn die Nachricht im Kontext zu den vorherigen Nachrichten passt. " \
@@ -24,11 +23,9 @@ def request_to_openai(events):
     messages.extend(conversation_items)
     messages.append({'role': 'user', 'content': FIRST_USER_INSTRUCTION})
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
         messages=messages,
-        max_tokens=400,
         temperature=0.5
     )
-    response_text = get_cleaned_chat_gpt_answer(response["choices"][0]['message']['content'])
-    return response_text
+    return completion.choices[0].message.content
