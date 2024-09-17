@@ -23,8 +23,12 @@ Only described for linux.
 
 - Install first python 3.10.
 - Create a virtual environment and install the packages in the requirements.txt.
-- Comment out the tracker_store section to use the InMemoryTrackerStore. Otherwise, you  need to install the postgres database and set the correct settings.
+- Comment out the tracker_store section [endpoints.yml](rasa/endpoints.yml) to use the InMemoryTrackerStore. Otherwise, you need to install the postgres database and set the correct settings.
 - Navigate in the console to the rasa folder.
+- download the spacy files:
+```bash 
+python3 -m spacy download de_core_news_md
+```
 - Build the rasa model.
 ```bash 
 rasa train --domain domain
